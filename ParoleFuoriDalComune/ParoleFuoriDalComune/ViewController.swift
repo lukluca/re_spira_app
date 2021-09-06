@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
     }
 
-
+    @IBAction func breathButtonAction(_ sender: UIButton) {
+        print("Did tap breath")
+    }
+    
 }
 
