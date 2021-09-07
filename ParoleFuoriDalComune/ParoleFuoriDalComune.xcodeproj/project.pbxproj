@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */; };
 		2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */; };
 		2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */; };
-		2F99EDCA26E6C31700F1DBAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC926E6C31700F1DBAF /* ViewController.swift */; };
+		2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC926E6C31700F1DBAF /* StartViewController.swift */; };
 		2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCB26E6C31700F1DBAF /* Main.storyboard */; };
 		2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */; };
 		2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F99EDC226E6C31700F1DBAF /* ParoleFuoriDalComune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParoleFuoriDalComune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
+		2F99EDC226E6C31700F1DBAF /* Re_Spira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Re_Spira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F99EDC926E6C31700F1DBAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F99EDC926E6C31700F1DBAF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		2F99EDCC26E6C31700F1DBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F99EDD126E6C31800F1DBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		2F99EDC326E6C31700F1DBAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F99EDC226E6C31700F1DBAF /* ParoleFuoriDalComune.app */,
+				2F99EDC226E6C31700F1DBAF /* Re_Spira.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +60,12 @@
 			children = (
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
 				2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */,
-				2F99EDC926E6C31700F1DBAF /* ViewController.swift */,
+				2F99EDC926E6C31700F1DBAF /* StartViewController.swift */,
 				2F99EDCB26E6C31700F1DBAF /* Main.storyboard */,
 				2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */,
 				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
 				2F99EDD326E6C31800F1DBAF /* Info.plist */,
+				2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
@@ -84,7 +87,7 @@
 			);
 			name = ParoleFuoriDalComune;
 			productName = ParoleFuoriDalComune;
-			productReference = 2F99EDC226E6C31700F1DBAF /* ParoleFuoriDalComune.app */;
+			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F99EDCA26E6C31700F1DBAF /* ViewController.swift in Sources */,
+				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
+				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,
 				2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.cyber.ParoleFuoriDalComune;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.cyber.ParoleFuoriDalComune;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
