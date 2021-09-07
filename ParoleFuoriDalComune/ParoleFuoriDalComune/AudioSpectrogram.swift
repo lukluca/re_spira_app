@@ -9,6 +9,8 @@ import AVFoundation
 import Accelerate
 
 public class AudioSpectrogram: CALayer {
+    
+    var didAppendFrequencies: (( [Float]) -> Void)?
 
     // MARK: Initialization
     
@@ -167,6 +169,7 @@ public class AudioSpectrogram: CALayer {
         }
         
         frequencyDomainValues.append(contentsOf: frequencyDomainBuffer)
+        didAppendFrequencies?(frequencyDomainBuffer)
 
         dispatchSemaphore.signal()
     }

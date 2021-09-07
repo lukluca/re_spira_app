@@ -12,6 +12,8 @@ class SpectrogramViewController: UIViewController {
     /// The audio spectrogram layer.
     private var audioSpectrogram = AudioSpectrogram()
     
+    private var frequencies = [Float]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,6 +42,11 @@ class SpectrogramViewController: UIViewController {
             audioSpectrogram = AudioSpectrogram()
             view.layer.addSublayer(audioSpectrogram)
         }
+        
+        audioSpectrogram.didAppendFrequencies = { [weak self] values in
+            self?.frequencies.append(contentsOf: values)
+        }
+        
         audioSpectrogram.startRunning()
     }
     
