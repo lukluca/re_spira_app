@@ -11,6 +11,7 @@ class StartViewController: UIViewController {
     
     @IBOutlet weak var breathButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
     
@@ -39,6 +40,10 @@ class StartViewController: UIViewController {
         spectrogramViewController?.reset()
     }
     
+    @IBAction func drawButtonAction(_ sender: UIButton) {
+        drawingButtonState()
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
@@ -51,19 +56,29 @@ class StartViewController: UIViewController {
     private func initialButtonState() {
         breathButton.isEnabled = true
         stopButton.isEnabled = false
+        drawButton.isEnabled = false
         resetButton.isEnabled = false
     }
     
     private func recordingButtonState() {
         breathButton.isEnabled = false
         stopButton.isEnabled = true
+        drawButton.isEnabled = true
         resetButton.isEnabled = false
     }
     
     private func stopButtonState() {
         breathButton.isEnabled = false
         stopButton.isEnabled = false
+        drawButton.isEnabled = false
         resetButton.isEnabled = true
+    }
+    
+    private func drawingButtonState() {
+        breathButton.isEnabled = false
+        stopButton.isEnabled = false
+        drawButton.isEnabled = false
+        resetButton.isEnabled = false
     }
 }
 

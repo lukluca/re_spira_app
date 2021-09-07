@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="716" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92w-xE-hm3">
-                                                <rect key="frame" x="30" y="58.5" width="308" height="30"/>
+                                                <rect key="frame" x="30" y="58.5" width="192" height="30"/>
                                                 <state key="normal" title="Stop_Registrazione"/>
                                                 <state key="disabled">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,8 +52,19 @@
                                                     <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mvm-tz-6Bq"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-Lf-cRp" userLabel="Draw Button">
+                                                <rect key="frame" x="262" y="51.5" width="192" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Di_Segna"/>
+                                                <state key="disabled">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8o-Y9-Nix"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-x8-not" userLabel="Reset Button">
-                                                <rect key="frame" x="378" y="58.5" width="308" height="30"/>
+                                                <rect key="frame" x="494" y="58.5" width="192" height="30"/>
                                                 <state key="normal" title="Reset"/>
                                                 <state key="disabled">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,6 +111,7 @@
                     </view>
                     <connections>
                         <outlet property="breathButton" destination="y87-n7-k2b" id="9pl-uf-1QE"/>
+                        <outlet property="drawButton" destination="Fae-Lf-cRp" id="uVZ-Ps-fM5"/>
                         <outlet property="resetButton" destination="Haa-x8-not" id="erG-g9-LYj"/>
                         <outlet property="stopButton" destination="92w-xE-hm3" id="6rp-Fb-IXb"/>
                     </connections>

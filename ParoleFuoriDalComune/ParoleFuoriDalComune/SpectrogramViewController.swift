@@ -55,6 +55,7 @@ class SpectrogramViewController: UIViewController {
     }
     
     func reset() {
+        frequencies.removeAll()
         audioSpectrogram.removeFromSuperlayer()
     }
 }
