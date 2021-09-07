@@ -8,15 +8,68 @@
 import UIKit
 
 class StartViewController: UIViewController {
+    
+    @IBOutlet weak var breathButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    
+    
+    private var spectrogramViewController: SpectrogramViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
-    }
-
-    @IBAction func breathButtonAction(_ sender: UIButton) {
-        print("Did tap breath")
+        initialButtonState()
     }
     
+    //MARK: IBAction
+
+    @IBAction func breathButtonAction(_ sender: UIButton) {
+        recordingButtonState()
+        spectrogramViewController?.start()
+    }
+    
+    @IBAction func stopButtonAction(_ sender: UIButton) {
+        stopButtonState()
+        spectrogramViewController?.stop()
+    }
+    
+    @IBAction func resetButtonAction(_ sender: UIButton) {
+        initialButtonState()
+        spectrogramViewController?.reset()
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case SegueAction.spectrogram.rawValue:
+            spectrogramViewController = segue.destination as? SpectrogramViewController
+        default: ()
+        }
+    }
+    
+    private func initialButtonState() {
+        breathButton.isEnabled = true
+        stopButton.isEnabled = false
+        resetButton.isEnabled = false
+    }
+    
+    private func recordingButtonState() {
+        breathButton.isEnabled = false
+        stopButton.isEnabled = true
+        resetButton.isEnabled = false
+    }
+    
+    private func stopButtonState() {
+        breathButton.isEnabled = false
+        stopButton.isEnabled = false
+        resetButton.isEnabled = true
+    }
 }
 
+
+private extension StartViewController {
+    enum SegueAction: String {
+        case spectrogram = "SpectrogramViewControllerSegue"
+    }
+}

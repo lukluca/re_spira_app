@@ -10,17 +10,15 @@ import UIKit
 class SpectrogramViewController: UIViewController {
 
     /// The audio spectrogram layer.
-    let audioSpectrogram = AudioSpectrogram()
+    private var audioSpectrogram = AudioSpectrogram()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         audioSpectrogram.contentsGravity = .resize
         view.layer.addSublayer(audioSpectrogram)
-  
-        view.backgroundColor = .black
         
-        audioSpectrogram.startRunning()
+        view.backgroundColor = .black
     }
 
     override func viewDidLayoutSubviews() {
@@ -34,5 +32,22 @@ class SpectrogramViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         true
     }
-
+    
+    //MARK: Start / Stop
+    
+    func start() {
+        if audioSpectrogram.superlayer == nil {
+            audioSpectrogram = AudioSpectrogram()
+            view.layer.addSublayer(audioSpectrogram)
+        }
+        audioSpectrogram.startRunning()
+    }
+    
+    func stop() {
+        audioSpectrogram.stopRunning()
+    }
+    
+    func reset() {
+        audioSpectrogram.removeFromSuperlayer()
+    }
 }
