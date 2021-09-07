@@ -9,21 +9,30 @@ import UIKit
 
 class SpectrogramViewController: UIViewController {
 
+    /// The audio spectrogram layer.
+    let audioSpectrogram = AudioSpectrogram()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        audioSpectrogram.contentsGravity = .resize
+        view.layer.addSublayer(audioSpectrogram)
+  
+        view.backgroundColor = .black
+        
+        audioSpectrogram.startRunning()
+    }
+
+    override func viewDidLayoutSubviews() {
+        audioSpectrogram.frame = view.frame
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        true
     }
-    */
+    
+    override var prefersStatusBarHidden: Bool {
+        true
+    }
 
 }

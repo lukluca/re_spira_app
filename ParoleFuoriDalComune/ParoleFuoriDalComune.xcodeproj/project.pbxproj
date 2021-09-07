@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */; };
+		2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */; };
+		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
 		2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */; };
 		2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */; };
 		2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC926E6C31700F1DBAF /* StartViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
+		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
+		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
 		2F99EDC226E6C31700F1DBAF /* Re_Spira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Re_Spira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
 				2F99EDD326E6C31800F1DBAF /* Info.plist */,
 				2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */,
+				2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */,
+				2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
+				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
+				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,
 				2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */,
@@ -291,13 +299,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.cyber.ParoleFuoriDalComune;
+				PRODUCT_BUNDLE_IDENTIFIER = it.ParoleFuoriDalComune.respira;
 				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,13 +318,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.cyber.ParoleFuoriDalComune;
+				PRODUCT_BUNDLE_IDENTIFIER = it.ParoleFuoriDalComune.respira;
 				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
