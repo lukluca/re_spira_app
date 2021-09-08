@@ -42,6 +42,14 @@ class StartViewController: UIViewController {
     
     @IBAction func drawButtonAction(_ sender: UIButton) {
         drawingButtonState()
+        
+        if let frequencies = spectrogramViewController?.frequencies {
+            let cal = Calculator(data: frequencies)
+            
+            print("Calculator mean", cal.mean())
+            print("Calculator median", cal.median())
+            print("Calculator mean", cal.mode() as Any)
+        }
     }
     
     
@@ -70,7 +78,7 @@ class StartViewController: UIViewController {
     private func stopButtonState() {
         breathButton.isEnabled = false
         stopButton.isEnabled = false
-        drawButton.isEnabled = false
+        drawButton.isEnabled = true
         resetButton.isEnabled = true
     }
     

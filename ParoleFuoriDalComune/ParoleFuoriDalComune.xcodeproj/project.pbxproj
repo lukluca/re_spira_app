@@ -10,6 +10,8 @@
 		2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */; };
 		2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */; };
 		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
+		2F53A7DC26E959E500559655 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DB26E959E500559655 /* Calculator.swift */; };
+		2F53A7E026E9687700559655 /* HTLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTLM.swift */; };
 		2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */; };
 		2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */; };
 		2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC926E6C31700F1DBAF /* StartViewController.swift */; };
@@ -22,6 +24,8 @@
 		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
 		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
 		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
+		2F53A7DB26E959E500559655 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		2F53A7DF26E9687700559655 /* HTLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLM.swift; sourceTree = "<group>"; };
 		2F99EDC226E6C31700F1DBAF /* Re_Spira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Re_Spira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		2F53A7DA26E9597800559655 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				2F53A7DB26E959E500559655 /* Calculator.swift */,
+				2F53A7DF26E9687700559655 /* HTLM.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 			files = (
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
+				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
+				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,

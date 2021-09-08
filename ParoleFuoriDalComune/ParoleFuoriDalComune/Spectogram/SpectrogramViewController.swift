@@ -12,7 +12,7 @@ class SpectrogramViewController: UIViewController {
     /// The audio spectrogram layer.
     private var audioSpectrogram = AudioSpectrogram()
     
-    private var frequencies = [Float]()
+    private(set) var frequencies = [Float]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
