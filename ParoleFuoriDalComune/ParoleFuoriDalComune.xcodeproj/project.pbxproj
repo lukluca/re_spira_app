@@ -43,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F53A7D926E9581F00559655 /* Spectogram */ = {
+			isa = PBXGroup;
+			children = (
+				2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */,
+				2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */,
+				2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */,
+			);
+			path = Spectogram;
+			sourceTree = "<group>";
+		};
+		2F53A7DA26E9597800559655 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		2F99EDB926E6C31700F1DBAF = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +79,8 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
+				2F53A7DA26E9597800559655 /* Drawing */,
+				2F53A7D926E9581F00559655 /* Spectogram */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
 				2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */,
 				2F99EDC926E6C31700F1DBAF /* StartViewController.swift */,
@@ -69,9 +88,6 @@
 				2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */,
 				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
 				2F99EDD326E6C31800F1DBAF /* Info.plist */,
-				2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */,
-				2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */,
-				2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
