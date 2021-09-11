@@ -19,9 +19,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ON-TB-2uz">
                                 <rect key="frame" x="239" y="0.0" width="716" height="167"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y87-n7-k2b">
-                                        <rect key="frame" x="328" y="68.5" width="60" height="30"/>
-                                        <state key="normal" title="Re_spira"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y87-n7-k2b">
+                                        <rect key="frame" x="334" y="59.5" width="48" height="48"/>
+                                        <state key="normal" image="air"/>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -42,9 +42,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="chm-Wk-Xlc">
                                         <rect key="frame" x="0.0" y="0.0" width="716" height="147"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92w-xE-hm3">
-                                                <rect key="frame" x="30" y="58.5" width="192" height="30"/>
-                                                <state key="normal" title="Stop_Registrazione"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92w-xE-hm3">
+                                                <rect key="frame" x="30" y="49.5" width="192" height="48"/>
+                                                <state key="normal" image="stop"/>
                                                 <state key="disabled">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -52,10 +52,9 @@
                                                     <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mvm-tz-6Bq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-Lf-cRp" userLabel="Draw Button">
-                                                <rect key="frame" x="262" y="51.5" width="192" height="44"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Di_Segna"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-Lf-cRp" userLabel="Draw Button">
+                                                <rect key="frame" x="262" y="49.5" width="192" height="48"/>
+                                                <state key="normal" image="gesture"/>
                                                 <state key="disabled">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -63,9 +62,9 @@
                                                     <action selector="drawButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8o-Y9-Nix"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-x8-not" userLabel="Reset Button">
-                                                <rect key="frame" x="494" y="58.5" width="192" height="30"/>
-                                                <state key="normal" title="Reset"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-x8-not" userLabel="Reset Button">
+                                                <rect key="frame" x="494" y="49.5" width="192" height="48"/>
+                                                <state key="normal" image="backspace"/>
                                                 <state key="disabled">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -94,6 +93,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="1ON-TB-2uz" firstAttribute="width" secondItem="YJ3-07-aIj" secondAttribute="width" id="Akp-5N-M8z"/>
                             <constraint firstItem="YJ3-07-aIj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" constant="-0.39999999999997726" id="Gfn-pa-AqS"/>
@@ -147,6 +147,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcY-Py-XDN">
                                 <rect key="frame" x="239" y="167" width="716" height="500"/>
                                 <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WyV-KX-iMo" appends="YES" id="1gb-XI-gu0"/>
                                     <segue destination="A24-ek-iOl" kind="embed" identifier="SpectrogramSegue" id="cDG-FX-gHC"/>
                                 </connections>
                             </containerView>
@@ -163,14 +164,47 @@
                     <navigationItem key="navigationItem" id="Ysd-jw-1bA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxG-ci-Ei0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WyV-KX-iMo">
+                    <connections>
+                        <segue destination="kDl-fw-k6m" kind="showDetail" id="D9H-2Z-vei"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-711" y="756"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="QiH-KO-Ezt">
+            <objects>
+                <viewController id="kDl-fw-k6m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36F-Wf-hXd">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="794"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT6-PH-JJv">
+                                <rect key="frame" x="261" y="387" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0fA-pS-mrT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZs-ly-qaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="1452"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cDG-FX-gHC"/>
+        <segue reference="Yqu-7u-dLc"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="air" width="48" height="48"/>
+        <image name="backspace" width="48" height="48"/>
+        <image name="gesture" width="48" height="48"/>
+        <image name="stop" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
