@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F103CCE26ED720700BF9F20 /* divina_commedia.json */; };
+		2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */; };
 		2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */; };
 		2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */; };
 		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
@@ -29,6 +31,8 @@
 		039BA94DA34A6D8F96C8CEE4 /* Pods-ParoleFuoriDalComune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParoleFuoriDalComune.release.xcconfig"; path = "Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune.release.xcconfig"; sourceTree = "<group>"; };
 		1BC6523F0ACD96706A1037FF /* Pods_ParoleFuoriDalComune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParoleFuoriDalComune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E5EA671B341F09A926BEB2 /* Pods-ParoleFuoriDalComune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParoleFuoriDalComune.debug.xcconfig"; path = "Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune.debug.xcconfig"; sourceTree = "<group>"; };
+		2F103CCE26ED720700BF9F20 /* divina_commedia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = divina_commedia.json; sourceTree = "<group>"; };
+		2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsTableViewController.swift; sourceTree = "<group>"; };
 		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
 		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
 		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
@@ -60,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F103CD026ED723600BF9F20 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
 		2F53A7D926E9581F00559655 /* Spectogram */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,8 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
+				2F103CD026ED723600BF9F20 /* Credits */,
+				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
 				2F53A7E126EAA38300559655 /* Cantiche */,
 				2F53A7DA26E9597800559655 /* Drawing */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
@@ -207,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
+				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
 				2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */,
 			);
@@ -261,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */,
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* CanticaViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
