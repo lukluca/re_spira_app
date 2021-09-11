@@ -20,6 +20,20 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>www.intratext.com</key>
+        <dict>
+          <!--Include to allow subdomains-->
+          <key>NSIncludesSubdomains</key>
+          <true/>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+      </dict>
+    </dict>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>${PRODUCT_NAME} ha bisogno di registrare il tuo respiro!</string>
 	<key>UIApplicationSceneManifest</key>

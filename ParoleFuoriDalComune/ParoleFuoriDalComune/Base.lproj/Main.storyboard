@@ -88,7 +88,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJ3-07-aIj">
                                 <rect key="frame" x="239" y="167" width="716" height="500"/>
                                 <connections>
-                                    <segue destination="A24-ek-iOl" kind="embed" identifier="SpectrogramViewControllerSegue" id="Yqu-7u-dLc"/>
+                                    <segue destination="A24-ek-iOl" kind="embed" identifier="SpectrogramSegue" id="Yqu-7u-dLc"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -114,6 +114,7 @@
                         <outlet property="drawButton" destination="Fae-Lf-cRp" id="uVZ-Ps-fM5"/>
                         <outlet property="resetButton" destination="Haa-x8-not" id="erG-g9-LYj"/>
                         <outlet property="stopButton" destination="92w-xE-hm3" id="6rp-Fb-IXb"/>
+                        <segue destination="SIW-u2-PT1" kind="presentation" identifier="CanticaSegue" modalPresentationStyle="fullScreen" id="9gB-Pt-u5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,14 +128,48 @@
                     <view key="view" contentMode="scaleToFill" id="b8o-eJ-rWt">
                         <rect key="frame" x="0.0" y="0.0" width="716" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KAI-PH-4Ip"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7e-SU-A69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="-331"/>
+            <point key="canvasLocation" x="59" y="337"/>
+        </scene>
+        <!--Cantica View Controller-->
+        <scene sceneID="ZJw-F8-8PE">
+            <objects>
+                <viewController id="SIW-u2-PT1" customClass="CanticaViewController" customModule="Re_Spira" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Id8-AH-UPn">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcY-Py-XDN">
+                                <rect key="frame" x="239" y="167" width="716" height="500"/>
+                                <connections>
+                                    <segue destination="A24-ek-iOl" kind="embed" identifier="SpectrogramSegue" id="cDG-FX-gHC"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MBy-K6-nN2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GcY-Py-XDN" firstAttribute="width" secondItem="Id8-AH-UPn" secondAttribute="width" multiplier="0.599665" id="E2F-ws-SKk"/>
+                            <constraint firstItem="GcY-Py-XDN" firstAttribute="centerY" secondItem="Id8-AH-UPn" secondAttribute="centerY" id="G1e-Ud-ZFo"/>
+                            <constraint firstItem="GcY-Py-XDN" firstAttribute="centerX" secondItem="Id8-AH-UPn" secondAttribute="centerX" id="V6F-fL-POC"/>
+                            <constraint firstItem="GcY-Py-XDN" firstAttribute="height" secondItem="Id8-AH-UPn" secondAttribute="height" multiplier="0.59952" id="eN1-Lw-a8P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ysd-jw-1bA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxG-ci-Ei0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="756"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cDG-FX-gHC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

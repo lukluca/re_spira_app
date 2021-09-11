@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,20 +12,31 @@
 		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
 		2F53A7DC26E959E500559655 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DB26E959E500559655 /* Calculator.swift */; };
 		2F53A7E026E9687700559655 /* HTLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTLM.swift */; };
+		2F53A7E326EAA3C500559655 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E226EAA3C500559655 /* Draw.swift */; };
+		2F53A7E526EAA41600559655 /* Cantica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E426EAA41600559655 /* Cantica.swift */; };
+		2F53A7E726EAA65E00559655 /* CanticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E626EAA65E00559655 /* CanticaViewController.swift */; };
 		2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */; };
 		2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */; };
 		2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC926E6C31700F1DBAF /* StartViewController.swift */; };
 		2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCB26E6C31700F1DBAF /* Main.storyboard */; };
 		2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */; };
 		2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */; };
+		2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA98ABD26ED54B300DE4681 /* KDTree */; };
+		B7AD72D54D0710E368AF6E1B /* Pods_ParoleFuoriDalComune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6523F0ACD96706A1037FF /* Pods_ParoleFuoriDalComune.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		039BA94DA34A6D8F96C8CEE4 /* Pods-ParoleFuoriDalComune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParoleFuoriDalComune.release.xcconfig"; path = "Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune.release.xcconfig"; sourceTree = "<group>"; };
+		1BC6523F0ACD96706A1037FF /* Pods_ParoleFuoriDalComune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParoleFuoriDalComune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E5EA671B341F09A926BEB2 /* Pods-ParoleFuoriDalComune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParoleFuoriDalComune.debug.xcconfig"; path = "Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune.debug.xcconfig"; sourceTree = "<group>"; };
 		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
 		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
 		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
 		2F53A7DB26E959E500559655 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		2F53A7DF26E9687700559655 /* HTLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLM.swift; sourceTree = "<group>"; };
+		2F53A7E226EAA3C500559655 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		2F53A7E426EAA41600559655 /* Cantica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantica.swift; sourceTree = "<group>"; };
+		2F53A7E626EAA65E00559655 /* CanticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanticaViewController.swift; sourceTree = "<group>"; };
 		2F99EDC226E6C31700F1DBAF /* Re_Spira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Re_Spira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AD72D54D0710E368AF6E1B /* Pods_ParoleFuoriDalComune.framework in Frameworks */,
+				2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +75,18 @@
 			children = (
 				2F53A7DB26E959E500559655 /* Calculator.swift */,
 				2F53A7DF26E9687700559655 /* HTLM.swift */,
+				2F53A7E226EAA3C500559655 /* Draw.swift */,
 			);
 			path = Drawing;
+			sourceTree = "<group>";
+		};
+		2F53A7E126EAA38300559655 /* Cantiche */ = {
+			isa = PBXGroup;
+			children = (
+				2F53A7E426EAA41600559655 /* Cantica.swift */,
+				2F53A7E626EAA65E00559655 /* CanticaViewController.swift */,
+			);
+			path = Cantiche;
 			sourceTree = "<group>";
 		};
 		2F99EDB926E6C31700F1DBAF = {
@@ -71,6 +94,8 @@
 			children = (
 				2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */,
 				2F99EDC326E6C31700F1DBAF /* Products */,
+				C69E13D254D9A006797691C0 /* Pods */,
+				CD550E7580EA4B7741F44E81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +110,7 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
+				2F53A7E126EAA38300559655 /* Cantiche */,
 				2F53A7DA26E9597800559655 /* Drawing */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
@@ -98,6 +124,23 @@
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
 		};
+		C69E13D254D9A006797691C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24E5EA671B341F09A926BEB2 /* Pods-ParoleFuoriDalComune.debug.xcconfig */,
+				039BA94DA34A6D8F96C8CEE4 /* Pods-ParoleFuoriDalComune.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD550E7580EA4B7741F44E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC6523F0ACD96706A1037FF /* Pods_ParoleFuoriDalComune.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,15 +148,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F99EDD626E6C31800F1DBAF /* Build configuration list for PBXNativeTarget "ParoleFuoriDalComune" */;
 			buildPhases = (
+				12AA4C6E0DF7126DDB54C4B8 /* [CP] Check Pods Manifest.lock */,
 				2F99EDBE26E6C31700F1DBAF /* Sources */,
 				2F99EDBF26E6C31700F1DBAF /* Frameworks */,
 				2F99EDC026E6C31700F1DBAF /* Resources */,
+				3FAEAC2A766EBDFD3BF36CD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ParoleFuoriDalComune;
+			packageProductDependencies = (
+				2FA98ABD26ED54B300DE4681 /* KDTree */,
+			);
 			productName = ParoleFuoriDalComune;
 			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 2F99EDB926E6C31700F1DBAF;
+			packageReferences = (
+				2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */,
+			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,17 +214,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12AA4C6E0DF7126DDB54C4B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParoleFuoriDalComune-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FAEAC2A766EBDFD3BF36CD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParoleFuoriDalComune/Pods-ParoleFuoriDalComune-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F99EDBE26E6C31700F1DBAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
+				2F53A7E726EAA65E00559655 /* CanticaViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
 				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
+				2F53A7E326EAA3C500559655 /* Draw.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
+				2F53A7E526EAA41600559655 /* Cantica.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,
 				2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */,
 			);
@@ -319,6 +415,7 @@
 		};
 		2F99EDD726E6C31800F1DBAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E5EA671B341F09A926BEB2 /* Pods-ParoleFuoriDalComune.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +435,7 @@
 		};
 		2F99EDD826E6C31800F1DBAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039BA94DA34A6D8F96C8CEE4 /* Pods-ParoleFuoriDalComune.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bersaelor/KDTree";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FA98ABD26ED54B300DE4681 /* KDTree */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */;
+			productName = KDTree;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F99EDBA26E6C31700F1DBAF /* Project object */;
 }

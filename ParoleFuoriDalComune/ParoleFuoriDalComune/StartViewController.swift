@@ -14,6 +14,8 @@ class StartViewController: UIViewController {
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
+    private var drawModel: DrawModel?
+    
     
     private var spectrogramViewController: SpectrogramViewController?
 
@@ -43,20 +45,20 @@ class StartViewController: UIViewController {
     @IBAction func drawButtonAction(_ sender: UIButton) {
         drawingButtonState()
         
-        if let frequencies = spectrogramViewController?.frequencies {
-            let cal = Calculator(data: frequencies)
-            
-            print("Calculator mean", cal.mean())
-            print("Calculator median", cal.median())
-            print("Calculator mean", cal.mode() as Any)
+        if let model = try? DrawPreparation().execute(using: spectrogramViewController?.frequencies ?? []) {
+            drawModel = model
+            performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
         }
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case SegueAction.spectrogram.rawValue:
             spectrogramViewController = segue.destination as? SpectrogramViewController
+        case SegueAction.cantica.rawValue:
+            let controller = segue.destination as? CanticaViewController
+            controller?.model = drawModel
+            controller?.rawAudioData = spectrogramViewController?.rawAudioData ?? []
         default: ()
         }
     }
@@ -71,7 +73,7 @@ class StartViewController: UIViewController {
     private func recordingButtonState() {
         breathButton.isEnabled = false
         stopButton.isEnabled = true
-        drawButton.isEnabled = true
+        drawButton.isEnabled = false
         resetButton.isEnabled = false
     }
     
@@ -90,9 +92,9 @@ class StartViewController: UIViewController {
     }
 }
 
-
 private extension StartViewController {
     enum SegueAction: String {
-        case spectrogram = "SpectrogramViewControllerSegue"
+        case spectrogram = "SpectrogramSegue"
+        case cantica = "CanticaSegue"
     }
 }

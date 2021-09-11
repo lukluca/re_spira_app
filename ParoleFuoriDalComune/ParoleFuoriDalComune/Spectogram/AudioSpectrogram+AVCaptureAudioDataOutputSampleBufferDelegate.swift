@@ -51,9 +51,14 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
             rawAudioData.append(contentsOf: Array(buf))
         }
 
+        process()
+    }
+    
+    func process() {
         while self.rawAudioData.count >= AudioSpectrogram.sampleCount {
             let dataToProcess = Array(self.rawAudioData[0 ..< AudioSpectrogram.sampleCount])
             self.rawAudioData.removeFirst(AudioSpectrogram.hopCount)
+            didAppendAudioData?(dataToProcess)
             self.processData(values: dataToProcess)
         }
      
@@ -111,6 +116,11 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
                 self.captureSession.startRunning()
             }
         }
+    }
+    
+    func startRunning(rawAudioData: [Int16]) {
+        self.rawAudioData = rawAudioData
+        process()
     }
     
     /// Stops the audio spectrogram.

@@ -10,18 +10,24 @@ import Accelerate
 
 public class AudioSpectrogram: CALayer {
     
-    var didAppendFrequencies: (( [Float]) -> Void)?
+    static var darkMode = true
+    
+    var didAppendFrequencies: (([Float]) -> Void)?
+    var didAppendAudioData: (([Int16]) -> Void)?
 
     // MARK: Initialization
     
     override init() {
+        AudioSpectrogram.darkMode = true
         super.init()
         
-        contentsGravity = .resize
-        
-        configureCaptureSession()
-        audioOutput.setSampleBufferDelegate(self,
-                                            queue: captureQueue)
+        configure()
+    }
+    
+    init(darkMode: Bool) {
+        AudioSpectrogram.darkMode = darkMode
+        super.init()
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -30,6 +36,14 @@ public class AudioSpectrogram: CALayer {
     
     override public init(layer: Any) {
         super.init(layer: layer)
+    }
+    
+    private func configure() {
+        contentsGravity = .resize
+        
+        configureCaptureSession()
+        audioOutput.setSampleBufferDelegate(self,
+                                            queue: captureQueue)
     }
     
     // MARK: Properties
@@ -116,15 +130,28 @@ public class AudioSpectrogram: CALayer {
     
     // Lookup tables for color transforms.
     static var redTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0).red
+        return brgValue(from: $0, darkMode: true).red
     }
     
     static var greenTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0).green
+        return brgValue(from: $0, darkMode: true).green
     }
     
     static var blueTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0).blue
+        return brgValue(from: $0, darkMode: true).blue
+    }
+    
+    // Lookup tables for color transforms.
+    static var lightRedTable: [Pixel_8] = (0 ... 255).map {
+        return brgValue(from: $0, darkMode: false).red
+    }
+    
+    static var lightGreenTable: [Pixel_8] = (0 ... 255).map {
+        return brgValue(from: $0, darkMode: false).green
+    }
+    
+    static var lightBlueTable: [Pixel_8] = (0 ... 255).map {
+        return brgValue(from: $0, darkMode: false).blue
     }
     
     /// A reusable array that contains the current frame of time domain audio data as single-precision
@@ -203,12 +230,21 @@ public class AudioSpectrogram: CALayer {
                                             vImage_Flags(kvImageNoFlags))
         }
         
-        vImageTableLookUp_ARGB8888(&rgbImageBuffer, &rgbImageBuffer,
-                                   nil,
-                                   &AudioSpectrogram.redTable,
-                                   &AudioSpectrogram.greenTable,
-                                   &AudioSpectrogram.blueTable,
-                                   vImage_Flags(kvImageNoFlags))
+        if AudioSpectrogram.darkMode {
+            vImageTableLookUp_ARGB8888(&rgbImageBuffer, &rgbImageBuffer,
+                                       nil,
+                                       &AudioSpectrogram.redTable,
+                                       &AudioSpectrogram.greenTable,
+                                       &AudioSpectrogram.blueTable,
+                                       vImage_Flags(kvImageNoFlags))
+        } else {
+            vImageTableLookUp_ARGB8888(&rgbImageBuffer, &rgbImageBuffer,
+                                       nil,
+                                       &AudioSpectrogram.lightRedTable,
+                                       &AudioSpectrogram.lightGreenTable,
+                                       &AudioSpectrogram.lightBlueTable,
+                                       vImage_Flags(kvImageNoFlags))
+        }
         
         vImageRotate90_ARGB8888(&rgbImageBuffer,
                                 &rotatedImageBuffer,
@@ -234,19 +270,19 @@ extension AudioSpectrogram {
     /// `value` controls hue and brightness. Values near zero return dark blue, `127` returns red, and
     ///  `255` returns full-brightness green.
 
-    static func brgValue(from value: Pixel_8) -> (red: Pixel_8,
-                                                  green: Pixel_8,
-                                                  blue: Pixel_8) {
+    static func brgValue(from value: Pixel_8, darkMode: Bool) -> (red: Pixel_8,
+                                                                  green: Pixel_8,
+                                                                  blue: Pixel_8) {
         let normalizedValue = CGFloat(value) / 255
         
         // Define `hue` that's blue at `0.0` to red at `1.0`.
         let hue = 0.6666 - (0.6666 * normalizedValue)
         let brightness = sqrt(normalizedValue)
-
+        
         let color = UIColor(hue: hue,
-                          saturation: 1,
-                          brightness: brightness,
-                          alpha: 1)
+                            saturation: 1,
+                            brightness: brightness,
+                            alpha: 1)
         
         var red = CGFloat()
         var green = CGFloat()
@@ -256,6 +292,14 @@ extension AudioSpectrogram {
                      green: &green,
                      blue: &blue,
                      alpha: nil)
+        
+        if !darkMode {
+            if green == 0 && red == 0 && blue == 0 {
+                return (Pixel_8(255),
+                        Pixel_8(255),
+                        Pixel_8(255))
+            }
+        }
         
         return (Pixel_8(green * 255),
                 Pixel_8(red * 255),

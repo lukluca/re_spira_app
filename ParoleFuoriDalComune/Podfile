@@ -1,0 +1,9 @@
+platform :ios, '14.5'
+
+target 'ParoleFuoriDalComune' do
+  
+  use_frameworks!
+
+  pod 'SwiftSoup'
+
+end
