@@ -74,11 +74,9 @@ struct HTMLParser {
             let middle = rights?[1]
             let last = rights?.last
             
-            if let rangeCanto = middle?.rangeOfCharacter(from: .decimalDigits),
-               let canto = middle?[rangeCanto],
+            if let canto = middle?.numbers,
                let intCanto = Int(canto),
-               let rangeVerso = last?.rangeOfCharacter(from: .decimalDigits),
-               let verso = last?[rangeVerso],
+               let verso = last?.numbers,
                let intVerso = Int(verso) {
                 
                 if first?.contains("In") == true {
@@ -181,5 +179,8 @@ private extension Substring {
     func deletingPrefix(_ prefix: String) -> Substring {
         guard self.hasPrefix(prefix) else { return self }
         return self.dropFirst(prefix.count)
+    }
+    var numbers: Substring {
+        filter { "0"..."9" ~= $0 }
     }
 }

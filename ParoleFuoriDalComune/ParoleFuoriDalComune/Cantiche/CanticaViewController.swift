@@ -10,7 +10,7 @@ import KDTree
 
 class CanticaViewController: UIViewController {
     
-    var model: DrawModel?
+    var display: DrawDisplayModel?
     var rawAudioData = [Int16]()
     
     private var spectrogramViewController: SpectrogramViewController?
@@ -18,9 +18,11 @@ class CanticaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let model = model else {
+        guard let display = display else {
             return
         }
+        
+        let model = display.model
         
         switch model.cantica {
         case .inferno:
@@ -43,6 +45,9 @@ class CanticaViewController: UIViewController {
         switch segue.identifier {
         case SegueAction.spectrogram.rawValue:
             spectrogramViewController = segue.destination as? SpectrogramViewController
+        case SegueAction.credits.rawValue:
+            let controller = segue.destination as? CreditsTableViewController
+            controller?.display = display
         default: ()
         }
     }
@@ -184,5 +189,6 @@ class CanticaViewController: UIViewController {
 private extension CanticaViewController {
     enum SegueAction: String {
         case spectrogram = "SpectrogramSegue"
+        case credits = "CreditsSegue"
     }
 }

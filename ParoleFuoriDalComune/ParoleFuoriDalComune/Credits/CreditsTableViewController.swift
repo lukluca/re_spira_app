@@ -8,38 +8,31 @@
 import UIKit
 
 class CreditsTableViewController: UITableViewController {
+    
+    var display: DrawDisplayModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        if indexPath.section == 0 && indexPath.row == 0 {
+            
+            let word = display?.model.word ?? ""
+            let cantica = display?.model.cantica.description ?? ""
+            let canto = display?.detail.canto ?? ""
+            let terzina = display?.detail.terzina.joined(separator: "\n")
+            
+            cell.textLabel?.text = "\(cantica), \(canto), parola '\(word)'"
+            cell.detailTextLabel?.text = terzina
+        }
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

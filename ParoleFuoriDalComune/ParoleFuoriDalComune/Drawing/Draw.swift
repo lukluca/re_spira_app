@@ -45,18 +45,20 @@ struct DrawPreparation {
         
         let wordLinks = try HTMLParser().extractWordLinks(from: link.href)
         
+        guard !wordLinks.isEmpty else {
+            throw DrawPreparationError.failure
+        }
+        
         let maxMode = mode?.mostFrequent.max() ?? 0
         let intMax = abs(Int(maxMode))
         
         let filtered = recursiveFilter(wordLinks: wordLinks, intMin: intMin)
-    
-        let value: Int
         
-        if filtered.isEmpty {
-            value = 0
-        } else {
-            value = intMax % filtered.count
+        guard !filtered.isEmpty else {
+            throw DrawPreparationError.failure
         }
+    
+        let value = intMax % filtered.count
         
         let wordLink = filtered[value]
         

@@ -14,7 +14,7 @@ class StartViewController: UIViewController {
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
-    private var drawModel: DrawModel?
+    private var drawModel: DrawDisplayModel?
     
     
     private var spectrogramViewController: SpectrogramViewController?
@@ -45,9 +45,14 @@ class StartViewController: UIViewController {
     @IBAction func drawButtonAction(_ sender: UIButton) {
         drawingButtonState()
         
-        if let model = try? DrawPreparation().execute(using: spectrogramViewController?.frequencies ?? []) {
-            drawModel = model
+        do {
+            let model = try DrawPreparation().execute(using: spectrogramViewController?.frequencies ?? [])
+            let display = try Commedia().enrich(model: model)
+            
+            drawModel = display
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
+        } catch {
+            print(error)
         }
     }
     
@@ -57,7 +62,7 @@ class StartViewController: UIViewController {
             spectrogramViewController = segue.destination as? SpectrogramViewController
         case SegueAction.cantica.rawValue:
             let controller = segue.destination as? CanticaViewController
-            controller?.model = drawModel
+            controller?.display = drawModel
             controller?.rawAudioData = spectrogramViewController?.rawAudioData ?? []
         default: ()
         }

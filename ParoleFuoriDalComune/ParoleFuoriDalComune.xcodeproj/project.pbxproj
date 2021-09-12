@@ -23,6 +23,7 @@
 		2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCB26E6C31700F1DBAF /* Main.storyboard */; };
 		2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */; };
 		2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */; };
+		2FA5A06426ED740100579588 /* Commedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5A06326ED740100579588 /* Commedia.swift */; };
 		2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA98ABD26ED54B300DE4681 /* KDTree */; };
 		B7AD72D54D0710E368AF6E1B /* Pods_ParoleFuoriDalComune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6523F0ACD96706A1037FF /* Pods_ParoleFuoriDalComune.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F99EDD126E6C31800F1DBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F99EDD326E6C31800F1DBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,15 @@
 				2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */,
 			);
 			path = Credits;
+			sourceTree = "<group>";
+		};
+		2F103CD326ED72C000BF9F20 /* DivinaCommedia */ = {
+			isa = PBXGroup;
+			children = (
+				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
+				2FA5A06326ED740100579588 /* Commedia.swift */,
+			);
+			path = DivinaCommedia;
 			sourceTree = "<group>";
 		};
 		2F53A7D926E9581F00559655 /* Spectogram */ = {
@@ -122,8 +133,8 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
+				2F103CD326ED72C000BF9F20 /* DivinaCommedia */,
 				2F103CD026ED723600BF9F20 /* Credits */,
-				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
 				2F53A7E126EAA38300559655 /* Cantiche */,
 				2F53A7DA26E9597800559655 /* Drawing */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
@@ -282,6 +293,7 @@
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
 				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* Draw.swift in Sources */,
+				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
