@@ -65,11 +65,11 @@ struct DrawPreparation {
         let models = try HTMLParser().extractDrawModels(from: wordLink.href,
                                                         using: wordLink.word)
         
-        let diff = intMax - intMin
-        
         guard !models.isEmpty else {
             throw DrawPreparationError.failure
         }
+        
+        let diff = intMax - intMin
         
         if diff == 0, let model = models.first {
             return model
@@ -82,7 +82,11 @@ struct DrawPreparation {
         return models[index]
     }
     
-    private func recursiveFilter(wordLinks: [HTMLParser.WordLink], intMin: Int) -> [HTMLParser.WordLink]{
+    private func recursiveFilter(wordLinks: [HTMLParser.WordLink], intMin: Int) -> [HTMLParser.WordLink] {
+        guard intMin > -1 else {
+            return []
+        }
+        
         let filtered = wordLinks.filter {
             $0.frequency == intMin
         }
@@ -90,11 +94,7 @@ struct DrawPreparation {
         if !filtered.isEmpty {
             return filtered
         }
-        
-        if intMin == -1 {
-            return []
-        }
-        
+       
         return recursiveFilter(wordLinks: wordLinks, intMin: intMin - 1)
     }
 }

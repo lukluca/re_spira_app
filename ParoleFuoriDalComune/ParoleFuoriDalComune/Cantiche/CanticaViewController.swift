@@ -8,7 +8,7 @@
 import UIKit
 import KDTree
 
-class CanticaViewController: UIViewController {
+final class CanticaViewController: UIViewController {
     
     var display: DrawDisplayModel?
     var rawAudioData = [Int16]()
@@ -75,6 +75,8 @@ class CanticaViewController: UIViewController {
             ring.heightAnchor.constraint(equalToConstant: ray),
             ring.widthAnchor.constraint(equalToConstant: ray)
         ])
+        
+        addTap(to: ring)
     }
     
     private func drawPurgatorio(model: DrawModel) {
@@ -104,6 +106,8 @@ class CanticaViewController: UIViewController {
             parabola.heightAnchor.constraint(equalToConstant: ray),
             parabola.widthAnchor.constraint(equalToConstant: ray)
         ])
+        
+        addTap(to: parabola)
     }
     
     private func drawParadiso(model: DrawModel) {
@@ -144,6 +148,8 @@ class CanticaViewController: UIViewController {
             constellation.widthAnchor.constraint(equalToConstant: lengthFloat)
         ])
         
+        addTap(to: constellation)
+        
         func nearest(to point: CGPoint, inside points: [CGPoint]) -> CGPoint? {
             let tree = KDTree(values: points)
             return tree.nearest(to: point)
@@ -183,6 +189,15 @@ class CanticaViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    private func addTap(to view: UIView) {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func handleTap(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: SegueAction.credits.rawValue, sender: sender)
     }
 }
 

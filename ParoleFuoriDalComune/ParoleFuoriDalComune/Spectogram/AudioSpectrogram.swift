@@ -8,7 +8,7 @@
 import AVFoundation
 import Accelerate
 
-public class AudioSpectrogram: CALayer {
+final class AudioSpectrogram: CALayer {
     
     static var darkMode = true
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+final class StartViewController: UIViewController {
     
     @IBOutlet weak var breathButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -52,7 +52,9 @@ class StartViewController: UIViewController {
             drawModel = display
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
         } catch {
-            print(error)
+            let alert = UIAlertController(title: "Errore", message: "C'è stato un errore. \(error)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            self.present(alert, animated: true)
         }
     }
     

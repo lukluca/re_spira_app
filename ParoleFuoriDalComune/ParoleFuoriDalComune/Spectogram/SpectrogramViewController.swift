@@ -7,6 +7,7 @@
 
 import UIKit
 
+final
 class SpectrogramViewController: UIViewController {
 
     /// The audio spectrogram layer.

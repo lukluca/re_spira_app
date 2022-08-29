@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreditsTableViewController: UITableViewController {
+final class CreditsTableViewController: UITableViewController {
     
     var display: DrawDisplayModel?
 
