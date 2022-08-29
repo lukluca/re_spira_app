@@ -14,20 +14,19 @@ final class AudioSpectrogram: CALayer {
     
     var didAppendFrequencies: (([Float]) -> Void)?
     var didAppendAudioData: (([Int16]) -> Void)?
+    
+    var showErrorMessage: ((String) -> Void)?
 
     // MARK: Initialization
     
     override init() {
         AudioSpectrogram.darkMode = true
         super.init()
-        
-        configure()
     }
     
     init(darkMode: Bool) {
         AudioSpectrogram.darkMode = darkMode
         super.init()
-        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -38,7 +37,7 @@ final class AudioSpectrogram: CALayer {
         super.init(layer: layer)
     }
     
-    private func configure() {
+    func configure() {
         contentsGravity = .resize
         
         configureCaptureSession()

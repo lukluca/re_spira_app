@@ -73,17 +73,17 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
             case .notDetermined:
                 sessionQueue.suspend()
                 AVCaptureDevice.requestAccess(for: .audio,
-                                              completionHandler: { granted in
+                                              completionHandler: { [weak self] granted in
                     if !granted {
-                        fatalError("App requires microphone access.")
+                        self?.showErrorMessage?(R.string.localizable.requiresMicrophoneAccess())
                     } else {
-                        self.configureCaptureSession()
-                        self.sessionQueue.resume()
+                        self?.configureCaptureSession()
+                        self?.sessionQueue.resume()
                     }
                 })
                 return
             default:
-                fatalError("App requires microphone access.")
+                showErrorMessage?(R.string.localizable.requiresMicrophoneAccess())
         }
         
         captureSession.beginConfiguration()
@@ -99,7 +99,8 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
                                                      for: .audio,
                                                      position: .unspecified),
             let microphoneInput = try? AVCaptureDeviceInput(device: microphone) else {
-                fatalError("Can't create microphone.")
+            showErrorMessage?(R.string.localizable.cantCreateMicrophone())
+            return
         }
         
         if captureSession.canAddInput(microphoneInput) {

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ParoleFuoriDalComune
+
+  Created by Luca Tagliabue on 29/08/22.
+  
+*/
+
+"requiresMicrophoneAccess" = "App requires microphone access.";
+"cantCreateMicrophone" = "Can't create microphone.";

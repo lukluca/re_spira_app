@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,10 @@
 		2FA5A06426ED740100579588 /* Commedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5A06326ED740100579588 /* Commedia.swift */; };
 		2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA98ABD26ED54B300DE4681 /* KDTree */; };
 		2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD14C5C26ED94EC0092CC69 /* SwiftSoup */; };
+		2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1651728BD4F7600438BF5 /* BBToast */; };
+		2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1651C28BD511F00438BF5 /* Localizable.strings */; };
+		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
+		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,8 @@
 		2F99EDD126E6C31800F1DBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F99EDD326E6C31800F1DBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
+		2FD1651C28BD511F00438BF5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */,
+				2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */,
 				2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */,
 				2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */,
 			);
@@ -112,6 +120,7 @@
 		2F99EDB926E6C31700F1DBAF = {
 			isa = PBXGroup;
 			children = (
+				2FD1652028BD5C3200438BF5 /* R.generated.swift */,
 				2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */,
 				2F99EDC326E6C31700F1DBAF /* Products */,
 			);
@@ -140,6 +149,7 @@
 				2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */,
 				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
 				2F99EDD326E6C31800F1DBAF /* Info.plist */,
+				2FD1651C28BD511F00438BF5 /* Localizable.strings */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
@@ -151,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F99EDD626E6C31800F1DBAF /* Build configuration list for PBXNativeTarget "ParoleFuoriDalComune" */;
 			buildPhases = (
+				2FD1651F28BD5B3900438BF5 /* R.swift */,
 				2F99EDBE26E6C31700F1DBAF /* Sources */,
 				2F99EDBF26E6C31700F1DBAF /* Frameworks */,
 				2F99EDC026E6C31700F1DBAF /* Resources */,
@@ -163,6 +174,8 @@
 			packageProductDependencies = (
 				2FA98ABD26ED54B300DE4681 /* KDTree */,
 				2FD14C5C26ED94EC0092CC69 /* SwiftSoup */,
+				2FD1651728BD4F7600438BF5 /* BBToast */,
+				2FD1652328BD5D4C00438BF5 /* Rswift */,
 			);
 			productName = ParoleFuoriDalComune;
 			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
@@ -194,6 +207,8 @@
 			packageReferences = (
 				2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */,
 				2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
+				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -209,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */,
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
@@ -218,12 +234,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FD1651F28BD5B3900438BF5 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F99EDBE26E6C31700F1DBAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */,
+				2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */,
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* CanticaViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
@@ -455,6 +495,22 @@
 				minimumVersion = 2.3.3;
 			};
 		};
+		2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bibinjacobpulickal/BBToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -467,6 +523,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		2FD1651728BD4F7600438BF5 /* BBToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */;
+			productName = BBToast;
+		};
+		2FD1652328BD5D4C00438BF5 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

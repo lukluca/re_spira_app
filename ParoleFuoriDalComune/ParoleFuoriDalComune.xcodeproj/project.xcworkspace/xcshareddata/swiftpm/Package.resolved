@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "bbtoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bibinjacobpulickal/BBToast.git",
+      "state" : {
+        "revision" : "367bd95a5208c430eae12082f6e95d3dc9bc39c1",
+        "version" : "1.0.1"
+      }
+    },
+    {
       "identity" : "kdtree",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Bersaelor/KDTree",
       "state" : {
         "revision" : "490df2848e3f497bdc2edf61667f4ab669cff26e",
         "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "r.swift.library",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mac-cain13/R.swift.Library",
+      "state" : {
+        "revision" : "8998cfe77f4fce79ee6dfab0c88a7d551659d8fb",
+        "version" : "5.4.0"
       }
     },
     {
