@@ -13,9 +13,12 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var danteButton: UIButton!
+    @IBOutlet weak var postcardButton: UIButton!
     
     private var drawModel: DrawDisplayModel?
     
+    private var sourceType: SourceType = .postcard
     
     private var spectrogramViewController: SpectrogramViewController?
 
@@ -26,6 +29,14 @@ final class StartViewController: UIViewController {
     }
     
     //MARK: IBAction
+    
+    @IBAction func danteButtonAction(_ sender: UIButton) {
+       setDanteType()
+    }
+    
+    @IBAction func postcardButtonAction(_ sender: UIButton) {
+        setPostcardType()
+    }
 
     @IBAction func breathButtonAction(_ sender: UIButton) {
         recordingButtonState()
@@ -75,6 +86,7 @@ final class StartViewController: UIViewController {
         stopButton.isEnabled = false
         drawButton.isEnabled = false
         resetButton.isEnabled = false
+        setPostcardType()
     }
     
     private func recordingButtonState() {
@@ -96,6 +108,18 @@ final class StartViewController: UIViewController {
         stopButton.isEnabled = false
         drawButton.isEnabled = false
         resetButton.isEnabled = false
+    }
+    
+    private func setDanteType() {
+        sourceType = .dante
+        danteButton.isEnabled = false
+        postcardButton.isEnabled = true
+    }
+    
+    private func setPostcardType() {
+        sourceType = .postcard
+        danteButton.isEnabled = true
+        postcardButton.isEnabled = false
     }
 }
 

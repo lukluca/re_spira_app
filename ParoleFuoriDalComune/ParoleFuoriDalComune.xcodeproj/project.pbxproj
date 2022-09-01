@@ -30,6 +30,7 @@
 		2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1651C28BD511F00438BF5 /* Localizable.strings */; };
 		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
 		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
+		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
 		2FD1651C28BD511F00438BF5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
 				2F99EDD326E6C31800F1DBAF /* Info.plist */,
 				2FD1651C28BD511F00438BF5 /* Localizable.strings */,
+				4A96DD5B28C00B2F00DB268B /* SourceType.swift */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
+				4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */,
 				2F53A7E526EAA41600559655 /* Cantica.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,
 				2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */,

@@ -40,7 +40,6 @@ final class CanticaViewController: UIViewController {
         spectrogramViewController?.start(rawAudioData: rawAudioData)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case SegueAction.spectrogram.rawValue:
@@ -60,7 +59,9 @@ final class CanticaViewController: UIViewController {
         let circleLayer = CAShapeLayer()
         circleLayer.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: ray, height: ray)).cgPath
         
-        let color = UIColor(hue: CGFloat(model.cantica.rawValue), saturation: CGFloat(model.canto), brightness: CGFloat(model.verso), alpha: 1)
+        let color = UIColor(hue: CGFloat(model.cantica.rawValue),
+                            saturation: CGFloat(model.canto),
+                            brightness: CGFloat(model.verso), alpha: 1)
         
         circleLayer.strokeColor = color.cgColor
         circleLayer.lineWidth = 1
@@ -89,7 +90,10 @@ final class CanticaViewController: UIViewController {
         path.addQuadCurve(to: CGPoint(x: ray, y: ray),
                           controlPoint: CGPoint(x: ray/2, y: 0))
         
-        let color = UIColor(hue: 0.7, saturation: CGFloat(model.canto), brightness: CGFloat(model.verso), alpha: 1)
+        let color = UIColor(hue: 0.7,
+                            saturation: CGFloat(model.canto),
+                            brightness: CGFloat(model.verso),
+                            alpha: 1)
         
         let layer = CAShapeLayer()
         layer.path = path.cgPath
@@ -130,7 +134,10 @@ final class CanticaViewController: UIViewController {
        
         addLines(startingFrom: startIndex, points: points)
     
-        let color = UIColor(hue: 0.7, saturation: CGFloat(model.canto), brightness: CGFloat(model.verso), alpha: 1)
+        let color = UIColor(hue: 0.7,
+                            saturation: CGFloat(model.canto),
+                            brightness: CGFloat(model.verso),
+                            alpha: 1)
         
         let layer = CAShapeLayer()
         layer.path = path.cgPath
