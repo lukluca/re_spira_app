@@ -31,6 +31,21 @@
 		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
 		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
+		4A96DD6D28C3749500DB268B /* page-7.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5E28C3749500DB268B /* page-7.docx */; };
+		4A96DD6E28C3749500DB268B /* page-11.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5F28C3749500DB268B /* page-11.docx */; };
+		4A96DD6F28C3749500DB268B /* page-1.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6028C3749500DB268B /* page-1.docx */; };
+		4A96DD7028C3749500DB268B /* page-6.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6128C3749500DB268B /* page-6.docx */; };
+		4A96DD7128C3749500DB268B /* page-13.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6228C3749500DB268B /* page-13.docx */; };
+		4A96DD7228C3749500DB268B /* page-15.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6328C3749500DB268B /* page-15.docx */; };
+		4A96DD7328C3749500DB268B /* page-2.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6428C3749500DB268B /* page-2.docx */; };
+		4A96DD7428C3749500DB268B /* page-5.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6528C3749500DB268B /* page-5.docx */; };
+		4A96DD7528C3749500DB268B /* page-14.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6628C3749500DB268B /* page-14.docx */; };
+		4A96DD7628C3749500DB268B /* page-9.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6728C3749500DB268B /* page-9.docx */; };
+		4A96DD7728C3749500DB268B /* page-10.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6828C3749500DB268B /* page-10.docx */; };
+		4A96DD7828C3749500DB268B /* page-8.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6928C3749500DB268B /* page-8.docx */; };
+		4A96DD7928C3749500DB268B /* page-4.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6A28C3749500DB268B /* page-4.docx */; };
+		4A96DD7A28C3749500DB268B /* page-12.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6B28C3749500DB268B /* page-12.docx */; };
+		4A96DD7B28C3749500DB268B /* page-3.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6C28C3749500DB268B /* page-3.docx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +71,21 @@
 		2FD1651C28BD511F00438BF5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
+		4A96DD5E28C3749500DB268B /* page-7.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-7.docx"; sourceTree = "<group>"; };
+		4A96DD5F28C3749500DB268B /* page-11.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-11.docx"; sourceTree = "<group>"; };
+		4A96DD6028C3749500DB268B /* page-1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-1.docx"; sourceTree = "<group>"; };
+		4A96DD6128C3749500DB268B /* page-6.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-6.docx"; sourceTree = "<group>"; };
+		4A96DD6228C3749500DB268B /* page-13.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-13.docx"; sourceTree = "<group>"; };
+		4A96DD6328C3749500DB268B /* page-15.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-15.docx"; sourceTree = "<group>"; };
+		4A96DD6428C3749500DB268B /* page-2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-2.docx"; sourceTree = "<group>"; };
+		4A96DD6528C3749500DB268B /* page-5.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-5.docx"; sourceTree = "<group>"; };
+		4A96DD6628C3749500DB268B /* page-14.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-14.docx"; sourceTree = "<group>"; };
+		4A96DD6728C3749500DB268B /* page-9.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-9.docx"; sourceTree = "<group>"; };
+		4A96DD6828C3749500DB268B /* page-10.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-10.docx"; sourceTree = "<group>"; };
+		4A96DD6928C3749500DB268B /* page-8.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-8.docx"; sourceTree = "<group>"; };
+		4A96DD6A28C3749500DB268B /* page-4.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-4.docx"; sourceTree = "<group>"; };
+		4A96DD6B28C3749500DB268B /* page-12.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-12.docx"; sourceTree = "<group>"; };
+		4A96DD6C28C3749500DB268B /* page-3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-3.docx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +169,7 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
+				4A96DD5D28C3746500DB268B /* Postcards */,
 				2F103CD326ED72C000BF9F20 /* DivinaCommedia */,
 				2F103CD026ED723600BF9F20 /* Credits */,
 				2F53A7E126EAA38300559655 /* Cantiche */,
@@ -155,6 +186,28 @@
 				4A96DD5B28C00B2F00DB268B /* SourceType.swift */,
 			);
 			path = ParoleFuoriDalComune;
+			sourceTree = "<group>";
+		};
+		4A96DD5D28C3746500DB268B /* Postcards */ = {
+			isa = PBXGroup;
+			children = (
+				4A96DD6028C3749500DB268B /* page-1.docx */,
+				4A96DD6428C3749500DB268B /* page-2.docx */,
+				4A96DD6C28C3749500DB268B /* page-3.docx */,
+				4A96DD6A28C3749500DB268B /* page-4.docx */,
+				4A96DD6528C3749500DB268B /* page-5.docx */,
+				4A96DD6128C3749500DB268B /* page-6.docx */,
+				4A96DD5E28C3749500DB268B /* page-7.docx */,
+				4A96DD6928C3749500DB268B /* page-8.docx */,
+				4A96DD6728C3749500DB268B /* page-9.docx */,
+				4A96DD6828C3749500DB268B /* page-10.docx */,
+				4A96DD5F28C3749500DB268B /* page-11.docx */,
+				4A96DD6B28C3749500DB268B /* page-12.docx */,
+				4A96DD6228C3749500DB268B /* page-13.docx */,
+				4A96DD6628C3749500DB268B /* page-14.docx */,
+				4A96DD6328C3749500DB268B /* page-15.docx */,
+			);
+			path = Postcards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +281,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */,
+				4A96DD7428C3749500DB268B /* page-5.docx in Resources */,
+				4A96DD7A28C3749500DB268B /* page-12.docx in Resources */,
+				4A96DD6E28C3749500DB268B /* page-11.docx in Resources */,
+				4A96DD7728C3749500DB268B /* page-10.docx in Resources */,
+				4A96DD7128C3749500DB268B /* page-13.docx in Resources */,
+				4A96DD6F28C3749500DB268B /* page-1.docx in Resources */,
+				4A96DD7628C3749500DB268B /* page-9.docx in Resources */,
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
+				4A96DD6D28C3749500DB268B /* page-7.docx in Resources */,
+				4A96DD7228C3749500DB268B /* page-15.docx in Resources */,
+				4A96DD7028C3749500DB268B /* page-6.docx in Resources */,
+				4A96DD7B28C3749500DB268B /* page-3.docx in Resources */,
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
+				4A96DD7828C3749500DB268B /* page-8.docx in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
+				4A96DD7528C3749500DB268B /* page-14.docx in Resources */,
 				2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */,
+				4A96DD7328C3749500DB268B /* page-2.docx in Resources */,
+				4A96DD7928C3749500DB268B /* page-4.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -427,7 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WSLAS3STB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
