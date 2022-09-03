@@ -91,19 +91,19 @@ struct R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
   struct segue {
-    /// This struct is generated for `CanticaViewController`, and contains static references to 2 segues.
-    struct canticaViewController {
+    /// This struct is generated for `DrawViewController`, and contains static references to 2 segues.
+    struct drawViewController {
       /// Segue identifier `CreditsSegue`.
-      static let creditsSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CanticaViewController, CreditsTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "CreditsSegue")
+      static let creditsSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, DrawViewController, CreditsTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "CreditsSegue")
       /// Segue identifier `SpectrogramSegue`.
-      static let spectrogramSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CanticaViewController, SpectrogramViewController> = Rswift.StoryboardSegueIdentifier(identifier: "SpectrogramSegue")
+      static let spectrogramSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, DrawViewController, SpectrogramViewController> = Rswift.StoryboardSegueIdentifier(identifier: "SpectrogramSegue")
 
       #if os(iOS) || os(tvOS)
       /// Optionally returns a typed version of segue `CreditsSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func creditsSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CanticaViewController, CreditsTableViewController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.canticaViewController.creditsSegue, segue: segue)
+      static func creditsSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, DrawViewController, CreditsTableViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.drawViewController.creditsSegue, segue: segue)
       }
       #endif
 
@@ -111,8 +111,8 @@ struct R: Rswift.Validatable {
       /// Optionally returns a typed version of segue `SpectrogramSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func spectrogramSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CanticaViewController, SpectrogramViewController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.canticaViewController.spectrogramSegue, segue: segue)
+      static func spectrogramSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, DrawViewController, SpectrogramViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.drawViewController.spectrogramSegue, segue: segue)
       }
       #endif
 
@@ -121,17 +121,17 @@ struct R: Rswift.Validatable {
 
     /// This struct is generated for `StartViewController`, and contains static references to 2 segues.
     struct startViewController {
-      /// Segue identifier `CanticaSegue`.
-      static let canticaSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, StartViewController, CanticaViewController> = Rswift.StoryboardSegueIdentifier(identifier: "CanticaSegue")
+      /// Segue identifier `DrawSegue`.
+      static let drawSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, StartViewController, DrawViewController> = Rswift.StoryboardSegueIdentifier(identifier: "DrawSegue")
       /// Segue identifier `SpectrogramSegue`.
       static let spectrogramSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, StartViewController, SpectrogramViewController> = Rswift.StoryboardSegueIdentifier(identifier: "SpectrogramSegue")
 
       #if os(iOS) || os(tvOS)
-      /// Optionally returns a typed version of segue `CanticaSegue`.
+      /// Optionally returns a typed version of segue `DrawSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func canticaSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, StartViewController, CanticaViewController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.startViewController.canticaSegue, segue: segue)
+      static func drawSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, StartViewController, DrawViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.startViewController.drawSegue, segue: segue)
       }
       #endif
 
