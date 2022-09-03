@@ -2,7 +2,7 @@
 //  DanteViewModel.swift
 //  ParoleFuoriDalComune
 //
-//  Created by softwave on 03/09/22.
+//  Created by Luca Tagliabue on 03/09/22.
 //
 
 import UIKit

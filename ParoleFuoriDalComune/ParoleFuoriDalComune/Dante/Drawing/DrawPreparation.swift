@@ -1,5 +1,5 @@
 //
-//  Draw.swift
+//  DrawPreparation.swift
 //  ParoleFuoriDalComune
 //
 //  Created by Luca Tagliabue on 09/09/21.
@@ -10,7 +10,9 @@ import Foundation
 struct DrawPreparation {
     
     enum DrawPreparationError: Error {
-        case failure
+        case noWordLinks
+        case noFiltered
+        case noModels
     }
     
     func execute(using values: [Float]) throws -> CommediaDrawModel {
@@ -46,7 +48,7 @@ struct DrawPreparation {
         let wordLinks = try HTMLParser().extractWordLinks(from: link.href)
         
         guard !wordLinks.isEmpty else {
-            throw DrawPreparationError.failure
+            throw DrawPreparationError.noWordLinks
         }
         
         let maxMode = mode?.mostFrequent.max() ?? 0
@@ -55,7 +57,7 @@ struct DrawPreparation {
         let filtered = recursiveFilter(wordLinks: wordLinks, intMin: intMin)
         
         guard !filtered.isEmpty else {
-            throw DrawPreparationError.failure
+            throw DrawPreparationError.noFiltered
         }
     
         let value = intMax % filtered.count
@@ -66,7 +68,7 @@ struct DrawPreparation {
                                                         using: wordLink.word)
         
         guard !models.isEmpty else {
-            throw DrawPreparationError.failure
+            throw DrawPreparationError.noModels
         }
         
         let diff = intMax - intMin

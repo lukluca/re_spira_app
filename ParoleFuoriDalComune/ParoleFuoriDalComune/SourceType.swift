@@ -2,7 +2,7 @@
 //  SourceType.swift
 //  ParoleFuoriDalComune
 //
-//  Created by softwave on 31/08/22.
+//  Created by Luca Tagliabue on 31/08/22.
 //
 
 import Foundation
