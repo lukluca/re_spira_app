@@ -9,12 +9,8 @@ import UIKit
 
 struct PostcardsViewModelFactory {
     func make(frequencies: [Float]) throws -> PostcardsViewModel {
-        
-        let files = try Files().getPoemAndImage(at: 1)
-        
-        let poem = Poem(position: 1, title: "Post", text: files.poem, image: files.image)
-        
-        return PostcardsViewModel(poem: poem)
+        let model = try PostcardsDrawPreparation().execute(using: frequencies)
+        return PostcardsViewModel(model: model)
     }
 }
 
@@ -22,25 +18,24 @@ struct Poem {
     let position: Int
     let title: String
     let text: String
-    let image: UIImage?
 }
 
 struct PostcardsViewModel: DrawViewModel {
     
-    private let poem: Poem
+    private let model: PostcardDisplayModel
     
-    init(poem: Poem) {
-        self.poem = poem
+    init(model: PostcardDisplayModel) {
+        self.model = model
     }
     
     var creditsViewModel: CreditsViewModel {
-        CreditsViewModel(title: poem.title,
-                         subtitle: poem.text)
+        CreditsViewModel(title: model.linearPoem.title,
+                         subtitle: model.linearPoem.text)
     }
     
     func didLoad(view: UIView, addTap: (UIView) -> Void) {
         
-        let imageView = UIImageView(image: poem.image)
+        let imageView = UIImageView(image: model.visualPoem)
         
         view.addSubview(imageView)
     }

@@ -11,7 +11,7 @@ import KDTree
 struct DanteViewModelFactory {
     
     func make(frequencies: [Float]) throws -> DanteViewModel {
-        let model = try DrawPreparation().execute(using: frequencies)
+        let model = try CommediaDrawPreparation().execute(using: frequencies)
         let display = try Commedia().enrich(model: model)
         return DanteViewModel(display: display)
     }

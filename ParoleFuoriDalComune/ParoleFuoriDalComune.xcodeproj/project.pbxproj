@@ -14,7 +14,7 @@
 		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
 		2F53A7DC26E959E500559655 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DB26E959E500559655 /* Calculator.swift */; };
 		2F53A7E026E9687700559655 /* HTLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTLM.swift */; };
-		2F53A7E326EAA3C500559655 /* DrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E226EAA3C500559655 /* DrawPreparation.swift */; };
+		2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */; };
 		2F53A7E526EAA41600559655 /* Cantica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E426EAA41600559655 /* Cantica.swift */; };
 		2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E626EAA65E00559655 /* DrawViewController.swift */; };
 		2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */; };
@@ -53,6 +53,8 @@
 		4ADC98B228C40DC6008887BA /* page-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B128C40DC6008887BA /* page-1.txt */; };
 		4ADC98B428C40F32008887BA /* page-2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B328C40F32008887BA /* page-2.txt */; };
 		4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */; };
+		4ADC98B928C41606008887BA /* PostcardsDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */; };
+		4ADC98BB28C41677008887BA /* Postcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98BA28C41677008887BA /* Postcards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +65,7 @@
 		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
 		2F53A7DB26E959E500559655 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		2F53A7DF26E9687700559655 /* HTLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLM.swift; sourceTree = "<group>"; };
-		2F53A7E226EAA3C500559655 /* DrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPreparation.swift; sourceTree = "<group>"; };
+		2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommediaDrawPreparation.swift; sourceTree = "<group>"; };
 		2F53A7E426EAA41600559655 /* Cantica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantica.swift; sourceTree = "<group>"; };
 		2F53A7E626EAA65E00559655 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		2F99EDC226E6C31700F1DBAF /* Re_Spira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Re_Spira.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,8 @@
 		4ADC98B128C40DC6008887BA /* page-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-1.txt"; sourceTree = "<group>"; };
 		4ADC98B328C40F32008887BA /* page-2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-2.txt"; sourceTree = "<group>"; };
 		4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pattern-Poem-Maze.jpg"; sourceTree = "<group>"; };
+		4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardsDrawPreparation.swift; sourceTree = "<group>"; };
+		4ADC98BA28C41677008887BA /* Postcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				2F53A7DF26E9687700559655 /* HTLM.swift */,
-				2F53A7E226EAA3C500559655 /* DrawPreparation.swift */,
+				2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 				4ADC98AE28C40851008887BA /* Drawing */,
 				4A96DD8328C3ECC900DB268B /* Poems Files */,
 				4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */,
+				4ADC98BA28C41677008887BA /* Postcards.swift */,
 			);
 			path = Postcards;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				4ADC98AF28C4087D008887BA /* Files.swift */,
+				4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -396,7 +402,7 @@
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
 				4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */,
 				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
-				2F53A7E326EAA3C500559655 /* DrawPreparation.swift in Sources */,
+				2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */,
 				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
 				4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
@@ -404,8 +410,10 @@
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
 				4ADC98AD28C406BF008887BA /* Converter.swift in Sources */,
 				4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */,
+				4ADC98BB28C41677008887BA /* Postcards.swift in Sources */,
 				4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */,
 				2F53A7E526EAA41600559655 /* Cantica.swift in Sources */,
+				4ADC98B928C41606008887BA /* PostcardsDrawPreparation.swift in Sources */,
 				2F99EDC626E6C31700F1DBAF /* AppDelegate.swift in Sources */,
 				2F99EDC826E6C31700F1DBAF /* SceneDelegate.swift in Sources */,
 			);

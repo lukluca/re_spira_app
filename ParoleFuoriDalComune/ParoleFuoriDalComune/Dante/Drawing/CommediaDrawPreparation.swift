@@ -1,5 +1,5 @@
 //
-//  DrawPreparation.swift
+//  CommediaDrawPreparation.swift
 //  ParoleFuoriDalComune
 //
 //  Created by Luca Tagliabue on 09/09/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DrawPreparation {
+struct CommediaDrawPreparation {
     
     enum DrawPreparationError: Error {
         case noLink
