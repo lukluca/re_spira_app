@@ -93,7 +93,9 @@ final class SpectrogramViewController: UIViewController {
     
     private func bindSpectogram() {
         audioSpectrogram?.showErrorMessage = { [weak self] errorString in
-            self?.showBBToast(errorString)
+            DispatchQueue.main.async {
+                self?.showBBToast(errorString)
+            }
         }
     }
 }
