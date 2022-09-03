@@ -411,12 +411,16 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
       /// Value: App requires microphone access.
       static let requiresMicrophoneAccess = Rswift.StringResource(key: "requiresMicrophoneAccess", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Can't create microphone.
       static let cantCreateMicrophone = Rswift.StringResource(key: "cantCreateMicrophone", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Error
+      static let errorTitle = Rswift.StringResource(key: "errorTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Something went wrong: 
+      static let errorMessage = Rswift.StringResource(key: "errorMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: App requires microphone access.
       static func requiresMicrophoneAccess(preferredLanguages: [String]? = nil) -> String {
@@ -442,6 +446,32 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("cantCreateMicrophone", bundle: bundle, comment: "")
+      }
+
+      /// Value: Error
+      static func errorTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("errorTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "errorTitle"
+        }
+
+        return NSLocalizedString("errorTitle", bundle: bundle, comment: "")
+      }
+
+      /// Value: Something went wrong: 
+      static func errorMessage(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("errorMessage", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "errorMessage"
+        }
+
+        return NSLocalizedString("errorMessage", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}

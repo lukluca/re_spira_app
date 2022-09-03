@@ -16,6 +16,12 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var danteButton: UIButton!
     @IBOutlet weak var postcardButton: UIButton!
     
+    #if targetEnvironment(simulator)
+    private var timer: Timer?
+    private var frequencies = [Float]()
+    #else
+    #endif
+    
     private var drawViewModel: DrawViewModel?
     private var sourceType: SourceType = .postcards
     
@@ -39,24 +45,29 @@ final class StartViewController: UIViewController {
 
     @IBAction func breathButtonAction(_ sender: UIButton) {
         recordingButtonState()
-        spectrogramViewController?.start()
+        startsSectrogram()
     }
     
     @IBAction func stopButtonAction(_ sender: UIButton) {
         stopButtonState()
-        spectrogramViewController?.stop()
+        stopSectrogram()
     }
     
     @IBAction func resetButtonAction(_ sender: UIButton) {
         initialButtonState()
-        spectrogramViewController?.reset()
+        resetSectrogram()
     }
     
     @IBAction func drawButtonAction(_ sender: UIButton) {
         drawingButtonState()
         
         do {
+            
+            #if targetEnvironment(simulator)
+            let frequencies = self.frequencies
+            #else
             let frequencies = spectrogramViewController?.frequencies ?? []
+            #endif
             
             switch sourceType {
             case .dante:
@@ -66,7 +77,8 @@ final class StartViewController: UIViewController {
 
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
         } catch {
-            let alert = UIAlertController(title: "Errore", message: "C'è stato un errore. \(error)", preferredStyle: .alert)
+            let alert = UIAlertController(title: R.string.localizable.errorTitle(),
+                                          message: R.string.localizable.errorMessage() + "\(error)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default))
             self.present(alert, animated: true)
         }
@@ -155,3 +167,53 @@ private extension StartViewController {
         case cantica = "DrawSegue"
     }
 }
+
+#if targetEnvironment(simulator)
+private extension StartViewController {
+    func startsSectrogram() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    }
+    func resetSectrogram() {
+        frequencies.removeAll()
+    }
+    func stopSectrogram() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    @objc func fireTimer() {
+        frequencies.append(Float.random(min: -10, max: 10))
+    }
+}
+#else
+private extension StartViewController {
+    func startsSectrogram() {
+        spectrogramViewController?.start()
+    }
+    func resetSectrogram() {
+        spectrogramViewController?.reset()
+    }
+    func stopSectrogram() {
+        spectrogramViewController?.stop()
+    }
+}
+#endif
+
+#if targetEnvironment(simulator)
+private extension Float {
+
+    /// Returns a random floating point number between 0.0 and 1.0, inclusive.
+    static var random: Float {
+        return Float(arc4random()) / Float(0xFFFFFFFF)
+    }
+
+    /// Random float between 0 and n-1.
+    ///
+    /// - Parameter n:  Interval max
+    /// - Returns:      Returns a random float point number between 0 and n max
+    static func random(min: Float, max: Float) -> Float {
+        return Float.random * (max - min) + min
+    }
+}
+#else
+#endif

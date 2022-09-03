@@ -8,3 +8,6 @@
 
 "requiresMicrophoneAccess" = "App requires microphone access.";
 "cantCreateMicrophone" = "Can't create microphone.";
+
+"errorTitle" = "Error";
+"errorMessage" = "Something went wrong: ";
