@@ -89,7 +89,7 @@ final class StartViewController: UIViewController {
         stopButton.isEnabled = false
         drawButton.isEnabled = false
         resetButton.isEnabled = false
-        setPostcardType()
+        setCurrentTypeButtonState()
     }
     
     private func recordingButtonState() {
@@ -111,17 +111,40 @@ final class StartViewController: UIViewController {
         stopButton.isEnabled = false
         drawButton.isEnabled = false
         resetButton.isEnabled = false
+        disableAllTypeButtons()
+    }
+    
+    private func setCurrentTypeButtonState() {
+        switch sourceType {
+        case .dante:
+            setDanteButtonState()
+        case .postcard:
+            setPostcardButtonState()
+        }
     }
     
     private func setDanteType() {
         sourceType = .dante
-        danteButton.isEnabled = false
-        postcardButton.isEnabled = true
+        setDanteButtonState()
     }
     
     private func setPostcardType() {
         sourceType = .postcard
+        setPostcardButtonState()
+    }
+    
+    private func setDanteButtonState() {
+        danteButton.isEnabled = false
+        postcardButton.isEnabled = true
+    }
+    
+    private func setPostcardButtonState() {
         danteButton.isEnabled = true
+        postcardButton.isEnabled = false
+    }
+    
+    private func disableAllTypeButtons() {
+        danteButton.isEnabled = false
         postcardButton.isEnabled = false
     }
 }
