@@ -256,7 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+			shellScript = "\n# check if directory exists\nif [ -d /opt/homebrew/bin ]; then\n    echo \"Running on Silicon\"\n    MINT=/opt/homebrew/bin/mint\nelse\n  echo \"Not running on Silicon\"\n  MINT=mint\nfi\n\nif ${MINT} list | grep -q 'R.swift'; then\n    ${MINT} run R.swift rswift generate \"$SRCROOT/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
