@@ -48,7 +48,8 @@
 		4A96DD7B28C3749500DB268B /* page-3.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6C28C3749500DB268B /* page-3.docx */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
-		4A96DD8228C3E3EB00DB268B /* CommediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */; };
+		4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */; };
+		4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +92,8 @@
 		4A96DD6C28C3749500DB268B /* page-3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-3.docx"; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
-		4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommediaViewModel.swift; sourceTree = "<group>"; };
+		4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanteViewModel.swift; sourceTree = "<group>"; };
+		4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,16 +120,16 @@
 			path = Credits;
 			sourceTree = "<group>";
 		};
-		2F103CD326ED72C000BF9F20 /* DivinaCommedia */ = {
+		2F103CD326ED72C000BF9F20 /* Dante */ = {
 			isa = PBXGroup;
 			children = (
 				2F53A7DA26E9597800559655 /* Drawing */,
 				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
 				2FA5A06326ED740100579588 /* Commedia.swift */,
 				2F53A7E426EAA41600559655 /* Cantica.swift */,
-				4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */,
+				4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */,
 			);
-			path = DivinaCommedia;
+			path = Dante;
 			sourceTree = "<group>";
 		};
 		2F53A7D926E9581F00559655 /* Spectogram */ = {
@@ -172,7 +174,7 @@
 			children = (
 				4A96DD8028C3E0B200DB268B /* Draw */,
 				4A96DD5D28C3746500DB268B /* Postcards */,
-				2F103CD326ED72C000BF9F20 /* DivinaCommedia */,
+				2F103CD326ED72C000BF9F20 /* Dante */,
 				2F103CD026ED723600BF9F20 /* Credits */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				4A96DD8328C3ECC900DB268B /* Poems Files */,
+				4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */,
 			);
 			path = Postcards;
 			sourceTree = "<group>";
@@ -356,10 +359,11 @@
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
+				4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */,
 				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* Draw.swift in Sources */,
 				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
-				4A96DD8228C3E3EB00DB268B /* CommediaViewModel.swift in Sources */,
+				4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,

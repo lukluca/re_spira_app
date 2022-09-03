@@ -1,5 +1,5 @@
 //
-//  CommediaViewModel.swift
+//  DanteViewModel.swift
 //  ParoleFuoriDalComune
 //
 //  Created by softwave on 03/09/22.
@@ -8,16 +8,16 @@
 import UIKit
 import KDTree
  
-struct CommediaViewModelFactory {
+struct DanteViewModelFactory {
     
-    func make(frequencies: [Float]) throws -> CommediaViewModel {
+    func make(frequencies: [Float]) throws -> DanteViewModel {
         let model = try DrawPreparation().execute(using: frequencies)
         let display = try Commedia().enrich(model: model)
-        return CommediaViewModel(display: display)
+        return DanteViewModel(display: display)
     }
 }
 
-struct CommediaViewModel: DrawViewModel {
+struct DanteViewModel: DrawViewModel {
     
     private let display: CommediaDisplayModel
     

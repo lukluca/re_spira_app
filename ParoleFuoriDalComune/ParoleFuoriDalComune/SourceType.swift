@@ -9,5 +9,5 @@ import Foundation
 
 enum SourceType {
     case dante
-    case postcard
+    case postcards
 }

@@ -17,7 +17,7 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var postcardButton: UIButton!
     
     private var drawViewModel: DrawViewModel?
-    private var sourceType: SourceType = .postcard
+    private var sourceType: SourceType = .postcards
     
     private var spectrogramViewController: SpectrogramViewController?
 
@@ -34,7 +34,7 @@ final class StartViewController: UIViewController {
     }
     
     @IBAction func postcardButtonAction(_ sender: UIButton) {
-        setPostcardType()
+        setPostcardsType()
     }
 
     @IBAction func breathButtonAction(_ sender: UIButton) {
@@ -60,8 +60,8 @@ final class StartViewController: UIViewController {
             
             switch sourceType {
             case .dante:
-                drawViewModel = try CommediaViewModelFactory().make(frequencies: frequencies)
-            case .postcard: ()
+                drawViewModel = try DanteViewModelFactory().make(frequencies: frequencies)
+            case .postcards: ()
             }
 
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
@@ -118,8 +118,8 @@ final class StartViewController: UIViewController {
         switch sourceType {
         case .dante:
             setDanteButtonState()
-        case .postcard:
-            setPostcardButtonState()
+        case .postcards:
+            setPostcardsButtonState()
         }
     }
     
@@ -128,9 +128,9 @@ final class StartViewController: UIViewController {
         setDanteButtonState()
     }
     
-    private func setPostcardType() {
-        sourceType = .postcard
-        setPostcardButtonState()
+    private func setPostcardsType() {
+        sourceType = .postcards
+        setPostcardsButtonState()
     }
     
     private func setDanteButtonState() {
@@ -138,7 +138,7 @@ final class StartViewController: UIViewController {
         postcardButton.isEnabled = true
     }
     
-    private func setPostcardButtonState() {
+    private func setPostcardsButtonState() {
         danteButton.isEnabled = true
         postcardButton.isEnabled = false
     }
