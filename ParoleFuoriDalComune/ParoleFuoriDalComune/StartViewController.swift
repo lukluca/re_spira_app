@@ -16,8 +16,7 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var danteButton: UIButton!
     @IBOutlet weak var postcardButton: UIButton!
     
-    private var drawModel: DrawDisplayModel?
-    
+    private var drawViewModel: DrawViewModel?
     private var sourceType: SourceType = .postcard
     
     private var spectrogramViewController: SpectrogramViewController?
@@ -57,10 +56,14 @@ final class StartViewController: UIViewController {
         drawingButtonState()
         
         do {
-            let model = try DrawPreparation().execute(using: spectrogramViewController?.frequencies ?? [])
-            let display = try Commedia().enrich(model: model)
+            let frequencies = spectrogramViewController?.frequencies ?? []
             
-            drawModel = display
+            switch sourceType {
+            case .dante:
+                drawViewModel = try CommediaViewModelFactory().make(frequencies: frequencies)
+            case .postcard: ()
+            }
+
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
         } catch {
             let alert = UIAlertController(title: "Errore", message: "C'è stato un errore. \(error)", preferredStyle: .alert)
@@ -75,7 +78,7 @@ final class StartViewController: UIViewController {
             spectrogramViewController = segue.destination as? SpectrogramViewController
         case SegueAction.cantica.rawValue:
             let controller = segue.destination as? DrawViewController
-            controller?.display = drawModel
+            controller?.viewModel = drawViewModel
             controller?.rawAudioData = spectrogramViewController?.rawAudioData ?? []
         default: ()
         }

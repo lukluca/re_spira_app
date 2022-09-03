@@ -44,14 +44,14 @@ extension Book.Canto: Decodable { }
 extension Book.Terzina: Decodable { }
 extension Book.Verso: Decodable { }
 
-struct DrawDisplayModel {
+struct CommediaDisplayModel {
     
     struct Detail {
         let canto: String
         let terzina: [String]
     }
     
-    let model: DrawModel
+    let model: CommediaDrawModel
     let detail: Detail
 }
 
@@ -63,7 +63,7 @@ struct Commedia {
         case noTerzina
     }
     
-    func enrich(model: DrawModel) throws -> DrawDisplayModel {
+    func enrich(model: CommediaDrawModel) throws -> CommediaDisplayModel {
         
         let book = try getBook()
         
@@ -91,8 +91,8 @@ struct Commedia {
         
         let texts = versi.map { $0.text }
         
-        let detail = DrawDisplayModel.Detail(canto: cantoName, terzina: texts)
-        return DrawDisplayModel(model: model, detail: detail)
+        let detail = CommediaDisplayModel.Detail(canto: cantoName, terzina: texts)
+        return CommediaDisplayModel(model: model, detail: detail)
     }
     
     private func getBook() throws -> Book {

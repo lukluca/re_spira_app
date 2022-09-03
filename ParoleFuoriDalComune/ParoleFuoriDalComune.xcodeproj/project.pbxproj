@@ -48,6 +48,7 @@
 		4A96DD7B28C3749500DB268B /* page-3.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6C28C3749500DB268B /* page-3.docx */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
+		4A96DD8228C3E3EB00DB268B /* CommediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		4A96DD6C28C3749500DB268B /* page-3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-3.docx"; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
+		4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommediaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,8 @@
 			children = (
 				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
 				2FA5A06326ED740100579588 /* Commedia.swift */,
+				2F53A7E426EAA41600559655 /* Cantica.swift */,
+				4A96DD8128C3E3EB00DB268B /* CommediaViewModel.swift */,
 			);
 			path = DivinaCommedia;
 			sourceTree = "<group>";
@@ -143,14 +147,6 @@
 				2F53A7E226EAA3C500559655 /* Draw.swift */,
 			);
 			path = Drawing;
-			sourceTree = "<group>";
-		};
-		2F53A7E126EAA38300559655 /* Cantiche */ = {
-			isa = PBXGroup;
-			children = (
-				2F53A7E426EAA41600559655 /* Cantica.swift */,
-			);
-			path = Cantiche;
 			sourceTree = "<group>";
 		};
 		2F99EDB926E6C31700F1DBAF = {
@@ -177,7 +173,6 @@
 				4A96DD5D28C3746500DB268B /* Postcards */,
 				2F103CD326ED72C000BF9F20 /* DivinaCommedia */,
 				2F103CD026ED723600BF9F20 /* Credits */,
-				2F53A7E126EAA38300559655 /* Cantiche */,
 				2F53A7DA26E9597800559655 /* Drawing */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
@@ -356,6 +351,7 @@
 				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* Draw.swift in Sources */,
 				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
+				4A96DD8228C3E3EB00DB268B /* CommediaViewModel.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,

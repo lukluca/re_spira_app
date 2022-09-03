@@ -13,7 +13,7 @@ struct DrawPreparation {
         case failure
     }
     
-    func execute(using values: [Float]) throws -> DrawModel {
+    func execute(using values: [Float]) throws -> CommediaDrawModel {
         
         let links = try HTMLParser().extractDistributionsLinks()
         

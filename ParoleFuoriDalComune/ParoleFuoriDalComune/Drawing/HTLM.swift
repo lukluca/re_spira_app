@@ -49,7 +49,7 @@ struct HTMLParser {
         let frequency: Int
     }
     
-    func extractDrawModels(from href: String, using word: String) throws -> [DrawModel] {
+    func extractDrawModels(from href: String, using word: String) throws -> [CommediaDrawModel] {
         let page = try getPage(from: href)
         let table = try extractTable(from: page, at: 2)
         
@@ -66,7 +66,7 @@ struct HTMLParser {
             dropped = AnyCollection(splitted)
         }
         
-        return dropped.compactMap { val -> DrawModel? in
+        return dropped.compactMap { val -> CommediaDrawModel? in
             let values = val.split(separator: "|")
             let rights = values.first?.split(separator: ",")
 
@@ -80,13 +80,13 @@ struct HTMLParser {
                let intVerso = Int(verso) {
                 
                 if first?.contains("In") == true {
-                    return DrawModel(cantica: .inferno, canto: intCanto, verso: intVerso, word: word)
+                    return CommediaDrawModel(cantica: .inferno, canto: intCanto, verso: intVerso, word: word)
                 }
                 if first?.contains("Pu") == true {
-                    return DrawModel(cantica: .purgatorio, canto: intCanto, verso: intVerso, word: word)
+                    return CommediaDrawModel(cantica: .purgatorio, canto: intCanto, verso: intVerso, word: word)
                 }
                 if first?.contains("Pa") == true {
-                    return DrawModel(cantica: .paradiso, canto: intCanto, verso: intVerso, word: word)
+                    return CommediaDrawModel(cantica: .paradiso, canto: intCanto, verso: intVerso, word: word)
                 }
             }
             return nil

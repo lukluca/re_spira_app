@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DrawModel {
+struct CommediaDrawModel {
     let cantica: Cantica
     let canto: Int
     let verso: Int

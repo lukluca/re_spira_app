@@ -100,6 +100,7 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
                                                      position: .unspecified),
             let microphoneInput = try? AVCaptureDeviceInput(device: microphone) else {
             showErrorMessage?(R.string.localizable.cantCreateMicrophone())
+            captureSession.commitConfiguration()
             return
         }
         
