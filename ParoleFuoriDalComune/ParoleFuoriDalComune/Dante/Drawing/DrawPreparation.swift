@@ -14,6 +14,8 @@ struct DrawPreparation {
         case noWordLinks
         case noFiltered
         case noModels
+        case minIsNotValid
+        case maxIsNotValid
     }
     
     func execute(using values: [Float]) throws -> CommediaDrawModel {
@@ -23,7 +25,13 @@ struct DrawPreparation {
         let cal = Calculator(data: values)
         let mode = cal.mode()
         
-        let minMode = mode?.mostFrequent.min() ?? 0
+        let mostFrequent = mode?.mostFrequent
+        let minMode = mostFrequent?.min() ?? 0
+        
+        guard !minMode.isInfinite && !minMode.isNaN else {
+            throw DrawPreparationError.minIsNotValid
+        }
+        
         let intMin = abs(Int(minMode))
     
         let found = links.first { link in
@@ -52,7 +60,12 @@ struct DrawPreparation {
             throw DrawPreparationError.noWordLinks
         }
         
-        let maxMode = mode?.mostFrequent.max() ?? 0
+        let maxMode = mostFrequent?.max() ?? 0
+        
+        guard !maxMode.isInfinite && !maxMode.isNaN else {
+            throw DrawPreparationError.maxIsNotValid
+        }
+        
         let intMax = abs(Int(maxMode))
         
         let filtered = recursiveFilter(wordLinks: wordLinks, intMin: intMin)
