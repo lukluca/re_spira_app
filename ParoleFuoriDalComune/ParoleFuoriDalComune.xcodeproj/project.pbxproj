@@ -121,6 +121,7 @@
 		2F103CD326ED72C000BF9F20 /* DivinaCommedia */ = {
 			isa = PBXGroup;
 			children = (
+				2F53A7DA26E9597800559655 /* Drawing */,
 				2F103CCE26ED720700BF9F20 /* divina_commedia.json */,
 				2FA5A06326ED740100579588 /* Commedia.swift */,
 				2F53A7E426EAA41600559655 /* Cantica.swift */,
@@ -173,7 +174,6 @@
 				4A96DD5D28C3746500DB268B /* Postcards */,
 				2F103CD326ED72C000BF9F20 /* DivinaCommedia */,
 				2F103CD026ED723600BF9F20 /* Credits */,
-				2F53A7DA26E9597800559655 /* Drawing */,
 				2F53A7D926E9581F00559655 /* Spectogram */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
 				2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */,
@@ -189,6 +189,23 @@
 			sourceTree = "<group>";
 		};
 		4A96DD5D28C3746500DB268B /* Postcards */ = {
+			isa = PBXGroup;
+			children = (
+				4A96DD8328C3ECC900DB268B /* Poems Files */,
+			);
+			path = Postcards;
+			sourceTree = "<group>";
+		};
+		4A96DD8028C3E0B200DB268B /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				2F53A7E626EAA65E00559655 /* DrawViewController.swift */,
+				4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		4A96DD8328C3ECC900DB268B /* Poems Files */ = {
 			isa = PBXGroup;
 			children = (
 				4A96DD6028C3749500DB268B /* page-1.docx */,
@@ -207,16 +224,7 @@
 				4A96DD6628C3749500DB268B /* page-14.docx */,
 				4A96DD6328C3749500DB268B /* page-15.docx */,
 			);
-			path = Postcards;
-			sourceTree = "<group>";
-		};
-		4A96DD8028C3E0B200DB268B /* Draw */ = {
-			isa = PBXGroup;
-			children = (
-				2F53A7E626EAA65E00559655 /* DrawViewController.swift */,
-				4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */,
-			);
-			path = Draw;
+			path = "Poems Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
