@@ -216,12 +216,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 4 images.
   struct image {
     /// Image `air`.
     static let air = Rswift.ImageResource(bundle: R.hostingBundle, name: "air")
-    /// Image `backspace`.
-    static let backspace = Rswift.ImageResource(bundle: R.hostingBundle, name: "backspace")
     /// Image `gesture`.
     static let gesture = Rswift.ImageResource(bundle: R.hostingBundle, name: "gesture")
     /// Image `launch`.
@@ -233,13 +231,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "air", bundle: ..., traitCollection: ...)`
     static func air(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.air, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "backspace", bundle: ..., traitCollection: ...)`
-    static func backspace(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.backspace, compatibleWith: traitCollection)
     }
     #endif
 
@@ -396,9 +387,9 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if UIKit.UIImage(named: "air", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'air' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "backspace", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'backspace' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "gesture", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'gesture' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "stop", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'stop' is used in storyboard 'Main', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "xmark") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'xmark' is used in storyboard 'Main', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
