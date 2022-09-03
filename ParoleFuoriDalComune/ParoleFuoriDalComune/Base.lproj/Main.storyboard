@@ -149,7 +149,7 @@
                         <outlet property="postcardButton" destination="zjb-WZ-SJR" id="vT0-CP-Q7M"/>
                         <outlet property="resetButton" destination="Haa-x8-not" id="erG-g9-LYj"/>
                         <outlet property="stopButton" destination="92w-xE-hm3" id="6rp-Fb-IXb"/>
-                        <segue destination="SIW-u2-PT1" kind="presentation" identifier="CanticaSegue" modalPresentationStyle="fullScreen" id="9gB-Pt-u5a"/>
+                        <segue destination="SIW-u2-PT1" kind="presentation" identifier="DrawSegue" modalPresentationStyle="fullScreen" id="9gB-Pt-u5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="59" y="337"/>
         </scene>
-        <!--Cantica View Controller-->
+        <!--Draw View Controller-->
         <scene sceneID="ZJw-F8-8PE">
             <objects>
-                <viewController id="SIW-u2-PT1" customClass="CanticaViewController" customModule="Re_Spira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SIW-u2-PT1" customClass="DrawViewController" customModule="Re_Spira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Id8-AH-UPn">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

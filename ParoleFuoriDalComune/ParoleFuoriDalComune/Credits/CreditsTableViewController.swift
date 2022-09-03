@@ -9,7 +9,7 @@ import UIKit
 
 final class CreditsTableViewController: UITableViewController {
     
-    var display: DrawDisplayModel?
+    var viewModel: CreditsViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,9 @@ final class CreditsTableViewController: UITableViewController {
         
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
-        if indexPath.section == 0 && indexPath.row == 0 {
-            
-            let word = display?.model.word ?? ""
-            let cantica = display?.model.cantica.description ?? ""
-            let canto = display?.detail.canto ?? ""
-            let terzina = display?.detail.terzina.joined(separator: "\n")
-            
-            cell.textLabel?.text = "\(cantica), \(canto), parola '\(word)'"
-            cell.detailTextLabel?.text = terzina
+        if indexPath.section == 0 && indexPath.row == 0, let viewModel = viewModel {
+            cell.textLabel?.text = viewModel.title
+            cell.detailTextLabel?.text = viewModel.subtitle
         }
         
         return cell

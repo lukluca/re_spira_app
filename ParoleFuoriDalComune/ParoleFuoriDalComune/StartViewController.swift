@@ -74,7 +74,7 @@ final class StartViewController: UIViewController {
         case SegueAction.spectrogram.rawValue:
             spectrogramViewController = segue.destination as? SpectrogramViewController
         case SegueAction.cantica.rawValue:
-            let controller = segue.destination as? CanticaViewController
+            let controller = segue.destination as? DrawViewController
             controller?.display = drawModel
             controller?.rawAudioData = spectrogramViewController?.rawAudioData ?? []
         default: ()
@@ -126,6 +126,6 @@ final class StartViewController: UIViewController {
 private extension StartViewController {
     enum SegueAction: String {
         case spectrogram = "SpectrogramSegue"
-        case cantica = "CanticaSegue"
+        case cantica = "DrawSegue"
     }
 }

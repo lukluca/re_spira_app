@@ -1,5 +1,5 @@
 //
-//  CanticaViewController.swift
+//  DrawViewController.swift
 //  ParoleFuoriDalComune
 //
 //  Created by Luca Tagliabue on 09/09/21.
@@ -8,7 +8,7 @@
 import UIKit
 import KDTree
 
-final class CanticaViewController: UIViewController {
+final class DrawViewController: UIViewController {
     
     var display: DrawDisplayModel?
     var rawAudioData = [Int16]()
@@ -46,7 +46,14 @@ final class CanticaViewController: UIViewController {
             spectrogramViewController = segue.destination as? SpectrogramViewController
         case SegueAction.credits.rawValue:
             let controller = segue.destination as? CreditsTableViewController
-            controller?.display = display
+            
+            let word = display?.model.word ?? ""
+            let cantica = display?.model.cantica.description ?? ""
+            let canto = display?.detail.canto ?? ""
+            let terzina = display?.detail.terzina.joined(separator: "\n") ?? ""
+            let creditsViewModel = CreditsViewModel(title: "\(cantica), \(canto), parola '\(word)'",
+                                                    subtitle: terzina)
+            controller?.viewModel = creditsViewModel
         default: ()
         }
     }
@@ -208,7 +215,7 @@ final class CanticaViewController: UIViewController {
     }
 }
 
-private extension CanticaViewController {
+private extension DrawViewController {
     enum SegueAction: String {
         case spectrogram = "SpectrogramSegue"
         case credits = "CreditsSegue"
