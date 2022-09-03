@@ -202,12 +202,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 16 files.
+  /// This `R.file` struct is generated, and contains static references to 17 files.
   struct file {
+    /// Resource file `Pattern-Poem-Maze.jpg`.
+    static let patternPoemMazeJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "Pattern-Poem-Maze", pathExtension: "jpg")
     /// Resource file `divina_commedia.json`.
     static let divina_commediaJson = Rswift.FileResource(bundle: R.hostingBundle, name: "divina_commedia", pathExtension: "json")
-    /// Resource file `page-1.docx`.
-    static let page1Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-1", pathExtension: "docx")
+    /// Resource file `page-1.txt`.
+    static let page1Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-1", pathExtension: "txt")
     /// Resource file `page-10.docx`.
     static let page10Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-10", pathExtension: "docx")
     /// Resource file `page-11.docx`.
@@ -220,8 +222,8 @@ struct R: Rswift.Validatable {
     static let page14Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-14", pathExtension: "docx")
     /// Resource file `page-15.docx`.
     static let page15Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-15", pathExtension: "docx")
-    /// Resource file `page-2.docx`.
-    static let page2Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-2", pathExtension: "docx")
+    /// Resource file `page-2.txt`.
+    static let page2Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-2", pathExtension: "txt")
     /// Resource file `page-3.docx`.
     static let page3Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-3", pathExtension: "docx")
     /// Resource file `page-4.docx`.
@@ -237,15 +239,21 @@ struct R: Rswift.Validatable {
     /// Resource file `page-9.docx`.
     static let page9Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-9", pathExtension: "docx")
 
+    /// `bundle.url(forResource: "Pattern-Poem-Maze", withExtension: "jpg")`
+    static func patternPoemMazeJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.patternPoemMazeJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
     /// `bundle.url(forResource: "divina_commedia", withExtension: "json")`
     static func divina_commediaJson(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.divina_commediaJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-1", withExtension: "docx")`
-    static func page1Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page1Docx
+    /// `bundle.url(forResource: "page-1", withExtension: "txt")`
+    static func page1Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page1Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -285,9 +293,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-2", withExtension: "docx")`
-    static func page2Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page2Docx
+    /// `bundle.url(forResource: "page-2", withExtension: "txt")`
+    static func page2Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page2Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -336,8 +344,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 5 images.
   struct image {
+    /// Image `Pattern-Poem-Maze.jpg`.
+    static let patternPoemMazeJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "Pattern-Poem-Maze.jpg")
     /// Image `air`.
     static let air = Rswift.ImageResource(bundle: R.hostingBundle, name: "air")
     /// Image `gesture`.
@@ -346,6 +356,13 @@ struct R: Rswift.Validatable {
     static let launch = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch")
     /// Image `stop`.
     static let stop = Rswift.ImageResource(bundle: R.hostingBundle, name: "stop")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Pattern-Poem-Maze.jpg", bundle: ..., traitCollection: ...)`
+    static func patternPoemMazeJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.patternPoemMazeJpg, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "air", bundle: ..., traitCollection: ...)`

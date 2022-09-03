@@ -33,11 +33,9 @@
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
 		4A96DD6D28C3749500DB268B /* page-7.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5E28C3749500DB268B /* page-7.docx */; };
 		4A96DD6E28C3749500DB268B /* page-11.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5F28C3749500DB268B /* page-11.docx */; };
-		4A96DD6F28C3749500DB268B /* page-1.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6028C3749500DB268B /* page-1.docx */; };
 		4A96DD7028C3749500DB268B /* page-6.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6128C3749500DB268B /* page-6.docx */; };
 		4A96DD7128C3749500DB268B /* page-13.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6228C3749500DB268B /* page-13.docx */; };
 		4A96DD7228C3749500DB268B /* page-15.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6328C3749500DB268B /* page-15.docx */; };
-		4A96DD7328C3749500DB268B /* page-2.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6428C3749500DB268B /* page-2.docx */; };
 		4A96DD7428C3749500DB268B /* page-5.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6528C3749500DB268B /* page-5.docx */; };
 		4A96DD7528C3749500DB268B /* page-14.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6628C3749500DB268B /* page-14.docx */; };
 		4A96DD7628C3749500DB268B /* page-9.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6728C3749500DB268B /* page-9.docx */; };
@@ -50,6 +48,11 @@
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
 		4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */; };
 		4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */; };
+		4ADC98AD28C406BF008887BA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98AC28C406BF008887BA /* Converter.swift */; };
+		4ADC98B028C4087D008887BA /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98AF28C4087D008887BA /* Files.swift */; };
+		4ADC98B228C40DC6008887BA /* page-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B128C40DC6008887BA /* page-1.txt */; };
+		4ADC98B428C40F32008887BA /* page-2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B328C40F32008887BA /* page-2.txt */; };
+		4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,11 +80,9 @@
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 		4A96DD5E28C3749500DB268B /* page-7.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-7.docx"; sourceTree = "<group>"; };
 		4A96DD5F28C3749500DB268B /* page-11.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-11.docx"; sourceTree = "<group>"; };
-		4A96DD6028C3749500DB268B /* page-1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-1.docx"; sourceTree = "<group>"; };
 		4A96DD6128C3749500DB268B /* page-6.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-6.docx"; sourceTree = "<group>"; };
 		4A96DD6228C3749500DB268B /* page-13.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-13.docx"; sourceTree = "<group>"; };
 		4A96DD6328C3749500DB268B /* page-15.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-15.docx"; sourceTree = "<group>"; };
-		4A96DD6428C3749500DB268B /* page-2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-2.docx"; sourceTree = "<group>"; };
 		4A96DD6528C3749500DB268B /* page-5.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-5.docx"; sourceTree = "<group>"; };
 		4A96DD6628C3749500DB268B /* page-14.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-14.docx"; sourceTree = "<group>"; };
 		4A96DD6728C3749500DB268B /* page-9.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-9.docx"; sourceTree = "<group>"; };
@@ -94,6 +95,11 @@
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanteViewModel.swift; sourceTree = "<group>"; };
 		4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardsViewModel.swift; sourceTree = "<group>"; };
+		4ADC98AC28C406BF008887BA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		4ADC98AF28C4087D008887BA /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		4ADC98B128C40DC6008887BA /* page-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-1.txt"; sourceTree = "<group>"; };
+		4ADC98B328C40F32008887BA /* page-2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-2.txt"; sourceTree = "<group>"; };
+		4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pattern-Poem-Maze.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,8 @@
 		4A96DD5D28C3746500DB268B /* Postcards */ = {
 			isa = PBXGroup;
 			children = (
+				4ADC98B528C41116008887BA /* Visual Files */,
+				4ADC98AE28C40851008887BA /* Drawing */,
 				4A96DD8328C3ECC900DB268B /* Poems Files */,
 				4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */,
 			);
@@ -211,8 +219,8 @@
 		4A96DD8328C3ECC900DB268B /* Poems Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A96DD6028C3749500DB268B /* page-1.docx */,
-				4A96DD6428C3749500DB268B /* page-2.docx */,
+				4ADC98B328C40F32008887BA /* page-2.txt */,
+				4ADC98B128C40DC6008887BA /* page-1.txt */,
 				4A96DD6C28C3749500DB268B /* page-3.docx */,
 				4A96DD6A28C3749500DB268B /* page-4.docx */,
 				4A96DD6528C3749500DB268B /* page-5.docx */,
@@ -234,8 +242,25 @@
 			isa = PBXGroup;
 			children = (
 				2F53A7DB26E959E500559655 /* Calculator.swift */,
+				4ADC98AC28C406BF008887BA /* Converter.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		4ADC98AE28C40851008887BA /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				4ADC98AF28C4087D008887BA /* Files.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		4ADC98B528C41116008887BA /* Visual Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */,
+			);
+			path = "Visual Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,14 +333,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADC98B428C40F32008887BA /* page-2.txt in Resources */,
 				2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */,
 				4A96DD7428C3749500DB268B /* page-5.docx in Resources */,
 				4A96DD7A28C3749500DB268B /* page-12.docx in Resources */,
 				4A96DD6E28C3749500DB268B /* page-11.docx in Resources */,
 				4A96DD7728C3749500DB268B /* page-10.docx in Resources */,
 				4A96DD7128C3749500DB268B /* page-13.docx in Resources */,
-				4A96DD6F28C3749500DB268B /* page-1.docx in Resources */,
 				4A96DD7628C3749500DB268B /* page-9.docx in Resources */,
+				4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */,
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
 				4A96DD6D28C3749500DB268B /* page-7.docx in Resources */,
 				4A96DD7228C3749500DB268B /* page-15.docx in Resources */,
@@ -324,9 +350,9 @@
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
 				4A96DD7828C3749500DB268B /* page-8.docx in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
+				4ADC98B228C40DC6008887BA /* page-1.txt in Resources */,
 				4A96DD7528C3749500DB268B /* page-14.docx in Resources */,
 				2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */,
-				4A96DD7328C3749500DB268B /* page-2.docx in Resources */,
 				4A96DD7928C3749500DB268B /* page-4.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +389,7 @@
 			files = (
 				4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */,
 				2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */,
+				4ADC98B028C4087D008887BA /* Files.swift in Sources */,
 				2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */,
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */,
@@ -375,6 +402,7 @@
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
 				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
+				4ADC98AD28C406BF008887BA /* Converter.swift in Sources */,
 				4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */,
 				4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */,
 				2F53A7E526EAA41600559655 /* Cantica.swift in Sources */,

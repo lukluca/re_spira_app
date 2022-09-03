@@ -96,11 +96,10 @@ struct Commedia {
     }
     
     private func getBook() throws -> Book {
-        guard let path = Bundle.main.path(forResource: "divina_commedia", ofType: "json") else {
+        guard let url = R.file.divina_commediaJson() else {
             throw CommediaError.noFile
         }
 
-        let url = URL(fileURLWithPath: path)
         let data = try Data(contentsOf: url)
     
         let decoder = JSONDecoder()
