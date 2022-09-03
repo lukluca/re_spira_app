@@ -10,6 +10,7 @@ import Foundation
 struct DrawPreparation {
     
     enum DrawPreparationError: Error {
+        case noLink
         case noWordLinks
         case noFiltered
         case noModels
@@ -42,7 +43,7 @@ struct DrawPreparation {
         }
         
         guard let link = found else {
-            throw DrawPreparationError.failure
+            throw DrawPreparationError.noLink
         }
         
         let wordLinks = try HTMLParser().extractWordLinks(from: link.href)
