@@ -72,7 +72,8 @@ final class StartViewController: UIViewController {
             switch sourceType {
             case .dante:
                 drawViewModel = try DanteViewModelFactory().make(frequencies: frequencies)
-            case .postcards: ()
+            case .postcards:
+                drawViewModel = try PostcardsViewModelFactory().make(frequencies: frequencies)
             }
 
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
