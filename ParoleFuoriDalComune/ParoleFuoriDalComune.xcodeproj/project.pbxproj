@@ -323,7 +323,7 @@
 				2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */,
 				2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
-				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */,
+				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -563,12 +563,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.parole-fuori-dal-comune.respira";
 				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
@@ -582,12 +584,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.parole-fuori-dal-comune.respira";
 				PRODUCT_NAME = Re_Spira;
 				SWIFT_VERSION = 5.0;
@@ -643,7 +647,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
+		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -671,7 +675,7 @@
 		};
 		2FD1652328BD5D4C00438BF5 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */;
+			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
