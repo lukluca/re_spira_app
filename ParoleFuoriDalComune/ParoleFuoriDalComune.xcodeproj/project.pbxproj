@@ -13,7 +13,7 @@
 		2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */; };
 		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
 		2F53A7DC26E959E500559655 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DB26E959E500559655 /* Calculator.swift */; };
-		2F53A7E026E9687700559655 /* HTLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTLM.swift */; };
+		2F53A7E026E9687700559655 /* HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTML.swift */; };
 		2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */; };
 		2F53A7E526EAA41600559655 /* Cantica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E426EAA41600559655 /* Cantica.swift */; };
 		2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E626EAA65E00559655 /* DrawViewController.swift */; };
@@ -64,7 +64,7 @@
 		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
 		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
 		2F53A7DB26E959E500559655 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		2F53A7DF26E9687700559655 /* HTLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLM.swift; sourceTree = "<group>"; };
+		2F53A7DF26E9687700559655 /* HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML.swift; sourceTree = "<group>"; };
 		2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommediaDrawPreparation.swift; sourceTree = "<group>"; };
 		2F53A7E426EAA41600559655 /* Cantica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantica.swift; sourceTree = "<group>"; };
 		2F53A7E626EAA65E00559655 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		2F53A7DA26E9597800559655 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				2F53A7DF26E9687700559655 /* HTLM.swift */,
+				2F53A7DF26E9687700559655 /* HTML.swift */,
 				2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */,
 			);
 			path = Drawing;
@@ -323,7 +323,7 @@
 				2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */,
 				2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
-				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */,
+				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -401,7 +401,7 @@
 				2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
 				4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */,
-				2F53A7E026E9687700559655 /* HTLM.swift in Sources */,
+				2F53A7E026E9687700559655 /* HTML.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */,
 				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
 				4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */,
@@ -643,7 +643,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -671,7 +671,7 @@
 		};
 		2FD1652328BD5D4C00438BF5 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift.Library" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */

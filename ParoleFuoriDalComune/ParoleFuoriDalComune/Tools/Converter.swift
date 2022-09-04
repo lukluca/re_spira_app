@@ -2,7 +2,7 @@
 //  Converter.swift
 //  ParoleFuoriDalComune
 //
-//  Created by softwave on 04/09/22.
+//  Created by Luca Tagliabue on 04/09/22.
 //
 
 import Foundation
@@ -15,10 +15,10 @@ enum ConverterError: Error {
 extension Float {
     
     func toAbsInt() throws -> Int {
-        guard !self.isInfinite else {
+        guard !isInfinite else {
             throw ConverterError.isNotFinite
         }
-        guard !self.isNaN else {
+        guard !isNaN else {
             throw ConverterError.isNan
         }
         

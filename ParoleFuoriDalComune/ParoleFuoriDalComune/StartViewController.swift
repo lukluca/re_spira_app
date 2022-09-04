@@ -45,17 +45,17 @@ final class StartViewController: UIViewController {
 
     @IBAction func breathButtonAction(_ sender: UIButton) {
         recordingButtonState()
-        startsSectrogram()
+        startsSpectrogram()
     }
     
     @IBAction func stopButtonAction(_ sender: UIButton) {
         stopButtonState()
-        stopSectrogram()
+        stopSpectrogram()
     }
     
     @IBAction func resetButtonAction(_ sender: UIButton) {
         initialButtonState()
-        resetSectrogram()
+        resetSpectrogram()
     }
     
     @IBAction func drawButtonAction(_ sender: UIButton) {
@@ -64,16 +64,16 @@ final class StartViewController: UIViewController {
         do {
             
             #if targetEnvironment(simulator)
-            let frequencies = self.frequencies
+            let freq = frequencies
             #else
-            let frequencies = spectrogramViewController?.frequencies ?? []
+            let freq = spectrogramViewController?.frequencies ?? []
             #endif
             
             switch sourceType {
             case .dante:
-                drawViewModel = try DanteViewModelFactory().make(frequencies: frequencies)
+                drawViewModel = try DanteViewModelFactory().make(frequencies: freq)
             case .postcards:
-                drawViewModel = try PostcardsViewModelFactory().make(frequencies: frequencies)
+                drawViewModel = try PostcardsViewModelFactory().make(frequencies: freq)
             }
 
             performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
@@ -81,7 +81,7 @@ final class StartViewController: UIViewController {
             let alert = UIAlertController(title: R.string.localizable.errorTitle(),
                                           message: R.string.localizable.errorMessage() + "\(error)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default))
-            self.present(alert, animated: true)
+            present(alert, animated: true)
         }
     }
     
@@ -171,13 +171,13 @@ private extension StartViewController {
 
 #if targetEnvironment(simulator)
 private extension StartViewController {
-    func startsSectrogram() {
+    func startsSpectrogram() {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
-    func resetSectrogram() {
+    func resetSpectrogram() {
         frequencies.removeAll()
     }
-    func stopSectrogram() {
+    func stopSpectrogram() {
         timer?.invalidate()
         timer = nil
     }
@@ -188,13 +188,13 @@ private extension StartViewController {
 }
 #else
 private extension StartViewController {
-    func startsSectrogram() {
+    func startsSpectrogram() {
         spectrogramViewController?.start()
     }
-    func resetSectrogram() {
+    func resetSpectrogram() {
         spectrogramViewController?.reset()
     }
-    func stopSectrogram() {
+    func stopSpectrogram() {
         spectrogramViewController?.stop()
     }
 }
@@ -205,15 +205,16 @@ private extension Float {
 
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
     static var random: Float {
-        return Float(arc4random()) / Float(0xFFFFFFFF)
+        Float(arc4random()) / Float(0xFFFFFFFF)
     }
 
     /// Random float between 0 and n-1.
     ///
-    /// - Parameter n:  Interval max
+    /// - Parameter min:  Interval min
+    /// - Parameter max:  Interval max
     /// - Returns:      Returns a random float point number between 0 and n max
     static func random(min: Float, max: Float) -> Float {
-        return Float.random * (max - min) + min
+        Float.random * (max - min) + min
     }
 }
 #else

@@ -129,28 +129,28 @@ final class AudioSpectrogram: CALayer {
     
     // Lookup tables for color transforms.
     static var redTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: true).red
+        brgValue(from: $0, darkMode: true).red
     }
     
     static var greenTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: true).green
+        brgValue(from: $0, darkMode: true).green
     }
     
     static var blueTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: true).blue
+        brgValue(from: $0, darkMode: true).blue
     }
     
     // Lookup tables for color transforms.
     static var lightRedTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: false).red
+        brgValue(from: $0, darkMode: false).red
     }
     
     static var lightGreenTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: false).green
+        brgValue(from: $0, darkMode: false).green
     }
     
     static var lightBlueTable: [Pixel_8] = (0 ... 255).map {
-        return brgValue(from: $0, darkMode: false).blue
+        brgValue(from: $0, darkMode: false).blue
     }
     
     /// A reusable array that contains the current frame of time domain audio data as single-precision
@@ -158,7 +158,7 @@ final class AudioSpectrogram: CALayer {
     var timeDomainBuffer = [Float](repeating: 0,
                                    count: sampleCount)
     
-    /// A resuable array that contains the frequency domain representation of the current frame of
+    /// A reusable array that contains the frequency domain representation of the current frame of
     /// audio data.
     var frequencyDomainBuffer = [Float](repeating: 0,
                                         count: sampleCount)

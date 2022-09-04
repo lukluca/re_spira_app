@@ -10,18 +10,15 @@ import Foundation
 struct Calculator {
     
     let data: [Float]
-    
-    //media
+
     func mean() -> Double {
         data.mean
     }
-    
-    //mediana
+
     func median() -> Double {
         data.median
     }
-    
-    //moda
+
     func mode() -> Mode<Float>? {
         data.mostFrequent
     }

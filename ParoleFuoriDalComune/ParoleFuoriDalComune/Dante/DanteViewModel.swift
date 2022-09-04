@@ -67,7 +67,7 @@ struct DanteViewModel: DrawViewModel {
         circleLayer.fillColor = UIColor.clear.cgColor
         ring.layer.addSublayer(circleLayer)
         
-        setContraints(to: view, subview: ring, length: ray, and: addTap)
+        setConstraints(to: view, subview: ring, length: ray, and: addTap)
     }
     
     private func drawPurgatorio(model: CommediaDrawModel,
@@ -93,8 +93,8 @@ struct DanteViewModel: DrawViewModel {
         layer.lineWidth = 1
         layer.fillColor = UIColor.clear.cgColor
         parabola.layer.addSublayer(layer)
-        
-        setContraints(to: view, subview: parabola, length: ray, and: addTap)
+
+        setConstraints(to: view, subview: parabola, length: ray, and: addTap)
     }
     
     private func drawParadiso(model: CommediaDrawModel,
@@ -130,8 +130,8 @@ struct DanteViewModel: DrawViewModel {
         layer.lineWidth = 1
         layer.fillColor = UIColor.clear.cgColor
         constellation.layer.addSublayer(layer)
-        
-        setContraints(to: view, subview: constellation, length: lengthFloat, and: addTap)
+
+        setConstraints(to: view, subview: constellation, length: lengthFloat, and: addTap)
         
         func nearest(to point: CGPoint, inside points: [CGPoint]) -> CGPoint? {
             let tree = KDTree(values: points)

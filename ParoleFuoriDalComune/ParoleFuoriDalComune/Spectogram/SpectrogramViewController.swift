@@ -18,8 +18,8 @@ final class SpectrogramViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setSpectogram()
+
+        setSpectrogram()
         
         view.backgroundColor = .black
     }
@@ -39,7 +39,7 @@ final class SpectrogramViewController: UIViewController {
     //MARK: Start / Stop
     
     func start() {
-        setSpectogram(darkMode: false)
+        setSpectrogram(darkMode: false)
         
         audioSpectrogram?.didAppendFrequencies = { [weak self] values in
             self?.frequencies.append(contentsOf: values)
@@ -53,9 +53,9 @@ final class SpectrogramViewController: UIViewController {
     }
     
     func start(rawAudioData: [Int16]) {
-        resetSpectogram()
-        
-        setSpectogram(darkMode: false)
+        resetSpectrogram()
+
+        setSpectrogram(darkMode: false)
         
         audioSpectrogram?.startRunning(rawAudioData: rawAudioData)
     }
@@ -66,14 +66,14 @@ final class SpectrogramViewController: UIViewController {
     
     func reset() {
         frequencies.removeAll()
-        resetSpectogram()
+        resetSpectrogram()
     }
     
-    private func resetSpectogram() {
+    private func resetSpectrogram() {
         audioSpectrogram?.removeFromSuperlayer()
     }
     
-    private func setSpectogram(darkMode: Bool? = nil) {
+    private func setSpectrogram(darkMode: Bool? = nil) {
         guard audioSpectrogram?.superlayer == nil else {
             return
         }
@@ -83,7 +83,7 @@ final class SpectrogramViewController: UIViewController {
         } else {
             spectogram = AudioSpectrogram()
         }
-        self.audioSpectrogram = spectogram
+        audioSpectrogram = spectogram
         bindSpectogram()
         
         spectogram.configure()

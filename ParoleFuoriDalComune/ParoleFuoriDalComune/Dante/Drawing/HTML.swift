@@ -1,5 +1,5 @@
 //
-//  HTLM.swift
+//  HTML.swift
 //  ParoleFuoriDalComune
 //
 //  Created by Luca Tagliabue on 08/09/21.
@@ -57,13 +57,13 @@ struct HTMLParser {
         
         let purifiedText = Substring(text).deletingPrefix("Parte, Capitolo, Capoverso")
 
-        let splitted = purifiedText.split(separator: "\n")
+        let split = purifiedText.split(separator: "\n")
         
         let dropped: AnyCollection<Substring>
-        if splitted.first == " " {
-            dropped = AnyCollection(splitted.dropFirst())
+        if split.first == " " {
+            dropped = AnyCollection(split.dropFirst())
         } else {
-            dropped = AnyCollection(splitted)
+            dropped = AnyCollection(split)
         }
         
         return dropped.compactMap { val -> CommediaDrawModel? in
@@ -145,11 +145,11 @@ struct HTMLParser {
                 return nil
             }
             
-            let splitted = text.split(separator: "-")
+            let split = text.split(separator: "-")
             
-            if splitted.count == 2 {
-                let first = splitted[0]
-                let last = splitted[1]
+            if split.count == 2 {
+                let first = split[0]
+                let last = split[1]
                 
                 let val1 = Int(first) ?? 0
                 let val2 = Int(last) ?? 0
@@ -178,7 +178,7 @@ struct HTMLParser {
 private extension Substring {
     func deletingPrefix(_ prefix: String) -> Substring {
         guard self.hasPrefix(prefix) else { return self }
-        return self.dropFirst(prefix.count)
+        return dropFirst(prefix.count)
     }
     var numbers: Substring {
         filter { "0"..."9" ~= $0 }

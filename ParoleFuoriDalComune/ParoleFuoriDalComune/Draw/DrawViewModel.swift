@@ -16,7 +16,7 @@ protocol DrawViewModel {
 
 extension DrawViewModel {
     
-    func setContraints(to view: UIView, subview: UIView, length: CGFloat, and addTap: (UIView) -> Void) {
+    func setConstraints(to view: UIView, subview: UIView, length: CGFloat, and addTap: (UIView) -> Void) {
         
         subview.translatesAutoresizingMaskIntoConstraints = false
         
