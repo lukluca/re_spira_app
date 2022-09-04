@@ -67,16 +67,7 @@ struct DanteViewModel: DrawViewModel {
         circleLayer.fillColor = UIColor.clear.cgColor
         ring.layer.addSublayer(circleLayer)
         
-        ring.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(ring)
-        NSLayoutConstraint.activate([
-            ring.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            ring.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            ring.heightAnchor.constraint(equalToConstant: ray),
-            ring.widthAnchor.constraint(equalToConstant: ray)
-        ])
-        
-        addTap(ring)
+        setContraints(to: view, subview: ring, length: ray, and: addTap)
     }
     
     private func drawPurgatorio(model: CommediaDrawModel,
@@ -103,16 +94,7 @@ struct DanteViewModel: DrawViewModel {
         layer.fillColor = UIColor.clear.cgColor
         parabola.layer.addSublayer(layer)
         
-        parabola.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(parabola)
-        NSLayoutConstraint.activate([
-            parabola.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            parabola.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            parabola.heightAnchor.constraint(equalToConstant: ray),
-            parabola.widthAnchor.constraint(equalToConstant: ray)
-        ])
-        
-        addTap(parabola)
+        setContraints(to: view, subview: parabola, length: ray, and: addTap)
     }
     
     private func drawParadiso(model: CommediaDrawModel,
@@ -149,16 +131,7 @@ struct DanteViewModel: DrawViewModel {
         layer.fillColor = UIColor.clear.cgColor
         constellation.layer.addSublayer(layer)
         
-        constellation.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(constellation)
-        NSLayoutConstraint.activate([
-            constellation.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            constellation.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            constellation.heightAnchor.constraint(equalToConstant: lengthFloat),
-            constellation.widthAnchor.constraint(equalToConstant: lengthFloat)
-        ])
-        
-        addTap(constellation)
+        setContraints(to: view, subview: constellation, length: lengthFloat, and: addTap)
         
         func nearest(to point: CGPoint, inside points: [CGPoint]) -> CGPoint? {
             let tree = KDTree(values: points)

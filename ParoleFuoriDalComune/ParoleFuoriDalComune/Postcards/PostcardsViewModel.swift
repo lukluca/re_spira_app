@@ -36,8 +36,12 @@ struct PostcardsViewModel: DrawViewModel {
     func didLoad(view: UIView, addTap: (UIView) -> Void) {
         
         let imageView = UIImageView(image: model.visualPoem)
+         
+        imageView.contentMode = .scaleAspectFit
         
-        view.addSubview(imageView)
+        let length = view.frame.height/3
+        
+        setContraints(to: view, subview: imageView, length: length, and: addTap)
     }
 }
 

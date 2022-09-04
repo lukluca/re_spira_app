@@ -13,3 +13,22 @@ protocol DrawViewModel {
     
     func didLoad(view: UIView, addTap: (UIView) -> Void)
 }
+
+extension DrawViewModel {
+    
+    func setContraints(to view: UIView, subview: UIView, length: CGFloat, and addTap: (UIView) -> Void) {
+        
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(subview)
+
+        NSLayoutConstraint.activate([
+            subview.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            subview.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            subview.heightAnchor.constraint(equalToConstant: length),
+            subview.widthAnchor.constraint(equalToConstant: length)
+        ])
+        
+        addTap(subview)
+    }
+}
