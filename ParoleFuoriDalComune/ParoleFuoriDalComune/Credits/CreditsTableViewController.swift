@@ -9,7 +9,7 @@ import UIKit
 
 final class CreditsTableViewController: UITableViewController {
     
-    var viewModel: CreditsViewModel?
+    let viewModel = CreditsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +19,23 @@ final class CreditsTableViewController: UITableViewController {
         
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
-        if indexPath.section == 0 && indexPath.row == 0, let viewModel = viewModel {
-            cell.textLabel?.text = viewModel.title
-            cell.detailTextLabel?.text = viewModel.subtitle
+        if indexPath.section == CreditsViewModel.Section.poem.rawValue && indexPath.row == 0,
+            let cellVM = viewModel.poem {
+            
+            var configuration = cell.defaultContentConfiguration()
+            configuration.text = cellVM.title
+            configuration.secondaryText = cellVM.subtitle
+            cell.contentConfiguration = configuration
         }
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        viewModel.heightForRow(at: indexPath)
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        viewModel.estimatedHeightForRow(at: indexPath)
     }
 }

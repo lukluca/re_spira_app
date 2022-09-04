@@ -32,8 +32,8 @@ final class DrawViewController: UIViewController {
             spectrogramViewController = segue.destination as? SpectrogramViewController
         case SegueAction.credits.rawValue:
             let controller = segue.destination as? CreditsTableViewController
-            let creditsViewModel = viewModel?.creditsViewModel
-            controller?.viewModel = creditsViewModel
+            let poemCellViewModel = viewModel?.poemCellViewModel
+            controller?.viewModel.poem = poemCellViewModel
         default: ()
         }
     }

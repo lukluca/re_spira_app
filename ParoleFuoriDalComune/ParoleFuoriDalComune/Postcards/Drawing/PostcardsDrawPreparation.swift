@@ -15,7 +15,7 @@ struct PostcardsDrawPreparation {
     }
     
     func execute(using values: [Float]) throws -> PostcardDisplayModel {
-        let files = try Files().getPoemAndImage(at: 1)
+        let files = try Files().getPoemAndImage(at: 8)
         
         let fullText = files.poem
         

@@ -28,9 +28,9 @@ struct PostcardsViewModel: DrawViewModel {
         self.model = model
     }
     
-    var creditsViewModel: CreditsViewModel {
-        CreditsViewModel(title: model.linearPoem.title,
-                         subtitle: model.linearPoem.text)
+    var poemCellViewModel: PoemCellViewModel {
+        PoemCellViewModel(title: model.linearPoem.title,
+                          subtitle: model.linearPoem.text)
     }
     
     func didLoad(view: UIView, addTap: (UIView) -> Void) {

@@ -21,13 +21,13 @@ struct DanteViewModel: DrawViewModel {
     
     private let display: CommediaDisplayModel
     
-    var creditsViewModel: CreditsViewModel {
+    var poemCellViewModel: PoemCellViewModel {
         let word = display.model.word
         let cantica = display.model.cantica.description
         let canto = display.detail.canto
         let terzina = display.detail.terzina.joined(separator: "\n")
-        return CreditsViewModel(title: "\(cantica), \(canto), parola '\(word)'",
-                                subtitle: terzina)
+        return PoemCellViewModel(title: "\(cantica), \(canto), parola '\(word)'",
+                                 subtitle: terzina)
     }
     
     init(display: CommediaDisplayModel) {
@@ -35,7 +35,6 @@ struct DanteViewModel: DrawViewModel {
     }
     
     func didLoad(view: UIView, addTap: (UIView) -> Void) {
-              
         
         let model = display.model
         
@@ -81,8 +80,8 @@ struct DanteViewModel: DrawViewModel {
     }
     
     private func drawPurgatorio(model: CommediaDrawModel,
-                             inside view: UIView,
-                             addTap: (UIView) -> Void) {
+                                inside view: UIView,
+                                addTap: (UIView) -> Void) {
         let parabola = UIView()
         
         let ray = CGFloat(3 * model.verso)

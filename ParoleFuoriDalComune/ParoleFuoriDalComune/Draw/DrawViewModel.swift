@@ -9,7 +9,7 @@ import UIKit
 
 protocol DrawViewModel {
     
-    var creditsViewModel: CreditsViewModel { get }
+    var poemCellViewModel: PoemCellViewModel { get }
     
     func didLoad(view: UIView, addTap: (UIView) -> Void)
 }
