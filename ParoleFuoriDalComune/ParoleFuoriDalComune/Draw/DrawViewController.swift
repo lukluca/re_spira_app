@@ -33,14 +33,13 @@ final class DrawViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case SegueAction.spectrogram.rawValue:
-            spectrogramViewController = segue.destination as? SpectrogramViewController
-        case SegueAction.credits.rawValue:
-            let controller = segue.destination as? CreditsTableViewController
+        if let typedInfo = R.segue.drawViewController.spectrogramSegue(segue: segue) {
+            spectrogramViewController = typedInfo.destination
+        }
+        if let typedInfo = R.segue.drawViewController.creditsSegue(segue: segue) {
+            let controller = typedInfo.destination
             let poemCellViewModel = viewModel?.poemCellViewModel
-            controller?.viewModel.poem = poemCellViewModel
-        default: ()
+            controller.viewModel.poem = poemCellViewModel
         }
     }
     
@@ -50,7 +49,7 @@ final class DrawViewController: UIViewController {
     }
     
     @objc private func handleTap(_ sender: UITapGestureRecognizer) {
-        performSegue(to: .credits, sender: sender)
+        performSegue(withIdentifier: R.segue.drawViewController.creditsSegue, sender: sender)
     }
     
     @objc private func didPressLeft(sender: UIScreenEdgePanGestureRecognizer) {
@@ -58,18 +57,6 @@ final class DrawViewController: UIViewController {
             return
         }
         
-        performSegue(to: .start, sender: sender)
-    }
-    
-    private func performSegue(to action: SegueAction, sender: Any?) {
-        performSegue(withIdentifier: action.rawValue, sender: sender)
-    }
-}
-
-private extension DrawViewController {
-    enum SegueAction: String {
-        case spectrogram = "SpectrogramSegue"
-        case credits = "CreditsSegue"
-        case start = "StartSegue"
+        performSegue(withIdentifier: R.segue.drawViewController.startSegue, sender: sender)
     }
 }

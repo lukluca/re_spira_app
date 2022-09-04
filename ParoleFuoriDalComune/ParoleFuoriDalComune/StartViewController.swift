@@ -76,7 +76,7 @@ final class StartViewController: UIViewController {
                 drawViewModel = try PostcardsViewModelFactory().make(frequencies: freq)
             }
 
-            performSegue(withIdentifier: SegueAction.cantica.rawValue, sender: nil)
+            performSegue(withIdentifier: R.segue.startViewController.drawSegue, sender: nil)
         } catch {
             let alert = UIAlertController(title: R.string.localizable.errorTitle(),
                                           message: R.string.localizable.errorMessage() + "\(error)", preferredStyle: .alert)
@@ -86,14 +86,13 @@ final class StartViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case SegueAction.spectrogram.rawValue:
-            spectrogramViewController = segue.destination as? SpectrogramViewController
-        case SegueAction.cantica.rawValue:
-            let controller = segue.destination as? DrawViewController
-            controller?.viewModel = drawViewModel
-            controller?.rawAudioData = spectrogramViewController?.rawAudioData ?? []
-        default: ()
+        if let typedInfo = R.segue.startViewController.spectrogramSegue(segue: segue) {
+            spectrogramViewController = typedInfo.destination
+        }
+        if let typedInfo = R.segue.startViewController.drawSegue(segue: segue) {
+            let controller = typedInfo.destination
+            controller.viewModel = drawViewModel
+            controller.rawAudioData = spectrogramViewController?.rawAudioData ?? []
         }
     }
     
@@ -159,13 +158,6 @@ final class StartViewController: UIViewController {
     private func disableAllTypeButtons() {
         danteButton.isEnabled = false
         postcardButton.isEnabled = false
-    }
-}
-
-private extension StartViewController {
-    enum SegueAction: String {
-        case spectrogram = "SpectrogramSegue"
-        case cantica = "DrawSegue"
     }
 }
 
