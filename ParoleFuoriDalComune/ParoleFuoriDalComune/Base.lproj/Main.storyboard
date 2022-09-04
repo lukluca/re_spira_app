@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ON-TB-2uz">
-                                <rect key="frame" x="239" y="24" width="716" height="143"/>
+                                <rect key="frame" x="239" y="0.0" width="716" height="167"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y87-n7-k2b">
-                                        <rect key="frame" x="334" y="47.5" width="48" height="48"/>
+                                        <rect key="frame" x="334" y="59.5" width="48" height="48"/>
                                         <state key="normal" image="air"/>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,7 +94,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjb-WZ-SJR">
-                                <rect key="frame" x="1064" y="70.5" width="50" height="50"/>
+                                <rect key="frame" x="1064" y="58.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zjb-WZ-SJR" secondAttribute="height" multiplier="1:1" id="CI6-E8-mfe"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Szd-3a-Uic"/>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XF-q0-AvV">
-                                <rect key="frame" x="80" y="70.5" width="50" height="50"/>
+                                <rect key="frame" x="80" y="58.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9XF-q0-AvV" secondAttribute="height" multiplier="1:1" id="1Jg-G2-Kdd"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Csn-EY-sIx"/>
@@ -197,6 +197,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ysd-jw-1bA"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="StartSegue" modalPresentationStyle="fullScreen" id="EMu-xO-kd3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxG-ci-Ei0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="WyV-KX-iMo">

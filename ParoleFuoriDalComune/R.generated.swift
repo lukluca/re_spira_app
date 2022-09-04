@@ -91,12 +91,14 @@ struct R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
   struct segue {
-    /// This struct is generated for `DrawViewController`, and contains static references to 2 segues.
+    /// This struct is generated for `DrawViewController`, and contains static references to 3 segues.
     struct drawViewController {
       /// Segue identifier `CreditsSegue`.
       static let creditsSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, DrawViewController, CreditsTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "CreditsSegue")
       /// Segue identifier `SpectrogramSegue`.
       static let spectrogramSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, DrawViewController, SpectrogramViewController> = Rswift.StoryboardSegueIdentifier(identifier: "SpectrogramSegue")
+      /// Segue identifier `StartSegue`.
+      static let startSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, DrawViewController, StartViewController> = Rswift.StoryboardSegueIdentifier(identifier: "StartSegue")
 
       #if os(iOS) || os(tvOS)
       /// Optionally returns a typed version of segue `CreditsSegue`.
@@ -113,6 +115,15 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func spectrogramSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, DrawViewController, SpectrogramViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.drawViewController.spectrogramSegue, segue: segue)
+      }
+      #endif
+
+      #if os(iOS) || os(tvOS)
+      /// Optionally returns a typed version of segue `StartSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func startSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, DrawViewController, StartViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.drawViewController.startSegue, segue: segue)
       }
       #endif
 

@@ -12,10 +12,24 @@ struct PostcardsDrawPreparation {
     
     enum DrawPreparationError: Error {
         case missingTitle
+        case noMinCalculated
+        case noMaxCalculated
     }
     
     func execute(using values: [Float]) throws -> PostcardDisplayModel {
-        let files = try Files().getPoemAndImage(at: 8)
+        let mostFrequent = Calculator(data: values).mode()?.mostFrequent
+        
+        guard let min = try mostFrequent?.min()?.toAbsInt() else {
+            throw DrawPreparationError.noMinCalculated
+        }
+        
+        guard let max = try mostFrequent?.max()?.toAbsInt() else {
+            throw DrawPreparationError.noMaxCalculated
+        }
+        
+        let position = (((min + max)/2) % 15) + 1
+        
+        let files = try Files().getPoemAndImage(at: position)
         
         let fullText = files.poem
         

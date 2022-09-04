@@ -17,6 +17,12 @@ final class DrawViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self,
+                                                                    action: #selector(didPressLeft))
+        screenEdgeRecognizer.edges = .left
+        view.addGestureRecognizer(screenEdgeRecognizer)
+        
         viewModel?.didLoad(view: view, addTap: addTap(to:))
     }
     
@@ -44,7 +50,19 @@ final class DrawViewController: UIViewController {
     }
     
     @objc private func handleTap(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: SegueAction.credits.rawValue, sender: sender)
+        performSegue(to: .credits, sender: sender)
+    }
+    
+    @objc private func didPressLeft(sender: UIScreenEdgePanGestureRecognizer) {
+        guard sender.state == .ended else {
+            return
+        }
+        
+        performSegue(to: .start, sender: sender)
+    }
+    
+    private func performSegue(to action: SegueAction, sender: Any?) {
+        performSegue(withIdentifier: action.rawValue, sender: sender)
     }
 }
 
@@ -52,5 +70,6 @@ private extension DrawViewController {
     enum SegueAction: String {
         case spectrogram = "SpectrogramSegue"
         case credits = "CreditsSegue"
+        case start = "StartSegue"
     }
 }
