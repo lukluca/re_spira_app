@@ -210,34 +210,34 @@ struct R: Rswift.Validatable {
     static let divina_commediaJson = Rswift.FileResource(bundle: R.hostingBundle, name: "divina_commedia", pathExtension: "json")
     /// Resource file `page-1.txt`.
     static let page1Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-1", pathExtension: "txt")
-    /// Resource file `page-10.docx`.
-    static let page10Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-10", pathExtension: "docx")
-    /// Resource file `page-11.docx`.
-    static let page11Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-11", pathExtension: "docx")
-    /// Resource file `page-12.docx`.
-    static let page12Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-12", pathExtension: "docx")
-    /// Resource file `page-13.docx`.
-    static let page13Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-13", pathExtension: "docx")
-    /// Resource file `page-14.docx`.
-    static let page14Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-14", pathExtension: "docx")
-    /// Resource file `page-15.docx`.
-    static let page15Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-15", pathExtension: "docx")
+    /// Resource file `page-10.txt`.
+    static let page10Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-10", pathExtension: "txt")
+    /// Resource file `page-11.txt`.
+    static let page11Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-11", pathExtension: "txt")
+    /// Resource file `page-12.txt`.
+    static let page12Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-12", pathExtension: "txt")
+    /// Resource file `page-13.txt`.
+    static let page13Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-13", pathExtension: "txt")
+    /// Resource file `page-14.txt`.
+    static let page14Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-14", pathExtension: "txt")
+    /// Resource file `page-15.txt`.
+    static let page15Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-15", pathExtension: "txt")
     /// Resource file `page-2.txt`.
     static let page2Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-2", pathExtension: "txt")
-    /// Resource file `page-3.docx`.
-    static let page3Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-3", pathExtension: "docx")
-    /// Resource file `page-4.docx`.
-    static let page4Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-4", pathExtension: "docx")
-    /// Resource file `page-5.docx`.
-    static let page5Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-5", pathExtension: "docx")
-    /// Resource file `page-6.docx`.
-    static let page6Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-6", pathExtension: "docx")
-    /// Resource file `page-7.docx`.
-    static let page7Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-7", pathExtension: "docx")
-    /// Resource file `page-8.docx`.
-    static let page8Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-8", pathExtension: "docx")
-    /// Resource file `page-9.docx`.
-    static let page9Docx = Rswift.FileResource(bundle: R.hostingBundle, name: "page-9", pathExtension: "docx")
+    /// Resource file `page-3.txt`.
+    static let page3Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-3", pathExtension: "txt")
+    /// Resource file `page-4.txt`.
+    static let page4Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-4", pathExtension: "txt")
+    /// Resource file `page-5.txt`.
+    static let page5Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-5", pathExtension: "txt")
+    /// Resource file `page-6.txt`.
+    static let page6Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-6", pathExtension: "txt")
+    /// Resource file `page-7.txt`.
+    static let page7Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-7", pathExtension: "txt")
+    /// Resource file `page-8.txt`.
+    static let page8Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-8", pathExtension: "txt")
+    /// Resource file `page-9.txt`.
+    static let page9Txt = Rswift.FileResource(bundle: R.hostingBundle, name: "page-9", pathExtension: "txt")
 
     /// `bundle.url(forResource: "Pattern-Poem-Maze", withExtension: "jpg")`
     static func patternPoemMazeJpg(_: Void = ()) -> Foundation.URL? {
@@ -257,39 +257,39 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-10", withExtension: "docx")`
-    static func page10Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page10Docx
+    /// `bundle.url(forResource: "page-10", withExtension: "txt")`
+    static func page10Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page10Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-11", withExtension: "docx")`
-    static func page11Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page11Docx
+    /// `bundle.url(forResource: "page-11", withExtension: "txt")`
+    static func page11Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page11Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-12", withExtension: "docx")`
-    static func page12Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page12Docx
+    /// `bundle.url(forResource: "page-12", withExtension: "txt")`
+    static func page12Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page12Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-13", withExtension: "docx")`
-    static func page13Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page13Docx
+    /// `bundle.url(forResource: "page-13", withExtension: "txt")`
+    static func page13Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page13Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-14", withExtension: "docx")`
-    static func page14Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page14Docx
+    /// `bundle.url(forResource: "page-14", withExtension: "txt")`
+    static func page14Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page14Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-15", withExtension: "docx")`
-    static func page15Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page15Docx
+    /// `bundle.url(forResource: "page-15", withExtension: "txt")`
+    static func page15Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page15Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -299,45 +299,45 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-3", withExtension: "docx")`
-    static func page3Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page3Docx
+    /// `bundle.url(forResource: "page-3", withExtension: "txt")`
+    static func page3Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page3Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-4", withExtension: "docx")`
-    static func page4Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page4Docx
+    /// `bundle.url(forResource: "page-4", withExtension: "txt")`
+    static func page4Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page4Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-5", withExtension: "docx")`
-    static func page5Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page5Docx
+    /// `bundle.url(forResource: "page-5", withExtension: "txt")`
+    static func page5Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page5Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-6", withExtension: "docx")`
-    static func page6Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page6Docx
+    /// `bundle.url(forResource: "page-6", withExtension: "txt")`
+    static func page6Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page6Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-7", withExtension: "docx")`
-    static func page7Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page7Docx
+    /// `bundle.url(forResource: "page-7", withExtension: "txt")`
+    static func page7Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page7Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-8", withExtension: "docx")`
-    static func page8Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page8Docx
+    /// `bundle.url(forResource: "page-8", withExtension: "txt")`
+    static func page8Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page8Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "page-9", withExtension: "docx")`
-    static func page9Docx(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.page9Docx
+    /// `bundle.url(forResource: "page-9", withExtension: "txt")`
+    static func page9Txt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.page9Txt
       return fileResource.bundle.url(forResource: fileResource)
     }
 

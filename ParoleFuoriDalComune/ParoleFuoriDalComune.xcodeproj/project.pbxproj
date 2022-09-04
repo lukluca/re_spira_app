@@ -31,19 +31,6 @@
 		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
 		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
-		4A96DD6D28C3749500DB268B /* page-7.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5E28C3749500DB268B /* page-7.docx */; };
-		4A96DD6E28C3749500DB268B /* page-11.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD5F28C3749500DB268B /* page-11.docx */; };
-		4A96DD7028C3749500DB268B /* page-6.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6128C3749500DB268B /* page-6.docx */; };
-		4A96DD7128C3749500DB268B /* page-13.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6228C3749500DB268B /* page-13.docx */; };
-		4A96DD7228C3749500DB268B /* page-15.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6328C3749500DB268B /* page-15.docx */; };
-		4A96DD7428C3749500DB268B /* page-5.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6528C3749500DB268B /* page-5.docx */; };
-		4A96DD7528C3749500DB268B /* page-14.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6628C3749500DB268B /* page-14.docx */; };
-		4A96DD7628C3749500DB268B /* page-9.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6728C3749500DB268B /* page-9.docx */; };
-		4A96DD7728C3749500DB268B /* page-10.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6828C3749500DB268B /* page-10.docx */; };
-		4A96DD7828C3749500DB268B /* page-8.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6928C3749500DB268B /* page-8.docx */; };
-		4A96DD7928C3749500DB268B /* page-4.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6A28C3749500DB268B /* page-4.docx */; };
-		4A96DD7A28C3749500DB268B /* page-12.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6B28C3749500DB268B /* page-12.docx */; };
-		4A96DD7B28C3749500DB268B /* page-3.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DD6C28C3749500DB268B /* page-3.docx */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
 		4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */; };
@@ -55,6 +42,19 @@
 		4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */; };
 		4ADC98B928C41606008887BA /* PostcardsDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */; };
 		4ADC98BB28C41677008887BA /* Postcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98BA28C41677008887BA /* Postcards.swift */; };
+		4ADC98C928C4A759008887BA /* page-15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98BC28C4A759008887BA /* page-15.txt */; };
+		4ADC98CA28C4A759008887BA /* page-13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98BD28C4A759008887BA /* page-13.txt */; };
+		4ADC98CB28C4A759008887BA /* page-9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98BE28C4A759008887BA /* page-9.txt */; };
+		4ADC98CC28C4A759008887BA /* page-8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98BF28C4A759008887BA /* page-8.txt */; };
+		4ADC98CD28C4A759008887BA /* page-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C028C4A759008887BA /* page-14.txt */; };
+		4ADC98CE28C4A759008887BA /* page-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C128C4A759008887BA /* page-12.txt */; };
+		4ADC98CF28C4A759008887BA /* page-10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C228C4A759008887BA /* page-10.txt */; };
+		4ADC98D028C4A759008887BA /* page-11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C328C4A759008887BA /* page-11.txt */; };
+		4ADC98D128C4A759008887BA /* page-6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C428C4A759008887BA /* page-6.txt */; };
+		4ADC98D228C4A759008887BA /* page-4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C528C4A759008887BA /* page-4.txt */; };
+		4ADC98D328C4A759008887BA /* page-7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C628C4A759008887BA /* page-7.txt */; };
+		4ADC98D428C4A759008887BA /* page-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C728C4A759008887BA /* page-5.txt */; };
+		4ADC98D528C4A759008887BA /* page-3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C828C4A759008887BA /* page-3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,19 +80,6 @@
 		2FD1651C28BD511F00438BF5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
-		4A96DD5E28C3749500DB268B /* page-7.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-7.docx"; sourceTree = "<group>"; };
-		4A96DD5F28C3749500DB268B /* page-11.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-11.docx"; sourceTree = "<group>"; };
-		4A96DD6128C3749500DB268B /* page-6.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-6.docx"; sourceTree = "<group>"; };
-		4A96DD6228C3749500DB268B /* page-13.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-13.docx"; sourceTree = "<group>"; };
-		4A96DD6328C3749500DB268B /* page-15.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-15.docx"; sourceTree = "<group>"; };
-		4A96DD6528C3749500DB268B /* page-5.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-5.docx"; sourceTree = "<group>"; };
-		4A96DD6628C3749500DB268B /* page-14.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-14.docx"; sourceTree = "<group>"; };
-		4A96DD6728C3749500DB268B /* page-9.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-9.docx"; sourceTree = "<group>"; };
-		4A96DD6828C3749500DB268B /* page-10.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-10.docx"; sourceTree = "<group>"; };
-		4A96DD6928C3749500DB268B /* page-8.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-8.docx"; sourceTree = "<group>"; };
-		4A96DD6A28C3749500DB268B /* page-4.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-4.docx"; sourceTree = "<group>"; };
-		4A96DD6B28C3749500DB268B /* page-12.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-12.docx"; sourceTree = "<group>"; };
-		4A96DD6C28C3749500DB268B /* page-3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-3.docx"; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanteViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +91,19 @@
 		4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pattern-Poem-Maze.jpg"; sourceTree = "<group>"; };
 		4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardsDrawPreparation.swift; sourceTree = "<group>"; };
 		4ADC98BA28C41677008887BA /* Postcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcards.swift; sourceTree = "<group>"; };
+		4ADC98BC28C4A759008887BA /* page-15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-15.txt"; sourceTree = "<group>"; };
+		4ADC98BD28C4A759008887BA /* page-13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-13.txt"; sourceTree = "<group>"; };
+		4ADC98BE28C4A759008887BA /* page-9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-9.txt"; sourceTree = "<group>"; };
+		4ADC98BF28C4A759008887BA /* page-8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-8.txt"; sourceTree = "<group>"; };
+		4ADC98C028C4A759008887BA /* page-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-14.txt"; sourceTree = "<group>"; };
+		4ADC98C128C4A759008887BA /* page-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-12.txt"; sourceTree = "<group>"; };
+		4ADC98C228C4A759008887BA /* page-10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-10.txt"; sourceTree = "<group>"; };
+		4ADC98C328C4A759008887BA /* page-11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-11.txt"; sourceTree = "<group>"; };
+		4ADC98C428C4A759008887BA /* page-6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-6.txt"; sourceTree = "<group>"; };
+		4ADC98C528C4A759008887BA /* page-4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-4.txt"; sourceTree = "<group>"; };
+		4ADC98C628C4A759008887BA /* page-7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-7.txt"; sourceTree = "<group>"; };
+		4ADC98C728C4A759008887BA /* page-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-5.txt"; sourceTree = "<group>"; };
+		4ADC98C828C4A759008887BA /* page-3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-3.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,21 +224,21 @@
 		4A96DD8328C3ECC900DB268B /* Poems Files */ = {
 			isa = PBXGroup;
 			children = (
+				4ADC98C828C4A759008887BA /* page-3.txt */,
+				4ADC98C528C4A759008887BA /* page-4.txt */,
+				4ADC98C728C4A759008887BA /* page-5.txt */,
+				4ADC98C428C4A759008887BA /* page-6.txt */,
+				4ADC98C628C4A759008887BA /* page-7.txt */,
+				4ADC98BF28C4A759008887BA /* page-8.txt */,
+				4ADC98BE28C4A759008887BA /* page-9.txt */,
+				4ADC98C228C4A759008887BA /* page-10.txt */,
+				4ADC98C328C4A759008887BA /* page-11.txt */,
+				4ADC98C128C4A759008887BA /* page-12.txt */,
+				4ADC98BD28C4A759008887BA /* page-13.txt */,
+				4ADC98C028C4A759008887BA /* page-14.txt */,
+				4ADC98BC28C4A759008887BA /* page-15.txt */,
 				4ADC98B328C40F32008887BA /* page-2.txt */,
 				4ADC98B128C40DC6008887BA /* page-1.txt */,
-				4A96DD6C28C3749500DB268B /* page-3.docx */,
-				4A96DD6A28C3749500DB268B /* page-4.docx */,
-				4A96DD6528C3749500DB268B /* page-5.docx */,
-				4A96DD6128C3749500DB268B /* page-6.docx */,
-				4A96DD5E28C3749500DB268B /* page-7.docx */,
-				4A96DD6928C3749500DB268B /* page-8.docx */,
-				4A96DD6728C3749500DB268B /* page-9.docx */,
-				4A96DD6828C3749500DB268B /* page-10.docx */,
-				4A96DD5F28C3749500DB268B /* page-11.docx */,
-				4A96DD6B28C3749500DB268B /* page-12.docx */,
-				4A96DD6228C3749500DB268B /* page-13.docx */,
-				4A96DD6628C3749500DB268B /* page-14.docx */,
-				4A96DD6328C3749500DB268B /* page-15.docx */,
 			);
 			path = "Poems Files";
 			sourceTree = "<group>";
@@ -339,27 +339,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADC98CE28C4A759008887BA /* page-12.txt in Resources */,
+				4ADC98CD28C4A759008887BA /* page-14.txt in Resources */,
 				4ADC98B428C40F32008887BA /* page-2.txt in Resources */,
 				2FD1651D28BD511F00438BF5 /* Localizable.strings in Resources */,
-				4A96DD7428C3749500DB268B /* page-5.docx in Resources */,
-				4A96DD7A28C3749500DB268B /* page-12.docx in Resources */,
-				4A96DD6E28C3749500DB268B /* page-11.docx in Resources */,
-				4A96DD7728C3749500DB268B /* page-10.docx in Resources */,
-				4A96DD7128C3749500DB268B /* page-13.docx in Resources */,
-				4A96DD7628C3749500DB268B /* page-9.docx in Resources */,
+				4ADC98D528C4A759008887BA /* page-3.txt in Resources */,
+				4ADC98CC28C4A759008887BA /* page-8.txt in Resources */,
+				4ADC98D028C4A759008887BA /* page-11.txt in Resources */,
+				4ADC98C928C4A759008887BA /* page-15.txt in Resources */,
+				4ADC98D128C4A759008887BA /* page-6.txt in Resources */,
 				4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */,
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
-				4A96DD6D28C3749500DB268B /* page-7.docx in Resources */,
-				4A96DD7228C3749500DB268B /* page-15.docx in Resources */,
-				4A96DD7028C3749500DB268B /* page-6.docx in Resources */,
-				4A96DD7B28C3749500DB268B /* page-3.docx in Resources */,
+				4ADC98CF28C4A759008887BA /* page-10.txt in Resources */,
+				4ADC98CA28C4A759008887BA /* page-13.txt in Resources */,
+				4ADC98D328C4A759008887BA /* page-7.txt in Resources */,
+				4ADC98D228C4A759008887BA /* page-4.txt in Resources */,
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
-				4A96DD7828C3749500DB268B /* page-8.docx in Resources */,
+				4ADC98D428C4A759008887BA /* page-5.txt in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
 				4ADC98B228C40DC6008887BA /* page-1.txt in Resources */,
-				4A96DD7528C3749500DB268B /* page-14.docx in Resources */,
+				4ADC98CB28C4A759008887BA /* page-9.txt in Resources */,
 				2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */,
-				4A96DD7928C3749500DB268B /* page-4.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

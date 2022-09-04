@@ -31,43 +31,43 @@ struct Files {
             url = R.file.page2Txt()
             image = R.image.patternPoemMazeJpg()
         case 3:
-            url = R.file.page3Docx()
+            url = R.file.page3Txt()
             image = R.image.patternPoemMazeJpg()
         case 4:
-            url = R.file.page4Docx()
+            url = R.file.page4Txt()
             image = R.image.patternPoemMazeJpg()
         case 5:
-            url = R.file.page5Docx()
+            url = R.file.page5Txt()
             image = R.image.patternPoemMazeJpg()
         case 6:
-            url = R.file.page6Docx()
+            url = R.file.page6Txt()
             image = R.image.patternPoemMazeJpg()
         case 7:
-            url = R.file.page7Docx()
+            url = R.file.page7Txt()
             image = R.image.patternPoemMazeJpg()
         case 8:
-            url = R.file.page8Docx()
+            url = R.file.page8Txt()
             image = R.image.patternPoemMazeJpg()
         case 9:
-            url = R.file.page9Docx()
+            url = R.file.page9Txt()
             image = R.image.patternPoemMazeJpg()
         case 10:
-            url = R.file.page10Docx()
+            url = R.file.page10Txt()
             image = R.image.patternPoemMazeJpg()
         case 11:
-            url = R.file.page10Docx()
+            url = R.file.page11Txt()
             image = R.image.patternPoemMazeJpg()
         case 12:
-            url = R.file.page10Docx()
+            url = R.file.page12Txt()
             image = R.image.patternPoemMazeJpg()
         case 13:
-            url = R.file.page10Docx()
+            url = R.file.page13Txt()
             image = R.image.patternPoemMazeJpg()
         case 14:
-            url = R.file.page10Docx()
+            url = R.file.page14Txt()
             image = R.image.patternPoemMazeJpg()
         case 15:
-            url = R.file.page10Docx()
+            url = R.file.page15Txt()
             image = R.image.patternPoemMazeJpg()
         default:
             throw FilesError.outOfRange
