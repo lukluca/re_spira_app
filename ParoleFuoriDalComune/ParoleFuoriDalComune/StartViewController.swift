@@ -16,16 +16,10 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var danteButton: UIButton!
     @IBOutlet weak var postcardButton: UIButton!
     
-    #if targetEnvironment(simulator)
-    private var timer: Timer?
-    private var frequencies = [Float]()
-    #else
-    #endif
-    
     private var drawViewModel: DrawViewModel?
     private var sourceType: SourceType = .postcards
     
-    private var spectrogramViewController: SpectrogramViewController?
+    private var spectrogramController: SpectrogramController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +39,7 @@ final class StartViewController: UIViewController {
 
     @IBAction func breathButtonAction(_ sender: UIButton) {
         recordingButtonState()
-        startsSpectrogram()
+        startSpectrogram()
     }
     
     @IBAction func stopButtonAction(_ sender: UIButton) {
@@ -61,19 +55,14 @@ final class StartViewController: UIViewController {
     @IBAction func drawButtonAction(_ sender: UIButton) {
         drawingButtonState()
         
+        let frequencies = spectrogramController?.frequencies ?? []
+        
         do {
-            
-            #if targetEnvironment(simulator)
-            let freq = frequencies
-            #else
-            let freq = spectrogramViewController?.frequencies ?? []
-            #endif
-            
             switch sourceType {
             case .dante:
-                drawViewModel = try DanteViewModelFactory().make(frequencies: freq)
+                drawViewModel = try DanteViewModelFactory().make(frequencies: frequencies)
             case .postcards:
-                drawViewModel = try PostcardsViewModelFactory().make(frequencies: freq)
+                drawViewModel = try PostcardsViewModelFactory().make(frequencies: frequencies)
             }
 
             performSegue(withIdentifier: R.segue.startViewController.drawSegue, sender: nil)
@@ -87,12 +76,18 @@ final class StartViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.startViewController.spectrogramSegue(segue: segue) {
-            spectrogramViewController = typedInfo.destination
+            #if targetEnvironment(simulator)
+            spectrogramController = SimulatorSpectogramController()
+            #else
+            spectrogramController = typedInfo.destination
+            #endif
+            return
         }
+        
         if let typedInfo = R.segue.startViewController.drawSegue(segue: segue) {
             let controller = typedInfo.destination
             controller.viewModel = drawViewModel
-            controller.rawAudioData = spectrogramViewController?.rawAudioData ?? []
+            controller.rawAudioData = spectrogramController?.rawAudioData ?? []
         }
     }
     
@@ -161,53 +156,16 @@ final class StartViewController: UIViewController {
     }
 }
 
-#if targetEnvironment(simulator)
 private extension StartViewController {
-    func startsSpectrogram() {
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    func startSpectrogram() {
+        spectrogramController?.start()
     }
     func resetSpectrogram() {
-        frequencies.removeAll()
+        spectrogramController?.reset()
     }
     func stopSpectrogram() {
-        timer?.invalidate()
-        timer = nil
-    }
-    
-    @objc func fireTimer() {
-        frequencies.append(Float.random(min: -10, max: 10))
+        spectrogramController?.stop()
     }
 }
-#else
-private extension StartViewController {
-    func startsSpectrogram() {
-        spectrogramViewController?.start()
-    }
-    func resetSpectrogram() {
-        spectrogramViewController?.reset()
-    }
-    func stopSpectrogram() {
-        spectrogramViewController?.stop()
-    }
-}
-#endif
 
-#if targetEnvironment(simulator)
-private extension Float {
 
-    /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    static var random: Float {
-        Float(arc4random()) / Float(0xFFFFFFFF)
-    }
-
-    /// Random float between 0 and n-1.
-    ///
-    /// - Parameter min:  Interval min
-    /// - Parameter max:  Interval max
-    /// - Returns:      Returns a random float point number between 0 and n max
-    static func random(min: Float, max: Float) -> Float {
-        Float.random * (max - min) + min
-    }
-}
-#else
-#endif

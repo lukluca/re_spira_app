@@ -35,6 +35,7 @@ final class DrawViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.drawViewController.spectrogramSegue(segue: segue) {
             spectrogramViewController = typedInfo.destination
+            return
         }
         if let typedInfo = R.segue.drawViewController.creditsSegue(segue: segue) {
             let controller = typedInfo.destination

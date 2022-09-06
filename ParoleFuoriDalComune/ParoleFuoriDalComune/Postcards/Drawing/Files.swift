@@ -26,13 +26,13 @@ struct Files {
         switch position {
         case 1:
             url = R.file.page1Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_1()
         case 2:
             url = R.file.page2Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_2()
         case 3:
             url = R.file.page3Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_3()
         case 4:
             url = R.file.page4Txt()
             image = R.image.patternPoemMazeJpg()

@@ -99,3 +99,5 @@ final class SpectrogramViewController: UIViewController {
         }
     }
 }
+
+extension SpectrogramViewController: SpectrogramController {}
