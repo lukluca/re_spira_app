@@ -9,5 +9,8 @@
 "requiresMicrophoneAccess" = "App requires microphone access.";
 "cantCreateMicrophone" = "Can't create microphone.";
 
-"errorTitle" = "Error";
+"errorTitle" = "Generic error";
 "errorMessage" = "Something went wrong: ";
+
+"noConnectionErrorTitle" = "No connection";
+"noConnectionErrorMessage" = "Please check your internet connection and retry.";

@@ -9,5 +9,8 @@
 "requiresMicrophoneAccess" = "L'app ha bisogno dell'accesso al microfono";
 "cantCreateMicrophone" = "Non posso creare il microfono.";
 
-"errorTitle" = "Error";
+"errorTitle" = "Errore generico";
 "errorMessage" = "Qualcosa è andato storto: ";
+
+"noConnectionErrorTitle" = "Nessuna connessione";
+"noConnectionErrorMessage" = "Controlla la tua connessione a internet e riprova.";

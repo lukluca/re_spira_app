@@ -488,14 +488,39 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 4 localization tables.
   struct string {
+    /// This `R.string.infoPlist` struct is generated, and contains static references to 1 localization keys.
+    struct infoPlist {
+      /// en translation: ${PRODUCT_NAME} needs to record your breath!
+      ///
+      /// Locales: en, it
+      static let nsMicrophoneUsageDescription = Rswift.StringResource(key: "NSMicrophoneUsageDescription", tableName: "InfoPlist", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+
+      /// en translation: ${PRODUCT_NAME} needs to record your breath!
+      ///
+      /// Locales: en, it
+      static func nsMicrophoneUsageDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("NSMicrophoneUsageDescription", tableName: "InfoPlist", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "InfoPlist", preferredLanguages: preferredLanguages) else {
+          return "NSMicrophoneUsageDescription"
+        }
+
+        return NSLocalizedString("NSMicrophoneUsageDescription", tableName: "InfoPlist", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
     /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
     struct launchScreen {
       fileprivate init() {}
     }
 
-    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     struct localizable {
       /// en translation: App requires microphone access.
       ///
@@ -505,10 +530,18 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, it
       static let cantCreateMicrophone = Rswift.StringResource(key: "cantCreateMicrophone", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
-      /// en translation: Error
+      /// en translation: Generic error
       ///
       /// Locales: en, it
       static let errorTitle = Rswift.StringResource(key: "errorTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+      /// en translation: No connection
+      ///
+      /// Locales: en, it
+      static let noConnectionErrorTitle = Rswift.StringResource(key: "noConnectionErrorTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+      /// en translation: Please check your internet connection and retry.
+      ///
+      /// Locales: en, it
+      static let noConnectionErrorMessage = Rswift.StringResource(key: "noConnectionErrorMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
       /// en translation: Something went wrong: 
       ///
       /// Locales: en, it
@@ -544,7 +577,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("cantCreateMicrophone", bundle: bundle, comment: "")
       }
 
-      /// en translation: Error
+      /// en translation: Generic error
       ///
       /// Locales: en, it
       static func errorTitle(preferredLanguages: [String]? = nil) -> String {
@@ -557,6 +590,36 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("errorTitle", bundle: bundle, comment: "")
+      }
+
+      /// en translation: No connection
+      ///
+      /// Locales: en, it
+      static func noConnectionErrorTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("noConnectionErrorTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "noConnectionErrorTitle"
+        }
+
+        return NSLocalizedString("noConnectionErrorTitle", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Please check your internet connection and retry.
+      ///
+      /// Locales: en, it
+      static func noConnectionErrorMessage(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("noConnectionErrorMessage", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "noConnectionErrorMessage"
+        }
+
+        return NSLocalizedString("noConnectionErrorMessage", bundle: bundle, comment: "")
       }
 
       /// en translation: Something went wrong: 
@@ -591,7 +654,7 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: it
       static let vuCV39SZHeaderTitle = Rswift.StringResource(key: "vuC-V3-9SZ.headerTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
-      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.  
+      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.
       ///
       /// Locales: it
       static let ixq25SwmText = Rswift.StringResource(key: "ixq-25-Swm.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
@@ -631,7 +694,7 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: it
       static let ge1AOT8TText = Rswift.StringResource(key: "GE1-aO-t8T.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
-      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo in formato json
+      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo della Divina Commedia in formato json
       ///
       /// Locales: it
       static let n6HA5BgxText = Rswift.StringResource(key: "n6H-a5-bgx.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
@@ -689,7 +752,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("vuC-V3-9SZ.headerTitle", tableName: "Main", bundle: bundle, comment: "")
       }
 
-      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.  
+      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.
       ///
       /// Locales: it
       static func ixq25SwmText(preferredLanguages: [String]? = nil) -> String {
@@ -839,7 +902,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("GE1-aO-t8T.text", tableName: "Main", bundle: bundle, comment: "")
       }
 
-      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo in formato json
+      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo della Divina Commedia in formato json
       ///
       /// Locales: it
       static func n6HA5BgxText(preferredLanguages: [String]? = nil) -> String {

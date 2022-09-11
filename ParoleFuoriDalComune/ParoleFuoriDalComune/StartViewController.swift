@@ -9,6 +9,7 @@ import UIKit
 
 final class StartViewController: UIViewController {
     
+    //MARK: IBOutlet
     @IBOutlet weak var breathButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
@@ -25,6 +26,23 @@ final class StartViewController: UIViewController {
         super.viewDidLoad()
     
         initialButtonState()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let typedInfo = R.segue.startViewController.spectrogramSegue(segue: segue) {
+            #if targetEnvironment(simulator)
+            spectrogramController = SimulatorSpectogramController()
+            #else
+            spectrogramController = typedInfo.destination
+            #endif
+            return
+        }
+        
+        if let typedInfo = R.segue.startViewController.drawSegue(segue: segue) {
+            let controller = typedInfo.destination
+            controller.viewModel = drawViewModel
+            controller.rawAudioData = spectrogramController?.rawAudioData ?? []
+        }
     }
     
     //MARK: IBAction
@@ -67,27 +85,7 @@ final class StartViewController: UIViewController {
 
             performSegue(withIdentifier: R.segue.startViewController.drawSegue, sender: nil)
         } catch {
-            let alert = UIAlertController(title: R.string.localizable.errorTitle(),
-                                          message: R.string.localizable.errorMessage() + "\(error)", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default))
-            present(alert, animated: true)
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let typedInfo = R.segue.startViewController.spectrogramSegue(segue: segue) {
-            #if targetEnvironment(simulator)
-            spectrogramController = SimulatorSpectogramController()
-            #else
-            spectrogramController = typedInfo.destination
-            #endif
-            return
-        }
-        
-        if let typedInfo = R.segue.startViewController.drawSegue(segue: segue) {
-            let controller = typedInfo.destination
-            controller.viewModel = drawViewModel
-            controller.rawAudioData = spectrogramController?.rawAudioData ?? []
+            presentAlert(from: error)
         }
     }
     
@@ -154,7 +152,29 @@ final class StartViewController: UIViewController {
         danteButton.isEnabled = false
         postcardButton.isEnabled = false
     }
+    
+    private func presentAlert(from error: Error) {
+        let nsError = error as NSError
+        
+        let title: String
+        let message: String
+        
+        if nsError.domain == NSCocoaErrorDomain && nsError.code == 256 {
+            title = R.string.localizable.noConnectionErrorTitle()
+            message = R.string.localizable.noConnectionErrorMessage()
+        } else {
+            title = R.string.localizable.errorTitle()
+            message = R.string.localizable.errorMessage() + "\(error)"
+        }
+        
+        let alert = UIAlertController(title: title,
+                                      message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(alert, animated: true)
+    }
 }
+
+//MARK: - Spectrogram wrappers
 
 private extension StartViewController {
     func startSpectrogram() {
