@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "https://github.com/mac-cain13/R.swift to easly manage assets"; ObjectID = "4cE-4Y-cK3"; */
+"4cE-4Y-cK3.text" = "https://github.com/mac-cain13/R.swift per poter maneggiare più semplicemente gli assets";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "4dx-Hj-uib"; */
+"4dx-Hj-uib.text" = "Title";
+
+/* Class = "UIButton"; configuration.title = "D"; ObjectID = "9XF-q0-AvV"; */
+"9XF-q0-AvV.configuration.title" = "D";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9XF-q0-AvV"; */
+"9XF-q0-AvV.normalTitle" = "D";
+
+/* Class = "UITableViewSection"; headerTitle = "Acknowledgments"; ObjectID = "Dh0-bL-06P"; */
+"Dh0-bL-06P.headerTitle" = "Ringraziamenti";
+
+/* Class = "UILabel"; text = "https://github.com/Bersaelor/KDTree to make Paradise graph"; ObjectID = "GE1-aO-t8T"; */
+"GE1-aO-t8T.text" = "https://github.com/Bersaelor/KDTree per poter creare i grafi per il Paradiso";
+
+/* Class = "UILabel"; text = "To build this app, the developer used:"; ObjectID = "GhN-1e-Xes"; */
+"GhN-1e-Xes.text" = "Per poter creare quest'app, l'auotore ha sfruttato:";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "NNs-zp-RbQ"; */
+"NNs-zp-RbQ.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "The autor wants to thank the friends that helped on this project, Katherine in particular and Elia. Without their help, this app was impossible to complete."; ObjectID = "ixq-25-Swm"; */
+"ixq-25-Swm.text" = "L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.";
+
+/* Class = "UILabel"; text = "https://github.com/fabiovalse/Divina-Commedia-Visualization for the Divina Commedia text in json format"; ObjectID = "n6H-a5-bgx"; */
+"n6H-a5-bgx.text" = "https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo della Divina Commedia in formato json";
+
+/* Class = "UILabel"; text = "http://www.intratext.com/ixt/ita0191/ for the statistics about Divina Commedia"; ObjectID = "n79-gN-QaR"; */
+"n79-gN-QaR.text" = "http://www.intratext.com/ixt/ita0191/ per le statische sulla Divina Commedia";
+
+/* Class = "UILabel"; text = "https://github.com/scinfu/SwiftSoup to extraxct Html fields"; ObjectID = "u5q-GS-6MO"; */
+"u5q-GS-6MO.text" = "https://github.com/scinfu/SwiftSoup per poter estrarre i dati dall'html";
+
+/* Class = "UITableViewSection"; headerTitle = "Di_Segna"; ObjectID = "vuC-V3-9SZ"; */
+"vuC-V3-9SZ.headerTitle" = "Di_Segna";
+
+/* Class = "UILabel"; text = "I whish to thank Alice Bertolasi because she prepared the ground to start this project."; ObjectID = "xVc-e8-E5x"; */
+"xVc-e8-E5x.text" = "Ringrazio Alice Bertolasi perchè ha creato il terreno per poter iniziare questo percorso.";
+
+/* Class = "UIButton"; configuration.title = "P"; ObjectID = "zjb-WZ-SJR"; */
+"zjb-WZ-SJR.configuration.title" = "P";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zjb-WZ-SJR"; */
+"zjb-WZ-SJR.normalTitle" = "P";

@@ -488,20 +488,35 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
+    /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
+    struct launchScreen {
+      fileprivate init() {}
+    }
+
     /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
-      /// Value: App requires microphone access.
-      static let requiresMicrophoneAccess = Rswift.StringResource(key: "requiresMicrophoneAccess", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Can't create microphone.
-      static let cantCreateMicrophone = Rswift.StringResource(key: "cantCreateMicrophone", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Error
-      static let errorTitle = Rswift.StringResource(key: "errorTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Something went wrong: 
-      static let errorMessage = Rswift.StringResource(key: "errorMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// en translation: App requires microphone access.
+      ///
+      /// Locales: en, it
+      static let requiresMicrophoneAccess = Rswift.StringResource(key: "requiresMicrophoneAccess", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+      /// en translation: Can't create microphone.
+      ///
+      /// Locales: en, it
+      static let cantCreateMicrophone = Rswift.StringResource(key: "cantCreateMicrophone", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+      /// en translation: Error
+      ///
+      /// Locales: en, it
+      static let errorTitle = Rswift.StringResource(key: "errorTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
+      /// en translation: Something went wrong: 
+      ///
+      /// Locales: en, it
+      static let errorMessage = Rswift.StringResource(key: "errorMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "it"], comment: nil)
 
-      /// Value: App requires microphone access.
+      /// en translation: App requires microphone access.
+      ///
+      /// Locales: en, it
       static func requiresMicrophoneAccess(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("requiresMicrophoneAccess", bundle: hostingBundle, comment: "")
@@ -514,7 +529,9 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("requiresMicrophoneAccess", bundle: bundle, comment: "")
       }
 
-      /// Value: Can't create microphone.
+      /// en translation: Can't create microphone.
+      ///
+      /// Locales: en, it
       static func cantCreateMicrophone(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("cantCreateMicrophone", bundle: hostingBundle, comment: "")
@@ -527,7 +544,9 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("cantCreateMicrophone", bundle: bundle, comment: "")
       }
 
-      /// Value: Error
+      /// en translation: Error
+      ///
+      /// Locales: en, it
       static func errorTitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("errorTitle", bundle: hostingBundle, comment: "")
@@ -540,7 +559,9 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("errorTitle", bundle: bundle, comment: "")
       }
 
-      /// Value: Something went wrong: 
+      /// en translation: Something went wrong: 
+      ///
+      /// Locales: en, it
       static func errorMessage(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("errorMessage", bundle: hostingBundle, comment: "")
@@ -551,6 +572,316 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("errorMessage", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
+    /// This `R.string.main` struct is generated, and contains static references to 16 localization keys.
+    struct main {
+      /// it translation: D
+      ///
+      /// Locales: it
+      static let xfq0AvVConfigurationTitle = Rswift.StringResource(key: "9XF-q0-AvV.configuration.title", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: D
+      ///
+      /// Locales: it
+      static let xfq0AvVNormalTitle = Rswift.StringResource(key: "9XF-q0-AvV.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Di_Segna
+      ///
+      /// Locales: it
+      static let vuCV39SZHeaderTitle = Rswift.StringResource(key: "vuC-V3-9SZ.headerTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.  
+      ///
+      /// Locales: it
+      static let ixq25SwmText = Rswift.StringResource(key: "ixq-25-Swm.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: P
+      ///
+      /// Locales: it
+      static let zjbWZSJRConfigurationTitle = Rswift.StringResource(key: "zjb-WZ-SJR.configuration.title", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: P
+      ///
+      /// Locales: it
+      static let zjbWZSJRNormalTitle = Rswift.StringResource(key: "zjb-WZ-SJR.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Per poter creare quest'app, l'auotore ha sfruttato:
+      ///
+      /// Locales: it
+      static let ghN1eXesText = Rswift.StringResource(key: "GhN-1e-Xes.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Ringraziamenti
+      ///
+      /// Locales: it
+      static let dh0BL06PHeaderTitle = Rswift.StringResource(key: "Dh0-bL-06P.headerTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Ringrazio Alice Bertolasi perchè ha creato il terreno per poter iniziare questo percorso.
+      ///
+      /// Locales: it
+      static let xVcE8E5xText = Rswift.StringResource(key: "xVc-e8-E5x.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Subtitle
+      ///
+      /// Locales: it
+      static let nNsZpRbQText = Rswift.StringResource(key: "NNs-zp-RbQ.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: Title
+      ///
+      /// Locales: it
+      static let dxHjUibText = Rswift.StringResource(key: "4dx-Hj-uib.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: http://www.intratext.com/ixt/ita0191/ per le statische sulla Divina Commedia
+      ///
+      /// Locales: it
+      static let n79GNQaRText = Rswift.StringResource(key: "n79-gN-QaR.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: https://github.com/Bersaelor/KDTree per poter creare i grafi per il Paradiso
+      ///
+      /// Locales: it
+      static let ge1AOT8TText = Rswift.StringResource(key: "GE1-aO-t8T.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo in formato json
+      ///
+      /// Locales: it
+      static let n6HA5BgxText = Rswift.StringResource(key: "n6H-a5-bgx.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: https://github.com/mac-cain13/R.swift per poter maneggiare più semplicemente gli assets
+      ///
+      /// Locales: it
+      static let cE4YCK3Text = Rswift.StringResource(key: "4cE-4Y-cK3.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+      /// it translation: https://github.com/scinfu/SwiftSoup per poter estrarre i dati dall'html
+      ///
+      /// Locales: it
+      static let u5qGS6MOText = Rswift.StringResource(key: "u5q-GS-6MO.text", tableName: "Main", bundle: R.hostingBundle, locales: ["it"], comment: nil)
+
+      /// it translation: D
+      ///
+      /// Locales: it
+      static func xfq0AvVConfigurationTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("9XF-q0-AvV.configuration.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "9XF-q0-AvV.configuration.title"
+        }
+
+        return NSLocalizedString("9XF-q0-AvV.configuration.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: D
+      ///
+      /// Locales: it
+      static func xfq0AvVNormalTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("9XF-q0-AvV.normalTitle", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "9XF-q0-AvV.normalTitle"
+        }
+
+        return NSLocalizedString("9XF-q0-AvV.normalTitle", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Di_Segna
+      ///
+      /// Locales: it
+      static func vuCV39SZHeaderTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("vuC-V3-9SZ.headerTitle", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "vuC-V3-9SZ.headerTitle"
+        }
+
+        return NSLocalizedString("vuC-V3-9SZ.headerTitle", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: L'autore vuole ringraziare gli amici che  mi hanno aiutato in questo percorso, Katherine in particolare e Elia. Senza il loro supporto e i loro consigli questa app non sarebbe venuta così compiuta.  
+      ///
+      /// Locales: it
+      static func ixq25SwmText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ixq-25-Swm.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "ixq-25-Swm.text"
+        }
+
+        return NSLocalizedString("ixq-25-Swm.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: P
+      ///
+      /// Locales: it
+      static func zjbWZSJRConfigurationTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("zjb-WZ-SJR.configuration.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "zjb-WZ-SJR.configuration.title"
+        }
+
+        return NSLocalizedString("zjb-WZ-SJR.configuration.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: P
+      ///
+      /// Locales: it
+      static func zjbWZSJRNormalTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("zjb-WZ-SJR.normalTitle", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "zjb-WZ-SJR.normalTitle"
+        }
+
+        return NSLocalizedString("zjb-WZ-SJR.normalTitle", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Per poter creare quest'app, l'auotore ha sfruttato:
+      ///
+      /// Locales: it
+      static func ghN1eXesText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("GhN-1e-Xes.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "GhN-1e-Xes.text"
+        }
+
+        return NSLocalizedString("GhN-1e-Xes.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Ringraziamenti
+      ///
+      /// Locales: it
+      static func dh0BL06PHeaderTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Dh0-bL-06P.headerTitle", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "Dh0-bL-06P.headerTitle"
+        }
+
+        return NSLocalizedString("Dh0-bL-06P.headerTitle", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Ringrazio Alice Bertolasi perchè ha creato il terreno per poter iniziare questo percorso.
+      ///
+      /// Locales: it
+      static func xVcE8E5xText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("xVc-e8-E5x.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "xVc-e8-E5x.text"
+        }
+
+        return NSLocalizedString("xVc-e8-E5x.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Subtitle
+      ///
+      /// Locales: it
+      static func nNsZpRbQText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("NNs-zp-RbQ.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "NNs-zp-RbQ.text"
+        }
+
+        return NSLocalizedString("NNs-zp-RbQ.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: Title
+      ///
+      /// Locales: it
+      static func dxHjUibText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("4dx-Hj-uib.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "4dx-Hj-uib.text"
+        }
+
+        return NSLocalizedString("4dx-Hj-uib.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: http://www.intratext.com/ixt/ita0191/ per le statische sulla Divina Commedia
+      ///
+      /// Locales: it
+      static func n79GNQaRText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("n79-gN-QaR.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "n79-gN-QaR.text"
+        }
+
+        return NSLocalizedString("n79-gN-QaR.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: https://github.com/Bersaelor/KDTree per poter creare i grafi per il Paradiso
+      ///
+      /// Locales: it
+      static func ge1AOT8TText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("GE1-aO-t8T.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "GE1-aO-t8T.text"
+        }
+
+        return NSLocalizedString("GE1-aO-t8T.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: https://github.com/fabiovalse/Divina-Commedia-Visualization per il testo in formato json
+      ///
+      /// Locales: it
+      static func n6HA5BgxText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("n6H-a5-bgx.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "n6H-a5-bgx.text"
+        }
+
+        return NSLocalizedString("n6H-a5-bgx.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: https://github.com/mac-cain13/R.swift per poter maneggiare più semplicemente gli assets
+      ///
+      /// Locales: it
+      static func cE4YCK3Text(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("4cE-4Y-cK3.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "4cE-4Y-cK3.text"
+        }
+
+        return NSLocalizedString("4cE-4Y-cK3.text", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// it translation: https://github.com/scinfu/SwiftSoup per poter estrarre i dati dall'html
+      ///
+      /// Locales: it
+      static func u5qGS6MOText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("u5q-GS-6MO.text", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "u5q-GS-6MO.text"
+        }
+
+        return NSLocalizedString("u5q-GS-6MO.text", tableName: "Main", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}

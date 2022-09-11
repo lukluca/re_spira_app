@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  ParoleFuoriDalComune
+
+  Created by Luca Tagliabue on 11/09/22.
+  
+*/
+
+NSMicrophoneUsageDescription = "${PRODUCT_NAME} ha bisogno di registrare il tuo respiro!";

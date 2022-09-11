@@ -34,7 +34,7 @@
 		</dict>
 	</dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>${PRODUCT_NAME} ha bisogno di registrare il tuo respiro!</string>
+	<string>${PRODUCT_NAME} needs to record your breath!</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
