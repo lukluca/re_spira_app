@@ -177,7 +177,6 @@ final class StartViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Reset", style: .default) { [weak self] _ in
             self?.reset()
         })
-        //Add reset button action
         present(alert, animated: true)
     }
 }
