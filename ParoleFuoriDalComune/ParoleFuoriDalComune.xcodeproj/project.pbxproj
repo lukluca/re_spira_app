@@ -38,6 +38,7 @@
 		4A564E6928CE9606009EDB5E /* Visual_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6728CE9606009EDB5E /* Visual_7.png */; };
 		4A564E6A28CE9606009EDB5E /* Visual_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6828CE9606009EDB5E /* Visual_4.png */; };
 		4A564E6C28CE9CD8009EDB5E /* Visual_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6B28CE9CD8009EDB5E /* Visual_5.png */; };
+		4A5B9BD828D1179A00778782 /* Visual_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BD728D1179A00778782 /* Visual_9.png */; };
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
@@ -99,6 +100,7 @@
 		4A564E6728CE9606009EDB5E /* Visual_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_7.png; sourceTree = "<group>"; };
 		4A564E6828CE9606009EDB5E /* Visual_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_4.png; sourceTree = "<group>"; };
 		4A564E6B28CE9CD8009EDB5E /* Visual_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_5.png; sourceTree = "<group>"; };
+		4A5B9BD728D1179A00778782 /* Visual_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_9.png; sourceTree = "<group>"; };
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		4ADC98B528C41116008887BA /* Visual Files */ = {
 			isa = PBXGroup;
 			children = (
+				4A5B9BD728D1179A00778782 /* Visual_9.png */,
 				4A564E6B28CE9CD8009EDB5E /* Visual_5.png */,
 				4A564E6828CE9606009EDB5E /* Visual_4.png */,
 				4A564E6728CE9606009EDB5E /* Visual_7.png */,
@@ -386,6 +389,7 @@
 				4A564E6C28CE9CD8009EDB5E /* Visual_5.png in Resources */,
 				4ADC98CA28C4A759008887BA /* page-13.txt in Resources */,
 				4ADC98D328C4A759008887BA /* page-7.txt in Resources */,
+				4A5B9BD828D1179A00778782 /* Visual_9.png in Resources */,
 				4ADC98D228C4A759008887BA /* page-4.txt in Resources */,
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
 				4A564E6928CE9606009EDB5E /* Visual_7.png in Resources */,
