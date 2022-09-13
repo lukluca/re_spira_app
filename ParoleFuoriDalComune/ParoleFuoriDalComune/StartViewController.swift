@@ -66,8 +66,7 @@ final class StartViewController: UIViewController {
     }
     
     @IBAction func resetButtonAction(_ sender: UIButton) {
-        initialButtonState()
-        resetSpectrogram()
+        reset()
     }
     
     @IBAction func drawButtonAction(_ sender: UIButton) {
@@ -117,6 +116,11 @@ final class StartViewController: UIViewController {
         drawButton.isEnabled = false
         resetButton.isEnabled = false
         disableAllTypeButtons()
+    }
+    
+    private func reset() {
+        initialButtonState()
+        resetSpectrogram()
     }
     
     private func setCurrentTypeButtonState() {
@@ -170,6 +174,10 @@ final class StartViewController: UIViewController {
         let alert = UIAlertController(title: title,
                                       message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        alert.addAction(UIAlertAction(title: "Reset", style: .default) { [weak self] _ in
+            self?.reset()
+        })
+        //Add reset button action
         present(alert, animated: true)
     }
 }
