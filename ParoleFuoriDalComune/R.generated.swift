@@ -213,12 +213,18 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 24 files.
+  /// This `R.file` struct is generated, and contains static references to 28 files.
   struct file {
     /// Resource file `Pattern-Poem-Maze.jpg`.
     static let patternPoemMazeJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "Pattern-Poem-Maze", pathExtension: "jpg")
     /// Resource file `Visual_1.png`.
     static let visual_1Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_1", pathExtension: "png")
+    /// Resource file `Visual_10.png`.
+    static let visual_10Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_10", pathExtension: "png")
+    /// Resource file `Visual_11.png`.
+    static let visual_11Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_11", pathExtension: "png")
+    /// Resource file `Visual_14.png`.
+    static let visual_14Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_14", pathExtension: "png")
     /// Resource file `Visual_2.png`.
     static let visual_2Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_2", pathExtension: "png")
     /// Resource file `Visual_3.png`.
@@ -229,6 +235,8 @@ struct R: Rswift.Validatable {
     static let visual_5Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_5", pathExtension: "png")
     /// Resource file `Visual_7.png`.
     static let visual_7Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_7", pathExtension: "png")
+    /// Resource file `Visual_8.png`.
+    static let visual_8Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_8", pathExtension: "png")
     /// Resource file `Visual_9.png`.
     static let visual_9Png = Rswift.FileResource(bundle: R.hostingBundle, name: "Visual_9", pathExtension: "png")
     /// Resource file `divina_commedia.json`.
@@ -276,6 +284,24 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
+    /// `bundle.url(forResource: "Visual_10", withExtension: "png")`
+    static func visual_10Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.visual_10Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Visual_11", withExtension: "png")`
+    static func visual_11Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.visual_11Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Visual_14", withExtension: "png")`
+    static func visual_14Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.visual_14Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
     /// `bundle.url(forResource: "Visual_2", withExtension: "png")`
     static func visual_2Png(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.visual_2Png
@@ -303,6 +329,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "Visual_7", withExtension: "png")`
     static func visual_7Png(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.visual_7Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Visual_8", withExtension: "png")`
+    static func visual_8Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.visual_8Png
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -411,10 +443,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 12 images.
+  /// This `R.image` struct is generated, and contains static references to 16 images.
   struct image {
     /// Image `Pattern-Poem-Maze.jpg`.
     static let patternPoemMazeJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "Pattern-Poem-Maze.jpg")
+    /// Image `Visual_10`.
+    static let visual_10 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_10")
+    /// Image `Visual_11`.
+    static let visual_11 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_11")
+    /// Image `Visual_14`.
+    static let visual_14 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_14")
     /// Image `Visual_1`.
     static let visual_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_1")
     /// Image `Visual_2`.
@@ -427,6 +465,8 @@ struct R: Rswift.Validatable {
     static let visual_5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_5")
     /// Image `Visual_7`.
     static let visual_7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_7")
+    /// Image `Visual_8`.
+    static let visual_8 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_8")
     /// Image `Visual_9`.
     static let visual_9 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Visual_9")
     /// Image `air`.
@@ -449,6 +489,27 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Visual_1", bundle: ..., traitCollection: ...)`
     static func visual_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.visual_1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Visual_10", bundle: ..., traitCollection: ...)`
+    static func visual_10(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.visual_10, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Visual_11", bundle: ..., traitCollection: ...)`
+    static func visual_11(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.visual_11, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Visual_14", bundle: ..., traitCollection: ...)`
+    static func visual_14(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.visual_14, compatibleWith: traitCollection)
     }
     #endif
 
@@ -484,6 +545,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Visual_7", bundle: ..., traitCollection: ...)`
     static func visual_7(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.visual_7, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Visual_8", bundle: ..., traitCollection: ...)`
+    static func visual_8(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.visual_8, compatibleWith: traitCollection)
     }
     #endif
 

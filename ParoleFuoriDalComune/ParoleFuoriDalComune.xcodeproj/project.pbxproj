@@ -39,6 +39,10 @@
 		4A564E6A28CE9606009EDB5E /* Visual_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6828CE9606009EDB5E /* Visual_4.png */; };
 		4A564E6C28CE9CD8009EDB5E /* Visual_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6B28CE9CD8009EDB5E /* Visual_5.png */; };
 		4A5B9BD828D1179A00778782 /* Visual_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BD728D1179A00778782 /* Visual_9.png */; };
+		4A5B9BDA28D121F900778782 /* Visual_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BD928D121F900778782 /* Visual_8.png */; };
+		4A5B9BDC28D1271300778782 /* Visual_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BDB28D1271300778782 /* Visual_10.png */; };
+		4A5B9BE528D2767100778782 /* Visual_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BE328D2767100778782 /* Visual_14.png */; };
+		4A5B9BE628D2767100778782 /* Visual_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BE428D2767100778782 /* Visual_11.png */; };
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
@@ -101,6 +105,10 @@
 		4A564E6828CE9606009EDB5E /* Visual_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_4.png; sourceTree = "<group>"; };
 		4A564E6B28CE9CD8009EDB5E /* Visual_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_5.png; sourceTree = "<group>"; };
 		4A5B9BD728D1179A00778782 /* Visual_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_9.png; sourceTree = "<group>"; };
+		4A5B9BD928D121F900778782 /* Visual_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_8.png; sourceTree = "<group>"; };
+		4A5B9BDB28D1271300778782 /* Visual_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_10.png; sourceTree = "<group>"; };
+		4A5B9BE328D2767100778782 /* Visual_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_14.png; sourceTree = "<group>"; };
+		4A5B9BE428D2767100778782 /* Visual_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_11.png; sourceTree = "<group>"; };
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
@@ -288,14 +296,18 @@
 		4ADC98B528C41116008887BA /* Visual Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A5B9BD728D1179A00778782 /* Visual_9.png */,
-				4A564E6B28CE9CD8009EDB5E /* Visual_5.png */,
-				4A564E6828CE9606009EDB5E /* Visual_4.png */,
-				4A564E6728CE9606009EDB5E /* Visual_7.png */,
+				4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */,
 				4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */,
 				4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */,
 				4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */,
-				4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */,
+				4A564E6828CE9606009EDB5E /* Visual_4.png */,
+				4A564E6B28CE9CD8009EDB5E /* Visual_5.png */,
+				4A564E6728CE9606009EDB5E /* Visual_7.png */,
+				4A5B9BD928D121F900778782 /* Visual_8.png */,
+				4A5B9BD728D1179A00778782 /* Visual_9.png */,
+				4A5B9BDB28D1271300778782 /* Visual_10.png */,
+				4A5B9BE428D2767100778782 /* Visual_11.png */,
+				4A5B9BE328D2767100778782 /* Visual_14.png */,
 			);
 			path = "Visual Files";
 			sourceTree = "<group>";
@@ -373,12 +385,14 @@
 			files = (
 				4ADC98CE28C4A759008887BA /* page-12.txt in Resources */,
 				4ADC98CD28C4A759008887BA /* page-14.txt in Resources */,
+				4A5B9BE628D2767100778782 /* Visual_11.png in Resources */,
 				4ADC98B428C40F32008887BA /* page-2.txt in Resources */,
 				4A564E5D28CE5A35009EDB5E /* Localizable.strings in Resources */,
 				4ADC98D528C4A759008887BA /* page-3.txt in Resources */,
 				4ADC98CC28C4A759008887BA /* page-8.txt in Resources */,
 				4ADC98D028C4A759008887BA /* page-11.txt in Resources */,
 				4ADC98C928C4A759008887BA /* page-15.txt in Resources */,
+				4A5B9BDA28D121F900778782 /* Visual_8.png in Resources */,
 				4ADC98D128C4A759008887BA /* page-6.txt in Resources */,
 				4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */,
 				4A3E0B7128C7E7CE00AA03BB /* Visual_2.png in Resources */,
@@ -393,6 +407,8 @@
 				4ADC98D228C4A759008887BA /* page-4.txt in Resources */,
 				2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */,
 				4A564E6928CE9606009EDB5E /* Visual_7.png in Resources */,
+				4A5B9BDC28D1271300778782 /* Visual_10.png in Resources */,
+				4A5B9BE528D2767100778782 /* Visual_14.png in Resources */,
 				4A564E6328CE5F26009EDB5E /* InfoPlist.strings in Resources */,
 				4ADC98D428C4A759008887BA /* page-5.txt in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,

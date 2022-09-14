@@ -47,16 +47,16 @@ struct Files {
             image = R.image.visual_7()
         case 8:
             url = R.file.page8Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_8()
         case 9:
             url = R.file.page9Txt()
             image = R.image.visual_9()
         case 10:
             url = R.file.page10Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_10()
         case 11:
             url = R.file.page11Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_11()
         case 12:
             url = R.file.page12Txt()
             image = R.image.patternPoemMazeJpg()
@@ -65,7 +65,7 @@ struct Files {
             image = R.image.patternPoemMazeJpg()
         case 14:
             url = R.file.page14Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_14()
         case 15:
             url = R.file.page15Txt()
             image = R.image.patternPoemMazeJpg()
