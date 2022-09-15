@@ -59,7 +59,7 @@ struct Files {
             image = R.image.visual_11()
         case 12:
             url = R.file.page12Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_12()
         case 13:
             url = R.file.page13Txt()
             image = R.image.patternPoemMazeJpg()

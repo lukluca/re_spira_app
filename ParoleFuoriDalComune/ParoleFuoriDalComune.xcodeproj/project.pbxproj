@@ -43,6 +43,7 @@
 		4A5B9BDC28D1271300778782 /* Visual_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BDB28D1271300778782 /* Visual_10.png */; };
 		4A5B9BE528D2767100778782 /* Visual_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BE328D2767100778782 /* Visual_14.png */; };
 		4A5B9BE628D2767100778782 /* Visual_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BE428D2767100778782 /* Visual_11.png */; };
+		4A5B9BE828D285E900778782 /* Visual_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B9BE728D285E900778782 /* Visual_12.png */; };
 		4A96DD5C28C00B2F00DB268B /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD5B28C00B2F00DB268B /* SourceType.swift */; };
 		4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */; };
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
@@ -109,6 +110,7 @@
 		4A5B9BDB28D1271300778782 /* Visual_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_10.png; sourceTree = "<group>"; };
 		4A5B9BE328D2767100778782 /* Visual_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_14.png; sourceTree = "<group>"; };
 		4A5B9BE428D2767100778782 /* Visual_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_11.png; sourceTree = "<group>"; };
+		4A5B9BE728D285E900778782 /* Visual_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_12.png; sourceTree = "<group>"; };
 		4A96DD5B28C00B2F00DB268B /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 		4A96DD7C28C379BA00DB268B /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
 		4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				4A5B9BD728D1179A00778782 /* Visual_9.png */,
 				4A5B9BDB28D1271300778782 /* Visual_10.png */,
 				4A5B9BE428D2767100778782 /* Visual_11.png */,
+				4A5B9BE728D285E900778782 /* Visual_12.png */,
 				4A5B9BE328D2767100778782 /* Visual_14.png */,
 			);
 			path = "Visual Files";
@@ -383,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5B9BE828D285E900778782 /* Visual_12.png in Resources */,
 				4ADC98CE28C4A759008887BA /* page-12.txt in Resources */,
 				4ADC98CD28C4A759008887BA /* page-14.txt in Resources */,
 				4A5B9BE628D2767100778782 /* Visual_11.png in Resources */,
