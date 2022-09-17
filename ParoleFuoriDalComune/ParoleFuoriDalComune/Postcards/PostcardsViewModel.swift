@@ -39,7 +39,7 @@ struct PostcardsViewModel: DrawViewModel {
          
         imageView.contentMode = .scaleAspectFit
         
-        let length = view.frame.height/3
+        let length = view.frame.height/2.5
 
         setConstraints(to: view, subview: imageView, length: length, and: addTap)
     }

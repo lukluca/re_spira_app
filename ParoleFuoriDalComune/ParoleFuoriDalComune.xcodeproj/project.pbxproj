@@ -29,11 +29,13 @@
 		2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1651728BD4F7600438BF5 /* BBToast */; };
 		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
 		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
+		4A195E0928D52A0500FF2BA7 /* Visual_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A195E0828D52A0500FF2BA7 /* Visual_6.png */; };
 		4A3E0B6D28C7E33000AA03BB /* Spectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */; };
 		4A3E0B7128C7E7CE00AA03BB /* Visual_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */; };
 		4A3E0B7228C7E7CE00AA03BB /* Visual_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */; };
 		4A3E0B7328C7E7CE00AA03BB /* Visual_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */; };
 		4A49201C28D3D39300DB4EFF /* Visual_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A49201B28D3D39300DB4EFF /* Visual_13.png */; };
+		4A534F1A28D5306B00256EF7 /* Visual_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A534F1928D5306B00256EF7 /* Visual_15.png */; };
 		4A564E5D28CE5A35009EDB5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E5F28CE5A35009EDB5E /* Localizable.strings */; };
 		4A564E6328CE5F26009EDB5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6528CE5F26009EDB5E /* InfoPlist.strings */; };
 		4A564E6928CE9606009EDB5E /* Visual_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A564E6728CE9606009EDB5E /* Visual_7.png */; };
@@ -54,7 +56,6 @@
 		4ADC98B028C4087D008887BA /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98AF28C4087D008887BA /* Files.swift */; };
 		4ADC98B228C40DC6008887BA /* page-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B128C40DC6008887BA /* page-1.txt */; };
 		4ADC98B428C40F32008887BA /* page-2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B328C40F32008887BA /* page-2.txt */; };
-		4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */; };
 		4ADC98B928C41606008887BA /* PostcardsDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */; };
 		4ADC98BB28C41677008887BA /* Postcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98BA28C41677008887BA /* Postcards.swift */; };
 		4ADC98C928C4A759008887BA /* page-15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98BC28C4A759008887BA /* page-15.txt */; };
@@ -93,11 +94,13 @@
 		2F99EDD326E6C31800F1DBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
 		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		4A195E0828D52A0500FF2BA7 /* Visual_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_6.png; sourceTree = "<group>"; };
 		4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectrogram.swift; sourceTree = "<group>"; };
 		4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_2.png; sourceTree = "<group>"; };
 		4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_3.png; sourceTree = "<group>"; };
 		4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_1.png; sourceTree = "<group>"; };
 		4A49201B28D3D39300DB4EFF /* Visual_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_13.png; sourceTree = "<group>"; };
+		4A534F1928D5306B00256EF7 /* Visual_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_15.png; sourceTree = "<group>"; };
 		4A564E5B28CE5830009EDB5E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		4A564E5C28CE5830009EDB5E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4A564E5E28CE5A35009EDB5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -122,7 +125,6 @@
 		4ADC98AF28C4087D008887BA /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		4ADC98B128C40DC6008887BA /* page-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-1.txt"; sourceTree = "<group>"; };
 		4ADC98B328C40F32008887BA /* page-2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-2.txt"; sourceTree = "<group>"; };
-		4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pattern-Poem-Maze.jpg"; sourceTree = "<group>"; };
 		4ADC98B828C41606008887BA /* PostcardsDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardsDrawPreparation.swift; sourceTree = "<group>"; };
 		4ADC98BA28C41677008887BA /* Postcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcards.swift; sourceTree = "<group>"; };
 		4ADC98BC28C4A759008887BA /* page-15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-15.txt"; sourceTree = "<group>"; };
@@ -300,12 +302,12 @@
 		4ADC98B528C41116008887BA /* Visual Files */ = {
 			isa = PBXGroup;
 			children = (
-				4ADC98B628C4115E008887BA /* Pattern-Poem-Maze.jpg */,
 				4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */,
 				4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */,
 				4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */,
 				4A564E6828CE9606009EDB5E /* Visual_4.png */,
 				4A564E6B28CE9CD8009EDB5E /* Visual_5.png */,
+				4A195E0828D52A0500FF2BA7 /* Visual_6.png */,
 				4A564E6728CE9606009EDB5E /* Visual_7.png */,
 				4A5B9BD928D121F900778782 /* Visual_8.png */,
 				4A5B9BD728D1179A00778782 /* Visual_9.png */,
@@ -314,6 +316,7 @@
 				4A5B9BE728D285E900778782 /* Visual_12.png */,
 				4A49201B28D3D39300DB4EFF /* Visual_13.png */,
 				4A5B9BE328D2767100778782 /* Visual_14.png */,
+				4A534F1928D5306B00256EF7 /* Visual_15.png */,
 			);
 			path = "Visual Files";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A534F1A28D5306B00256EF7 /* Visual_15.png in Resources */,
 				4A5B9BE828D285E900778782 /* Visual_12.png in Resources */,
 				4ADC98CE28C4A759008887BA /* page-12.txt in Resources */,
 				4ADC98CD28C4A759008887BA /* page-14.txt in Resources */,
@@ -401,7 +405,6 @@
 				4ADC98C928C4A759008887BA /* page-15.txt in Resources */,
 				4A5B9BDA28D121F900778782 /* Visual_8.png in Resources */,
 				4ADC98D128C4A759008887BA /* page-6.txt in Resources */,
-				4ADC98B728C4115E008887BA /* Pattern-Poem-Maze.jpg in Resources */,
 				4A3E0B7128C7E7CE00AA03BB /* Visual_2.png in Resources */,
 				4A3E0B7328C7E7CE00AA03BB /* Visual_1.png in Resources */,
 				2F99EDD226E6C31800F1DBAF /* LaunchScreen.storyboard in Resources */,
@@ -421,6 +424,7 @@
 				4ADC98D428C4A759008887BA /* page-5.txt in Resources */,
 				2F99EDCF26E6C31800F1DBAF /* Assets.xcassets in Resources */,
 				4A564E6A28CE9606009EDB5E /* Visual_4.png in Resources */,
+				4A195E0928D52A0500FF2BA7 /* Visual_6.png in Resources */,
 				4ADC98B228C40DC6008887BA /* page-1.txt in Resources */,
 				4ADC98CB28C4A759008887BA /* page-9.txt in Resources */,
 				2F99EDCD26E6C31700F1DBAF /* Main.storyboard in Resources */,

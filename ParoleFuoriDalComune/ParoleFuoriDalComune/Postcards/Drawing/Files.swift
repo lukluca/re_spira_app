@@ -41,7 +41,7 @@ struct Files {
             image = R.image.visual_5()
         case 6:
             url = R.file.page6Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_6()
         case 7:
             url = R.file.page7Txt()
             image = R.image.visual_7()
@@ -68,7 +68,7 @@ struct Files {
             image = R.image.visual_14()
         case 15:
             url = R.file.page15Txt()
-            image = R.image.patternPoemMazeJpg()
+            image = R.image.visual_15()
         default:
             throw FilesError.outOfRange
         }
