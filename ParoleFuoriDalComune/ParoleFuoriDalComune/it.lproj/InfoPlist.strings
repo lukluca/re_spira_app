@@ -6,4 +6,4 @@
   
 */
 
-NSMicrophoneUsageDescription = "${PRODUCT_NAME} ha bisogno di registrare il tuo respiro!";
+NSMicrophoneUsageDescription = "L'app ha bisogno di registrare il tuo respiro!";
