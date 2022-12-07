@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,8 +27,6 @@
 		2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA98ABD26ED54B300DE4681 /* KDTree */; };
 		2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD14C5C26ED94EC0092CC69 /* SwiftSoup */; };
 		2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1651728BD4F7600438BF5 /* BBToast */; };
-		2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1652028BD5C3200438BF5 /* R.generated.swift */; };
-		2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1652328BD5D4C00438BF5 /* Rswift */; };
 		4A195E0928D52A0500FF2BA7 /* Visual_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A195E0828D52A0500FF2BA7 /* Visual_6.png */; };
 		4A3E0B6D28C7E33000AA03BB /* Spectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */; };
 		4A3E0B7128C7E7CE00AA03BB /* Visual_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */; };
@@ -52,6 +50,7 @@
 		4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD7E28C37D5000DB268B /* DrawViewModel.swift */; };
 		4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */; };
 		4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DD8428C3F0CB00DB268B /* PostcardsViewModel.swift */; };
+		4A9C593B2940A79A005E5C98 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9C593A2940A79A005E5C98 /* RswiftLibrary */; };
 		4ADC98AD28C406BF008887BA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98AC28C406BF008887BA /* Converter.swift */; };
 		4ADC98B028C4087D008887BA /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC98AF28C4087D008887BA /* Files.swift */; };
 		4ADC98B228C40DC6008887BA /* page-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98B128C40DC6008887BA /* page-1.txt */; };
@@ -93,7 +92,6 @@
 		2F99EDD126E6C31800F1DBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F99EDD326E6C31800F1DBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
-		2FD1652028BD5C3200438BF5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4A195E0828D52A0500FF2BA7 /* Visual_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_6.png; sourceTree = "<group>"; };
 		4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectrogram.swift; sourceTree = "<group>"; };
 		4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_2.png; sourceTree = "<group>"; };
@@ -148,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */,
-				2FD1652428BD5D4C00438BF5 /* Rswift in Frameworks */,
+				4A9C593B2940A79A005E5C98 /* RswiftLibrary in Frameworks */,
 				2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */,
 				2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */,
 			);
@@ -201,7 +199,6 @@
 		2F99EDB926E6C31700F1DBAF = {
 			isa = PBXGroup;
 			children = (
-				2FD1652028BD5C3200438BF5 /* R.generated.swift */,
 				2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */,
 				2F99EDC326E6C31700F1DBAF /* Products */,
 			);
@@ -328,7 +325,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F99EDD626E6C31800F1DBAF /* Build configuration list for PBXNativeTarget "ParoleFuoriDalComune" */;
 			buildPhases = (
-				2FD1651F28BD5B3900438BF5 /* R.swift */,
 				2F99EDBE26E6C31700F1DBAF /* Sources */,
 				2F99EDBF26E6C31700F1DBAF /* Frameworks */,
 				2F99EDC026E6C31700F1DBAF /* Resources */,
@@ -336,13 +332,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A9C593D2940A7C6005E5C98 /* PBXTargetDependency */,
 			);
 			name = ParoleFuoriDalComune;
 			packageProductDependencies = (
 				2FA98ABD26ED54B300DE4681 /* KDTree */,
 				2FD14C5C26ED94EC0092CC69 /* SwiftSoup */,
 				2FD1651728BD4F7600438BF5 /* BBToast */,
-				2FD1652328BD5D4C00438BF5 /* Rswift */,
+				4A9C593A2940A79A005E5C98 /* RswiftLibrary */,
 			);
 			productName = ParoleFuoriDalComune;
 			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
@@ -376,7 +373,7 @@
 				2FA98ABC26ED54B300DE4681 /* XCRemoteSwiftPackageReference "KDTree" */,
 				2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
-				2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */,
+				4A9C59392940A79A005E5C98 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -433,29 +430,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2FD1651F28BD5B3900438BF5 /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\n# check if directory exists\nif [ -d /opt/homebrew/bin ]; then\n    echo \"Running on Silicon\"\n    MINT=/opt/homebrew/bin/mint\nelse\n  echo \"Not running on Silicon\"\n  MINT=mint\nfi\n\nif ${MINT} list | grep -q 'R.swift'; then\n    ${MINT} run R.swift rswift generate \"$SRCROOT/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2F99EDBE26E6C31700F1DBAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -465,7 +439,6 @@
 				4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */,
 				2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */,
 				4ADC98B028C4087D008887BA /* Files.swift in Sources */,
-				2FD1652128BD5C3200438BF5 /* R.generated.swift in Sources */,
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */,
 				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
@@ -489,6 +462,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A9C593D2940A7C6005E5C98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4A9C593C2940A7C6005E5C98 /* RswiftGenerateInternalResources */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2F99EDCB26E6C31700F1DBAF /* Main.storyboard */ = {
@@ -738,12 +718,12 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		4A9C59392940A79A005E5C98 /* XCRemoteSwiftPackageReference "R" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -764,10 +744,14 @@
 			package = 2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */;
 			productName = BBToast;
 		};
-		2FD1652328BD5D4C00438BF5 /* Rswift */ = {
+		4A9C593A2940A79A005E5C98 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FD1652228BD5D4C00438BF5 /* XCRemoteSwiftPackageReference "R.swift" */;
-			productName = Rswift;
+			package = 4A9C59392940A79A005E5C98 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		4A9C593C2940A7C6005E5C98 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
