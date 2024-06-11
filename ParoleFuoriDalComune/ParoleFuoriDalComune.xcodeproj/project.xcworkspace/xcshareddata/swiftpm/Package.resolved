@@ -1,4 +1,5 @@
 {
+  "originHash" : "f87d18bcf4810b35f9c2ab364e971df8552ccc68c538a62463dcc6aaa41158fc",
   "pins" : [
     {
       "identity" : "bbtoast",
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Bersaelor/KDTree",
       "state" : {
-        "revision" : "490df2848e3f497bdc2edf61667f4ab669cff26e",
-        "version" : "1.4.1"
+        "revision" : "35d14064d48d92a0c2c1215b93a3118f558b2e6b",
+        "version" : "1.4.2"
       }
     },
     {
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mac-cain13/R.swift",
       "state" : {
-        "revision" : "ebd055b076daf2e78f832b0209fa617ad0342cc3",
-        "version" : "7.2.1"
+        "revision" : "384eab88d1a0b98ac96f4819e50a4308ecd5359f",
+        "version" : "7.5.0"
       }
     },
     {
@@ -41,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup",
       "state" : {
-        "revision" : "6778575285177365cbad3e5b8a72f2a20583cfec",
-        "version" : "2.4.3"
+        "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
+        "version" : "2.7.2"
       }
     },
     {
@@ -55,5 +56,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
