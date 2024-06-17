@@ -17,10 +17,10 @@ final class StartViewController: UIViewController {
     @IBOutlet weak var danteButton: UIButton!
     @IBOutlet weak var postcardButton: UIButton!
     
-    private var drawViewModel: DrawViewModel?
+    private var drawViewModel: (any DrawViewModel)?
     private var sourceType: SourceType = .postcards
     
-    private var spectrogramController: SpectrogramController?
+    private var spectrogramController: (any SpectrogramController)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -157,7 +157,7 @@ final class StartViewController: UIViewController {
         postcardButton.isEnabled = false
     }
     
-    private func presentAlert(from error: Error) {
+    private func presentAlert(from error: any Error) {
         let nsError = error as NSError
         
         let title: String

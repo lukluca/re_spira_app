@@ -9,7 +9,7 @@ import UIKit
 
 final class DrawViewController: UIViewController {
     
-    var viewModel: DrawViewModel?
+    var viewModel: (any DrawViewModel)?
     var rawAudioData = [Int16]()
     
     private var spectrogramViewController: SpectrogramViewController?
