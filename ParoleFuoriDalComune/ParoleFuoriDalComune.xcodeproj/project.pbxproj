@@ -70,6 +70,8 @@
 		4ADC98D328C4A759008887BA /* page-7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C628C4A759008887BA /* page-7.txt */; };
 		4ADC98D428C4A759008887BA /* page-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C728C4A759008887BA /* page-5.txt */; };
 		4ADC98D528C4A759008887BA /* page-3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C828C4A759008887BA /* page-3.txt */; };
+		4AFC25F22C19EDA0005DD5AB /* ShazamHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC25F12C19EDA0005DD5AB /* ShazamHashGenerator.swift */; };
+		4AFC25F62C1A00AE005DD5AB /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 4AFC25F52C1A00AE005DD5AB /* ComplexModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +140,7 @@
 		4ADC98C628C4A759008887BA /* page-7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-7.txt"; sourceTree = "<group>"; };
 		4ADC98C728C4A759008887BA /* page-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-5.txt"; sourceTree = "<group>"; };
 		4ADC98C828C4A759008887BA /* page-3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "page-3.txt"; sourceTree = "<group>"; };
+		4AFC25F12C19EDA0005DD5AB /* ShazamHashGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamHashGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFC25F62C1A00AE005DD5AB /* ComplexModule in Frameworks */,
 				2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */,
 				4A9C593B2940A79A005E5C98 /* RswiftLibrary in Frameworks */,
 				2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */,
@@ -215,22 +219,23 @@
 		2F99EDC426E6C31700F1DBAF /* ParoleFuoriDalComune */ = {
 			isa = PBXGroup;
 			children = (
-				4A96DD8628C3F39200DB268B /* Tools */,
-				4A96DD8028C3E0B200DB268B /* Draw */,
-				4A96DD5D28C3746500DB268B /* Postcards */,
-				2F103CD326ED72C000BF9F20 /* Dante */,
-				2F103CD026ED723600BF9F20 /* Credits */,
-				2F53A7D926E9581F00559655 /* Spectogram */,
+				2F99EDD326E6C31800F1DBAF /* Info.plist */,
 				2F99EDC526E6C31700F1DBAF /* AppDelegate.swift */,
 				2F99EDC726E6C31700F1DBAF /* SceneDelegate.swift */,
-				2F99EDC926E6C31700F1DBAF /* StartViewController.swift */,
-				2F99EDCB26E6C31700F1DBAF /* Main.storyboard */,
-				2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */,
-				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
-				2F99EDD326E6C31800F1DBAF /* Info.plist */,
-				4A564E5F28CE5A35009EDB5E /* Localizable.strings */,
-				4A564E6528CE5F26009EDB5E /* InfoPlist.strings */,
 				4A96DD5B28C00B2F00DB268B /* SourceType.swift */,
+				2F99EDC926E6C31700F1DBAF /* StartViewController.swift */,
+				2F99EDCE26E6C31800F1DBAF /* Assets.xcassets */,
+				2F103CD026ED723600BF9F20 /* Credits */,
+				2F103CD326ED72C000BF9F20 /* Dante */,
+				4A96DD8028C3E0B200DB268B /* Draw */,
+				4A564E6528CE5F26009EDB5E /* InfoPlist.strings */,
+				2F99EDD026E6C31800F1DBAF /* LaunchScreen.storyboard */,
+				4A564E5F28CE5A35009EDB5E /* Localizable.strings */,
+				2F99EDCB26E6C31700F1DBAF /* Main.storyboard */,
+				4A96DD5D28C3746500DB268B /* Postcards */,
+				4AFC25F02C19ED1C005DD5AB /* Shazam */,
+				2F53A7D926E9581F00559655 /* Spectogram */,
+				4A96DD8628C3F39200DB268B /* Tools */,
 			);
 			path = ParoleFuoriDalComune;
 			sourceTree = "<group>";
@@ -318,6 +323,14 @@
 			path = "Visual Files";
 			sourceTree = "<group>";
 		};
+		4AFC25F02C19ED1C005DD5AB /* Shazam */ = {
+			isa = PBXGroup;
+			children = (
+				4AFC25F12C19EDA0005DD5AB /* ShazamHashGenerator.swift */,
+			);
+			path = Shazam;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,6 +353,7 @@
 				2FD14C5C26ED94EC0092CC69 /* SwiftSoup */,
 				2FD1651728BD4F7600438BF5 /* BBToast */,
 				4A9C593A2940A79A005E5C98 /* RswiftLibrary */,
+				4AFC25F52C1A00AE005DD5AB /* ComplexModule */,
 			);
 			productName = ParoleFuoriDalComune;
 			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
@@ -374,6 +388,7 @@
 				2FD14C5B26ED94EC0092CC69 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
 				4A9C59392940A79A005E5C98 /* XCRemoteSwiftPackageReference "R" */,
+				4AFC25F42C1A00AE005DD5AB /* XCRemoteSwiftPackageReference "swift-numerics" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -446,6 +461,7 @@
 				2F53A7E026E9687700559655 /* HTML.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */,
 				2FA5A06426ED740100579588 /* Commedia.swift in Sources */,
+				4AFC25F22C19EDA0005DD5AB /* ShazamHashGenerator.swift in Sources */,
 				4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
 				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
@@ -644,6 +660,7 @@
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.parole-fuori-dal-comune.respira";
 				PRODUCT_NAME = Re_Spira;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -665,6 +682,7 @@
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.parole-fuori-dal-comune.respira";
 				PRODUCT_NAME = Re_Spira;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -726,6 +744,14 @@
 				minimumVersion = 7.5.0;
 			};
 		};
+		4AFC25F42C1A00AE005DD5AB /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -752,6 +778,11 @@
 		4A9C593C2940A7C6005E5C98 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		4AFC25F52C1A00AE005DD5AB /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AFC25F42C1A00AE005DD5AB /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

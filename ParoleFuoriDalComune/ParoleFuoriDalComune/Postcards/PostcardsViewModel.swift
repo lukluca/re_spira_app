@@ -33,6 +33,7 @@ struct PostcardsViewModel: DrawViewModel {
                           subtitle: model.linearPoem.text)
     }
     
+    @MainActor
     func didLoad(view: UIView, addTap: (UIView) -> Void) {
         
         let imageView = UIImageView(image: model.visualPoem)

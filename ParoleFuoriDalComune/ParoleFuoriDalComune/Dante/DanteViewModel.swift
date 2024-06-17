@@ -34,6 +34,7 @@ struct DanteViewModel: DrawViewModel {
         self.display = display
     }
     
+    @MainActor
     func didLoad(view: UIView, addTap: (UIView) -> Void) {
         
         let model = display.model
@@ -48,6 +49,7 @@ struct DanteViewModel: DrawViewModel {
         }
     }
     
+    @MainActor
     private func drawInferno(model: CommediaDrawModel,
                              inside view: UIView,
                              addTap: (UIView) -> Void) {
@@ -70,6 +72,7 @@ struct DanteViewModel: DrawViewModel {
         setConstraints(to: view, subview: ring, length: ray, and: addTap)
     }
     
+    @MainActor
     private func drawPurgatorio(model: CommediaDrawModel,
                                 inside view: UIView,
                                 addTap: (UIView) -> Void) {
@@ -97,6 +100,7 @@ struct DanteViewModel: DrawViewModel {
         setConstraints(to: view, subview: parabola, length: ray, and: addTap)
     }
     
+    @MainActor
     private func drawParadiso(model: CommediaDrawModel,
                              inside view: UIView,
                              addTap: (UIView) -> Void) {

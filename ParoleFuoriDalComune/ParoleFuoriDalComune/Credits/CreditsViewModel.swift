@@ -30,6 +30,7 @@ class CreditsViewModel {
         poem = nil
     }
     
+    @MainActor
     func heightForRow(at indexPath: IndexPath) -> CGFloat {
         guard let section = Section(rawValue: indexPath.section) else {
             return 0
@@ -42,6 +43,7 @@ class CreditsViewModel {
         }
     }
     
+    @MainActor
     func estimatedHeightForRow(at indexPath: IndexPath) -> CGFloat {
         heightForRow(at: indexPath)
     }

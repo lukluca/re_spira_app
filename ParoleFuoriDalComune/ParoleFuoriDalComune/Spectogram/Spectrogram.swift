@@ -18,7 +18,7 @@ protocol SpectrogramController {
 
 #if targetEnvironment(simulator)
 
-class SimulatorSpectogramController {
+final class SimulatorSpectogramController {
     
     private(set) var frequencies = [Float]()
     private(set) var rawAudioData = [Int16]()

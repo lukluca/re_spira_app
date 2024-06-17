@@ -8,6 +8,7 @@
 import UIKit
 import BBToast
 
+@MainActor
 final class SpectrogramViewController: UIViewController {
 
     /// The audio spectrogram layer.
@@ -41,12 +42,16 @@ final class SpectrogramViewController: UIViewController {
     func start() {
         setSpectrogram(darkMode: false)
         
-        audioSpectrogram?.didAppendFrequencies = { [weak self] values in
-            self?.frequencies.append(contentsOf: values)
+        audioSpectrogram?.didAppendFrequencies = { values in
+            Task { @MainActor [weak self] in
+                self?.frequencies.append(contentsOf: values)
+            }
         }
         
         audioSpectrogram?.didAppendAudioData = { [weak self] values in
-            self?.rawAudioData.append(contentsOf: values)
+            Task { @MainActor [weak self] in
+                self?.rawAudioData.append(contentsOf: values)
+            }
         }
         
         audioSpectrogram?.startRunning()
@@ -92,12 +97,12 @@ final class SpectrogramViewController: UIViewController {
     }
     
     private func bindSpectogram() {
-        audioSpectrogram?.showErrorMessage = { [weak self] errorString in
-            DispatchQueue.main.async {
+        audioSpectrogram?.showErrorMessage = { errorString in
+            Task { @MainActor [weak self] in
                 self?.showBBToast(errorString)
             }
         }
     }
 }
 
-extension SpectrogramViewController: SpectrogramController {}
+extension SpectrogramViewController: @preconcurrency SpectrogramController {}

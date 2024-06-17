@@ -11,9 +11,9 @@ import AVFoundation
 
 extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
  
-    public func captureOutput(_ output: AVCaptureOutput,
-                              didOutput sampleBuffer: CMSampleBuffer,
-                              from connection: AVCaptureConnection) {
+    func captureOutput(_ output: AVCaptureOutput,
+                       didOutput sampleBuffer: CMSampleBuffer,
+                       from connection: AVCaptureConnection) {
 
         var audioBufferList = AudioBufferList()
         var blockBuffer: CMBlockBuffer?
@@ -50,7 +50,7 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
             
             rawAudioData.append(contentsOf: Array(buf))
         }
-
+        
         process()
     }
     
@@ -59,10 +59,12 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
             let dataToProcess = Array(rawAudioData[0 ..< AudioSpectrogram.sampleCount])
             rawAudioData.removeFirst(AudioSpectrogram.hopCount)
             didAppendAudioData?(dataToProcess)
-            self.processData(values: dataToProcess)
+            processData(values: dataToProcess)
         }
-     
-        createAudioSpectrogram()
+        
+        Task { @MainActor [weak self] in
+            self?.createAudioSpectrogram()
+        }
     }
     
     func configureCaptureSession() {
@@ -113,13 +115,14 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
     
     /// Starts the audio spectrogram.
     func startRunning() {
-        sessionQueue.async {
+        sessionQueue.async { [weak self] in
             if AVCaptureDevice.authorizationStatus(for: .audio) == .authorized {
-                self.captureSession.startRunning()
+                self?.captureSession.startRunning()
             }
         }
     }
     
+    @MainActor 
     func startRunning(rawAudioData: [Int16]) {
         self.rawAudioData = rawAudioData
         process()
@@ -127,9 +130,9 @@ extension AudioSpectrogram: AVCaptureAudioDataOutputSampleBufferDelegate {
     
     /// Stops the audio spectrogram.
     func stopRunning() {
-        sessionQueue.async {
+        sessionQueue.async { [weak self] in
             if AVCaptureDevice.authorizationStatus(for: .audio) == .authorized {
-                self.captureSession.stopRunning()
+                self?.captureSession.stopRunning()
             }
         }
     }

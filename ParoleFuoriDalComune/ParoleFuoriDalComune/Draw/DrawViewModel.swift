@@ -11,11 +11,13 @@ protocol DrawViewModel {
     
     var poemCellViewModel: PoemCellViewModel { get }
     
+    @MainActor
     func didLoad(view: UIView, addTap: (UIView) -> Void)
 }
 
 extension DrawViewModel {
     
+    @MainActor
     func setConstraints(to view: UIView, subview: UIView, length: CGFloat, and addTap: (UIView) -> Void) {
         
         subview.translatesAutoresizingMaskIntoConstraints = false

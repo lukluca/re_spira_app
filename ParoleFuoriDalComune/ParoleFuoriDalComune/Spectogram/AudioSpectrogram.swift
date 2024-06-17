@@ -8,9 +8,9 @@
 import AVFoundation
 import Accelerate
 
-final class AudioSpectrogram: CALayer {
+final class AudioSpectrogram: CALayer, @unchecked Sendable {
     
-    static var darkMode = true
+    @MainActor static var darkMode = true
     
     var didAppendFrequencies: (([Float]) -> Void)?
     var didAppendAudioData: (([Int16]) -> Void)?
@@ -20,10 +20,14 @@ final class AudioSpectrogram: CALayer {
     // MARK: Initialization
     
     override init() {
-        AudioSpectrogram.darkMode = true
+        Task { @MainActor in
+          AudioSpectrogram.darkMode = true
+        }
+        
         super.init()
     }
     
+    @MainActor
     init(darkMode: Bool) {
         AudioSpectrogram.darkMode = darkMode
         super.init()
@@ -128,28 +132,28 @@ final class AudioSpectrogram: CALayer {
     }
     
     // Lookup tables for color transforms.
-    static var redTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var redTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: true).red
     }
     
-    static var greenTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var greenTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: true).green
     }
     
-    static var blueTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var blueTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: true).blue
     }
     
     // Lookup tables for color transforms.
-    static var lightRedTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var lightRedTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: false).red
     }
     
-    static var lightGreenTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var lightGreenTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: false).green
     }
     
-    static var lightBlueTable: [Pixel_8] = (0 ... 255).map {
+    @MainActor static var lightBlueTable: [Pixel_8] = (0 ... 255).map {
         brgValue(from: $0, darkMode: false).blue
     }
     
@@ -212,7 +216,7 @@ final class AudioSpectrogram: CALayer {
 
     /// Creates an audio spectrogram `CGImage` from `frequencyDomainValues` and renders it
     /// to the `spectrogramLayer` layer.
-    func createAudioSpectrogram() {
+    @MainActor func createAudioSpectrogram() {
         let maxFloats: [Float] = [255, maxFloat, maxFloat, maxFloat]
         let minFloats: [Float] = [255, 0, 0, 0]
         
