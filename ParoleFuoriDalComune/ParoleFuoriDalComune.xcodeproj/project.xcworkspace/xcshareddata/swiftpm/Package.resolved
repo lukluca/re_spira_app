@@ -1,5 +1,5 @@
 {
-  "originHash" : "43a894b18f9d0fee94e7c2e4c9f322bf426d99d6f551bb54de200a7481877465",
+  "originHash" : "8d214cab2eccf08b67836f9dfca66f2922acb7cd3ce01c5e77eb462eec7130fb",
   "pins" : [
     {
       "identity" : "bbtoast",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "384eab88d1a0b98ac96f4819e50a4308ecd5359f",
         "version" : "7.5.0"
+      }
+    },
+    {
+      "identity" : "spectrogramview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukluca/SpectrogramView",
+      "state" : {
+        "revision" : "d2eead62988a04a6bdcb1761b587e349985057ba",
+        "version" : "1.0.3"
       }
     },
     {

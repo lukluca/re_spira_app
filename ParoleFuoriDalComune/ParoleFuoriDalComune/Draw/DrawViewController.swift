@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import BBToast
+import SpectrogramView
 
 final class DrawViewController: UIViewController {
     
@@ -16,7 +18,6 @@ final class DrawViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self,
                                                                     action: #selector(didPressLeft))
@@ -35,6 +36,18 @@ final class DrawViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.drawViewController.spectrogramSegue(segue: segue) {
             spectrogramViewController = typedInfo.destination
+            
+            spectrogramViewController?.showError = { error in
+                Task { @MainActor [weak self] in
+                    let message = switch error {
+                    case .cantCreateMicrophone:
+                        R.string.localizable.cantCreateMicrophone()
+                    case .requiresMicrophoneAccess:
+                        R.string.localizable.requiresMicrophoneAccess()
+                    }
+                    self?.showBBToast(message)
+                }
+            }
             return
         }
         if let typedInfo = R.segue.drawViewController.creditsSegue(segue: segue) {

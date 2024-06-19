@@ -6,4 +6,4 @@
   
 */
 
-NSMicrophoneUsageDescription = "$The app needs to record your breath!";
+NSMicrophoneUsageDescription = "The app needs to record your breath!";

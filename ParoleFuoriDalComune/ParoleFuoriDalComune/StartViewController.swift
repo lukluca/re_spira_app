@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import SpectrogramView
+
+typealias SpectrogramController = SpectrogramView.SpectrogramController
+typealias SimulatorSpectrogramController = SpectrogramView.SimulatorSpectrogramController
 
 final class StartViewController: UIViewController {
     
@@ -31,7 +35,7 @@ final class StartViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.startViewController.spectrogramSegue(segue: segue) {
             #if targetEnvironment(simulator)
-            spectrogramController = SimulatorSpectogramController()
+            spectrogramController = SimulatorSpectrogramController()
             #else
             spectrogramController = typedInfo.destination
             #endif

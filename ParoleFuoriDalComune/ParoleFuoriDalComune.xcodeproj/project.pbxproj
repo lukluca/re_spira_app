@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		2F103CCF26ED720700BF9F20 /* divina_commedia.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F103CCE26ED720700BF9F20 /* divina_commedia.json */; };
 		2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */; };
-		2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */; };
-		2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */; };
-		2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */; };
 		2F53A7DC26E959E500559655 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DB26E959E500559655 /* Calculator.swift */; };
 		2F53A7E026E9687700559655 /* HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7DF26E9687700559655 /* HTML.swift */; };
 		2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */; };
@@ -28,7 +25,6 @@
 		2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD14C5C26ED94EC0092CC69 /* SwiftSoup */; };
 		2FD1651828BD4F7600438BF5 /* BBToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD1651728BD4F7600438BF5 /* BBToast */; };
 		4A195E0928D52A0500FF2BA7 /* Visual_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A195E0828D52A0500FF2BA7 /* Visual_6.png */; };
-		4A3E0B6D28C7E33000AA03BB /* Spectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */; };
 		4A3E0B7128C7E7CE00AA03BB /* Visual_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */; };
 		4A3E0B7228C7E7CE00AA03BB /* Visual_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */; };
 		4A3E0B7328C7E7CE00AA03BB /* Visual_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */; };
@@ -70,6 +66,7 @@
 		4ADC98D328C4A759008887BA /* page-7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C628C4A759008887BA /* page-7.txt */; };
 		4ADC98D428C4A759008887BA /* page-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C728C4A759008887BA /* page-5.txt */; };
 		4ADC98D528C4A759008887BA /* page-3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ADC98C828C4A759008887BA /* page-3.txt */; };
+		4AF1F81B2C2344C100B7B2A7 /* SpectrogramView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AF1F81A2C2344C100B7B2A7 /* SpectrogramView */; };
 		4AFC25F22C19EDA0005DD5AB /* ShazamHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC25F12C19EDA0005DD5AB /* ShazamHashGenerator.swift */; };
 		4AFC25F62C1A00AE005DD5AB /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 4AFC25F52C1A00AE005DD5AB /* ComplexModule */; };
 /* End PBXBuildFile section */
@@ -77,9 +74,6 @@
 /* Begin PBXFileReference section */
 		2F103CCE26ED720700BF9F20 /* divina_commedia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = divina_commedia.json; sourceTree = "<group>"; };
 		2F103CD126ED725100BF9F20 /* CreditsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsTableViewController.swift; sourceTree = "<group>"; };
-		2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrogramViewController.swift; sourceTree = "<group>"; };
-		2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrogram.swift; sourceTree = "<group>"; };
-		2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
 		2F53A7DB26E959E500559655 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		2F53A7DF26E9687700559655 /* HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML.swift; sourceTree = "<group>"; };
 		2F53A7E226EAA3C500559655 /* CommediaDrawPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommediaDrawPreparation.swift; sourceTree = "<group>"; };
@@ -95,7 +89,6 @@
 		2F99EDD326E6C31800F1DBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5A06326ED740100579588 /* Commedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commedia.swift; sourceTree = "<group>"; };
 		4A195E0828D52A0500FF2BA7 /* Visual_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_6.png; sourceTree = "<group>"; };
-		4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectrogram.swift; sourceTree = "<group>"; };
 		4A3E0B6E28C7E7CE00AA03BB /* Visual_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_2.png; sourceTree = "<group>"; };
 		4A3E0B6F28C7E7CE00AA03BB /* Visual_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_3.png; sourceTree = "<group>"; };
 		4A3E0B7028C7E7CE00AA03BB /* Visual_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visual_1.png; sourceTree = "<group>"; };
@@ -153,6 +146,7 @@
 				4A9C593B2940A79A005E5C98 /* RswiftLibrary in Frameworks */,
 				2FA98ABE26ED54B300DE4681 /* KDTree in Frameworks */,
 				2FD14C5D26ED94EC0092CC69 /* SwiftSoup in Frameworks */,
+				4AF1F81B2C2344C100B7B2A7 /* SpectrogramView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,17 +172,6 @@
 				4A96DD8128C3E3EB00DB268B /* DanteViewModel.swift */,
 			);
 			path = Dante;
-			sourceTree = "<group>";
-		};
-		2F53A7D926E9581F00559655 /* Spectogram */ = {
-			isa = PBXGroup;
-			children = (
-				2F53A7D126E78B0500559655 /* SpectrogramViewController.swift */,
-				2F53A7D326E7D9CE00559655 /* AudioSpectrogram.swift */,
-				2F53A7D526E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift */,
-				4A3E0B6C28C7E33000AA03BB /* Spectrogram.swift */,
-			);
-			path = Spectogram;
 			sourceTree = "<group>";
 		};
 		2F53A7DA26E9597800559655 /* Drawing */ = {
@@ -234,7 +217,6 @@
 				2F99EDCB26E6C31700F1DBAF /* Main.storyboard */,
 				4A96DD5D28C3746500DB268B /* Postcards */,
 				4AFC25F02C19ED1C005DD5AB /* Shazam */,
-				2F53A7D926E9581F00559655 /* Spectogram */,
 				4A96DD8628C3F39200DB268B /* Tools */,
 			);
 			path = ParoleFuoriDalComune;
@@ -354,6 +336,7 @@
 				2FD1651728BD4F7600438BF5 /* BBToast */,
 				4A9C593A2940A79A005E5C98 /* RswiftLibrary */,
 				4AFC25F52C1A00AE005DD5AB /* ComplexModule */,
+				4AF1F81A2C2344C100B7B2A7 /* SpectrogramView */,
 			);
 			productName = ParoleFuoriDalComune;
 			productReference = 2F99EDC226E6C31700F1DBAF /* Re_Spira.app */;
@@ -390,6 +373,7 @@
 				2FD1651628BD4F7600438BF5 /* XCRemoteSwiftPackageReference "BBToast" */,
 				4A9C59392940A79A005E5C98 /* XCRemoteSwiftPackageReference "R" */,
 				4AFC25F42C1A00AE005DD5AB /* XCRemoteSwiftPackageReference "swift-numerics" */,
+				4AF1F8192C2344C100B7B2A7 /* XCRemoteSwiftPackageReference "SpectrogramView" */,
 			);
 			productRefGroup = 2F99EDC326E6C31700F1DBAF /* Products */;
 			projectDirPath = "";
@@ -451,13 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3E0B6D28C7E33000AA03BB /* Spectrogram.swift in Sources */,
 				4A96DD7F28C37D5000DB268B /* DrawViewModel.swift in Sources */,
 				2F103CD226ED725100BF9F20 /* CreditsTableViewController.swift in Sources */,
 				4ADC98B028C4087D008887BA /* Files.swift in Sources */,
 				2F99EDCA26E6C31700F1DBAF /* StartViewController.swift in Sources */,
 				2F53A7E726EAA65E00559655 /* DrawViewController.swift in Sources */,
-				2F53A7D626E7DA5900559655 /* AudioSpectrogram+AVCaptureAudioDataOutputSampleBufferDelegate.swift in Sources */,
 				4A96DD8528C3F0CB00DB268B /* PostcardsViewModel.swift in Sources */,
 				2F53A7E026E9687700559655 /* HTML.swift in Sources */,
 				2F53A7E326EAA3C500559655 /* CommediaDrawPreparation.swift in Sources */,
@@ -465,8 +447,6 @@
 				4AFC25F22C19EDA0005DD5AB /* ShazamHashGenerator.swift in Sources */,
 				4A96DD8228C3E3EB00DB268B /* DanteViewModel.swift in Sources */,
 				2F53A7DC26E959E500559655 /* Calculator.swift in Sources */,
-				2F53A7D426E7D9CE00559655 /* AudioSpectrogram.swift in Sources */,
-				2F53A7D226E78B0500559655 /* SpectrogramViewController.swift in Sources */,
 				4ADC98AD28C406BF008887BA /* Converter.swift in Sources */,
 				4A96DD7D28C379BA00DB268B /* CreditsViewModel.swift in Sources */,
 				4ADC98BB28C41677008887BA /* Postcards.swift in Sources */,
@@ -658,6 +638,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,6 +673,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WSLAS3STB;
 				INFOPLIST_FILE = ParoleFuoriDalComune/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,6 +755,14 @@
 				minimumVersion = 7.5.0;
 			};
 		};
+		4AF1F8192C2344C100B7B2A7 /* XCRemoteSwiftPackageReference "SpectrogramView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukluca/SpectrogramView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
 		4AFC25F42C1A00AE005DD5AB /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-numerics.git";
@@ -807,6 +797,11 @@
 		4A9C593C2940A7C6005E5C98 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		4AF1F81A2C2344C100B7B2A7 /* SpectrogramView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AF1F8192C2344C100B7B2A7 /* XCRemoteSwiftPackageReference "SpectrogramView" */;
+			productName = SpectrogramView;
 		};
 		4AFC25F52C1A00AE005DD5AB /* ComplexModule */ = {
 			isa = XCSwiftPackageProductDependency;
